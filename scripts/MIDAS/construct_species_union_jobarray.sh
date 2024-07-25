@@ -113,5 +113,5 @@ while read line; do
    fi
 done < <(sed '1d' "$accession_list")
 
-python /u/project/ngarud/michaelw/useful-scripts/construct_species_union.py $accession_list $file $midas_path
+python construct_species_union.py $accession_list $file $midas_path
 
