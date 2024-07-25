@@ -42,6 +42,3 @@ species_union=~/species_union/${acc}/species_union.txt
 
 ### MIDAS GENES
 singularity exec $H2_CONTAINER_LOC/MIDAS-mod.sif run_midas.py genes $OUTDIR -1 $fastq1 -2 $fastq2 --extra_species_file $species_union --remove_temp
-
-### MIDAS SNPs
-#singularity exec $H2_CONTAINER_LOC/MIDAS-mod.sif run_midas.py snps $OUTDIR -1 $fastq1 -2 $fastq2 --extra_species_file $species_union
