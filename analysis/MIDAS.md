@@ -28,7 +28,7 @@ Second, we infer gene copy number by running the following script:
 qsub midas_genes.sh
 ```
 
-##. 3. SNP step
+## 3. SNP step
 
 Third, we infer allele frequency for all loci in the genome:
 
