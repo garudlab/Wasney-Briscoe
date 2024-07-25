@@ -2,7 +2,7 @@
 
 In the standard MIDAS workflow, `species`, `gene`, and `SNP` content are called by aligned metagenomic sequencing to a database comprising reference genomes representing 5,952 species. In the final step, outputs are merged across all relevant hosts.
 
-For details on each step, please refer to [MIDAS documentation](https://github.com/snayfach/MIDAS) (Nayfach et al., 2016). All scripts referenced here can be found in `scripts/MIDAS/` directory. All steps were performed on Hoffman2 using a job scheduler.
+For details on each step, please refer to [MIDAS documentation](https://github.com/snayfach/MIDAS) (Nayfach et al., 2016). All scripts referenced here can be found in [`scripts/MIDAS/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts) directory. All steps were performed on Hoffman2 using a job scheduler.
 
 MIDAS runs on `python 2.7`. Therefore, all MIDAS code is executed in a custom conda environment called `python27_env` that has `python 2.7` loaded. 
 
