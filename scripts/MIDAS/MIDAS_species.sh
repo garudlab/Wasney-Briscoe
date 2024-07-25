@@ -33,7 +33,7 @@ echo $acc_path
 
 OUTDIR=~/midas_output/${acc}
 
-mkdir $OUTDIR
+mkdir -p $OUTDIR
 
 fastq1=~/fastqs/${acc_path}_1.fq.gz
 fastq2=~/fastqs/${acc_path}_2.fq.gz
