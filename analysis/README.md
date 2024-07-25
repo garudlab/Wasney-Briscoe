@@ -4,7 +4,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## MIDAS
 
-- Running MIDAS
+- [Running MIDAS](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/MIDAS.md)
 - Post-processing MIDAS data
 
 ## $\pi$ analysis
