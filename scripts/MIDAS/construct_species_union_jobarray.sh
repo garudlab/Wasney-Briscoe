@@ -51,7 +51,7 @@ while getopts ":h" option; do
 done
 
 #Default arguments
-midas_path=~
+midas_path=~/
 accession_list=~/Wasney-Briscoe-2024/scripts/MIDAS/species_union_list.txt
 
 
