@@ -7,7 +7,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 - Running MIDAS
 - Post-processing MIDAS data
 
-## Pi
+## $\pi$
 
 ## Strain abundance
 
