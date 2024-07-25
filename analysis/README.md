@@ -7,13 +7,13 @@ The analysis subdirectory contains instructions on running all analyses and repr
 - Running MIDAS
 - Post-processing MIDAS data
 
-## $\pi$
+## $\pi$ analysis
 
-## Strain abundance
+## Strain abundance analysis
 
-## SNV changes
+## SNV changes analysis
 
-## $\Delta f$
+## $\Delta f$ analysis
 
 ## Main text figures
 
