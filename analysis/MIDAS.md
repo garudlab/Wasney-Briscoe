@@ -4,7 +4,7 @@ In the standard MIDAS workflow, `species`, `gene`, and `SNP` content are called 
 
 For details on each step, please refer to [MIDAS documentation](https://github.com/snayfach/MIDAS) (Nayfach et al., 2016). All scripts referenced here can be found in `scripts/MIDAS/` directory. All steps were performed on Hoffman2 using a job scheduler.
 
-MIDAS runs on `python 2.7`. Therefor, all MIDAS code is executed in a custom conda environment called `python27_env` that has `python 2.7` loaded. 
+MIDAS runs on `python 2.7`. Therefore, all MIDAS code is executed in a custom conda environment called `python27_env` that has `python 2.7` loaded. 
 
 ## 1. Species step
 
