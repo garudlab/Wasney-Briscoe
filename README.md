@@ -6,7 +6,7 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 
 ## Table of Contents
 
-1. [https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/analysis](Analysis): contains instructions in `.md` format on how to run the following pipelines/analyses
+1. [Analysis](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/analysis): contains instructions in `.md` format on how to run the following pipelines/analyses
 2. Scripts: scripts used in all pipelines/analyses. Instructions on how to execute the scripts can be found in Analysis.
 3. Figures: main text figures
 4. Tables: supplementary tables
