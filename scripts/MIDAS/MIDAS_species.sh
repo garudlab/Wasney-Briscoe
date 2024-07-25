@@ -8,7 +8,7 @@
 #$ -l h_data=26G
 #$ -l time=48:00:00
 #$ -l highp
-#$ -t 1-11:1
+#$ -t 1-41:1
 
 source /u/local/Modules/default/init/modules.sh
 module load anaconda3
@@ -20,23 +20,23 @@ export MIDAS_DB=/u/project/ngarud/Garud_lab/midas_db_v1.2
 
 
 #Accessions
-readarray accs < /u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/accessions.txt
+readarray accs < ~/Wasney-Briscoe-2024/scripts/accessions.txt
 accs=(null ${accs[@]}) # zero to one start index
 acc=${accs[$SGE_TASK_ID]}
 echo $acc
 
 #Accession paths
-readarray accs_paths < /u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/accession_paths.txt
+readarray accs_paths < ~/Wasney-Briscoe-2024/scripts/accession_paths.txt
 accs_paths=(null ${accs_paths[@]}) # zero to one start index
 acc_path=${accs_paths[$SGE_TASK_ID]}
 echo $acc_path
 
-OUTDIR=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/midas_output/${acc}
+OUTDIR=~/midas_output/${acc}
 
 mkdir $OUTDIR
 
-fastq1=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/fastqs/${acc_path}_1.fq.gz
-fastq2=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/fastqs/${acc_path}_2.fq.gz
+fastq1=~/fastqs/${acc_path}_1.fq.gz
+fastq2=~/fastqs/${acc_path}_2.fq.gz
 
 #run_midas.py species $OUTDIR -1 $fastq1 -2 $fastq2 --remove_temp
 module load singularity
