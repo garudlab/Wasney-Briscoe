@@ -65,7 +65,7 @@ sample_metadata_map = parse_midas_data.parse_sample_metadata_map()
 samples = sample_metadata_map.keys()
 
 #Initialize df
-snp_changes_df = pd.DataFrame(columns = ['species','contig','site_pos','gene','variant_type','sample1', 'sample2', 'alternate_freq_1', 'depth_1', 'alternate_freq_2', 'depth_2'])
+snp_changes_df = pd.DataFrame(columns = ['species','contig','site_pos','gene','variant_type','sample1', 'sample2', 'alternate_freq_1', 'depth_1', 'alternate_freq_2', 'depth_2', 'gene_description'])
 species_vec = []
 contig = []
 site_pos = []
@@ -168,7 +168,7 @@ for i,snp_change in snp_changes_df.iterrows():
     
 snp_changes_df['strain_orientation'] = strain_orientation   
 
-snp_changes_path = "%s%s%s" % (config.project_folder, "evolutionary_changes/", "snp_changes.txt")
+snp_changes_path = "%s%s%s" % (config.project_folder, "evolutionary_changes/", "snp_changes.txt.bz2")
 snp_changes_df.to_csv(snp_changes_path, sep = ",")
 
 #################################################################################################################################################################
@@ -267,7 +267,16 @@ opportunities_df['diet_orientation'] = diet_orientation
 opportunities_df['inoculum_orientation'] = inoculum_orientation
 opportunities_df['cage_orientation'] = opportunities_df.apply(lambda row: "Between inoculum" if row['host_orientation'] == "Between inoculum" else "Same cage" if row['cage_1'] == row['cage_2'] else "Different cage", axis = 1)
 
+strain_orientation = []
+for i,opportunity in opportunities_df.iterrows():
+    if ((opportunity['species'],opportunity['sample_1'], opportunity['sample_2']) in different_strain_list) | ((opportunity['species'],opportunity['sample_2'], opportunity['sample_1']) in different_strain_list):
+        strain_orientation.append("Different strain")
+    else:
+        strain_orientation.append("Same strain")
+    
+opportunities_df['strain_orientation'] = strain_orientation   
 
-
+opportunities_path = "%s%s%s" % (config.project_folder, "evolutionary_changes/", "opportunities.txt.bz2")
+opportunities_df.to_csv(opportunities_path, sep = ",")
 
 
