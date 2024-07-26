@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -N post_processing_MIDAS_data
 #$ -l h_data=8G,h_rt=2:00:00,highp
-#$ -o /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/outputs/
-#$ -e /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/errors/
+#$ -e ~/Wasney-Briscoe-2024/scripts/postprocessing/errors/
+#$ -o ~/Wasney-Briscoe-2024/scripts/postprocessing/outputs/
 #$ -t 1-85:1 
 #$ -cwd
 
@@ -37,9 +37,9 @@ while getopts ":h" option; do
 done
 
 #Default arguments
-species_list=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species_snps.txt
-microbiome_scripts_path=/u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/
-data_directory=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/merged_data/
+species_list=~/Wasney-Briscoe-2024/scripts/postprocessing/species_snps.txt
+microbiome_scripts_path=~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/
+data_directory=~/merged_data/
 
 #Arguments that are passed
 for arg in "$@"
@@ -79,22 +79,6 @@ echo ""
 source /u/local/Modules/default/init/modules.sh
 module load anaconda3
 source activate python27_env
-
-#STEP 0.A: generate core genes! ONLY DO THIS IF ON THE FIRST ITERATION
-
-### CHANGE DIRECOTRY TO MICROBIOME DIRECTORY
-# cd $microbiome_scripts_path
-
-# echo "Generating core genes"
-# echo ""
-
-# if [ "$i" -eq 1 ]; then
-#     ### GENERATING snps/species_snps.txt
-#     cd ${data_directory}snps/
-#     ls -d */ | sed 's/\/$//' > species_snps.txt
-#     # Execute the Python script if 'i' is equal to 1
-#     python core_gene_utils.py
-# fi
 
 #STEP 0.B: annotate p-values
 echo "Annotating p_values"
@@ -161,22 +145,5 @@ echo "Calculating intersample changes"
 echo ""
 
 python calculate_intersample_changes.py ${species_name}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
