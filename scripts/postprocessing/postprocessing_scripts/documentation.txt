@@ -1,0 +1,1528 @@
+# -*-Sh-*-       
+
+############################################################################################################
+# January 20, 2017
+# This is a documentation/readme file for where all the scripts live and the order of analyses performed.
+############################################################################################################                        
+
+# to run the code, the following symbolic links must be made to the home dir:
+ben_nandita_hmp_analysis
+ben_nandita_hmp_data
+ben_nandita_hmp_scripts
+tmp_intermediate_files
+
+#update $PYTHONPATH with ben_nandita_hmp_scripts path                                             
+#update $PATH with ben_nandita_hmp_scripts path because it contains the error c++ code       
+
+#####################
+# HMP data download #
+#####################
+# Obtain HMP shotgun data (see Stephen's dir)
+# Obtain HMP metadata from Westway (HMP_ids.txt)                                                                                                                                                  
+mysql -u ngarud -p -e"select subject_id, sample_id, run_accession, country, continent from MetaQuery.run_to_study a join MetaQuery.run_to_sample b using(run_accession) join MetaQuery.sample_to_subject c using(sample_id) join MetaQuery.subject_attributes d using(subject_id) where study_id ='HMP'" > HMP_ids.txt
+d
+# HMP meta data download for parsing time data:
+mysql -u ngarud -p -e"select run_accession,sample_accession,sample_alias from SRAdb.sra " > sra_mapping.txt
+
+# get the time data
+parse_HMP_metadata.py
+
+##########################################################
+# Concatenate the technical replicates fastq files 
+# (increases power, especially for samples with low depth. 
+# Eliminates need later on to merge tech. reps). 
+###########################################################
+python concatenate_fastq_technical_replicates.py
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/concatenate_fastq_technical_replicates
+
+
+#########################################
+# Run MIDAS on all technical replicates #
+#########################################
+# need a list of sample IDs
+sed '1d' ~/ben_nandita_hmp_scripts/HMP_ids.txt | cut -f2 | sort | uniq > /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/sampleIDs.txt
+
+# MIDAS: run the species, SNPs, CNVs modules all together linearly for each sample ID (cuts down on waiting time)
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_species_snps_cnvs
+
+
+###########################################################
+# Concatenate the sample replicates fastq files 
+# (increases power, especially for samples with low depth. 
+# Eliminates need later on to merge sample reps). 
+###########################################################
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/concatenate_fastq_sample_replicates
+
+
+##################
+# HMP1-2 data    #
+##################
+# Jason downloaded HMP1-2 sometime July 2018
+/pollard/data/metagenomes/HMP1-II/WMS/
+
+# parse the HMP1-2 metadata to obtain only stool samples and get the visnos etc in the same format as the old data:
+~/ben_nandita_hmp_scripts/parse_hmp1-2_data.py
+# which resulted in this file:
+~/ben_nandita_hmp_scripts/HMP1-2_ids_order.txt
+
+# need to uncompress the files that Jason downloaded
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/untar_HMP1-2
+
+# redo the uncompression for some files
+
+rm /pollard/home/ngarud/ben_nandita_hmp_scripts/HMP1-2_SRS_redo.txt
+while read sample; do
+    if [ ! -f /pollard/data/metagenomes/HMP1-II/untarred_files/${sample}/${sample}.denovo_duplicates_marked.trimmed.1.fastq ]
+    then
+	echo $sample >> /pollard/home/ngarud/ben_nandita_hmp_scripts/HMP1-2_SRS_redo.txt
+    fi
+done < /pollard/home/ngarud/ben_nandita_hmp_scripts/HMP1-2_SRS.txt
+
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/untar_HMP1-2_redo
+
+# next, need to concatenate the fastq files if there are multiple sample replicates for the same time point. 
+# generate a list of subject_ids
+python ~/ben_nandita_hmp_scripts/get_list_of_subject_ids.py
+python ~/ben_nandita_hmp_scripts/concatenate_fastq_sample_replicates_from_same_visno_HMP1-2.py $subject_id
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/concatenate_fastq_sample_replicates_HMP1-2
+
+rm /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700101840_1.fastq.gz 
+rm /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700101840_2.fastq.gz 
+
+nohup nice gzip -c /pollard/data/metagenomes/HMP1-II/untarred_files/SRS024549/SRS024549.denovo_duplicates_marked.trimmed.1.fastq >> /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700101840_1.fastq.gz &
+
+nohup nice gzip -c /pollard/data/metagenomes/HMP1-II/untarred_files/SRS024549/SRS024549.denovo_duplicates_marked.trimmed.2.fastq >> /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700101840_2.fastq.gz &
+
+rm /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700102356_1.fastq.gz 
+rm /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700102356_2.fastq.gz 
+nohup nice gzip -c /pollard/data/metagenomes/HMP1-II/untarred_files/SRS052027/SRS052027.denovo_duplicates_marked.trimmed.1.fastq >> /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700102356_1.fastq.gz &
+
+nohup nice gzip -c /pollard/data/metagenomes/HMP1-II/untarred_files/SRS052027/SRS052027.denovo_duplicates_marked.trimmed.2.fastq >> /pollard/data/metagenomes/HMP1-II/merged_sample_replicates/700102356_2.fastq.gz &
+
+# redo for two samples:
+
+#subject_id:
+
+for subject_id in 159591683 159490532; do
+    nohup nice python ~/ben_nandita_hmp_scripts/concatenate_fastq_sample_replicates_from_same_visno_HMP1-2.py $subject_id &
+done
+
+
+# run MIDAS:
+#outdir: ~/BenNanditaProject/MIDAS_intermediate_files_HMP1-2
+# get a list of all sample names (some have a 'c' appended to it to indicate that multiple samples have been concatenated). 
+ls /pollard/data/metagenomes/HMP1-II/merged_sample_replicates | grep _1 | cut -f 1 -d '_' > ~/BenNanditaProject/MIDAS_intermediate_files_HMP1-2/HMP1-2_samples.txt
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP1-2_MIDAS_species
+
+# some of the samples did not finish. Redo for these
+
+rm ~/BenNanditaProject/MIDAS_intermediate_files_HMP1-2/redo_samples.txt
+while read sample; do
+    if [ ! -f /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_HMP1-2/${sample}/species/species_profile.txt ]
+    then
+	echo $sample >> ~/BenNanditaProject/MIDAS_intermediate_files_HMP1-2/redo_samples.txt
+    fi
+done < ~/BenNanditaProject/MIDAS_intermediate_files_HMP1-2/HMP1-2_samples.txt
+
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP1-2_MIDAS_species_redo_samples
+
+# get the time pair species list
+time_pair_species_list_for_midas_HMP1-2.py
+
+# run SNPs and gene
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP1-2_MIDAS_snps_timepts_matched
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP1-2_MIDAS_genes_timepts_matched
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP1-2_MIDAS_snps_timepts_matched_redo
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP1-2_MIDAS_genes_timepts_matched_redo
+
+Redo:
+Genes:
+700107873
+700108095c
+
+SNPs
+700106325c
+
+######################################
+# Run MIDAS on HMP sample replicates #
+######################################
+
+# need a list of combined sample IDs to run MIDAS on 
+ls ~/BenNanditaProject/MIDAS_intermediate_files_hmp/joined_fastq_files_hmp_combine_sample_reps | cut -f1 -d'_' | sort | uniq > ~/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/combined_sampleIDs.txt
+
+# MIDAS: run the species, SNPs, CNVs modules all together linearly for each sample ID (cuts down on waiting time)
+# I've commented out the snps and cnvs part for now because I need to control for time points. 
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_species_snps_cnvs_samples_combined
+
+#file=700107547c
+
+#OUTDIR=~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_samples_combined_output_2/${file}
+
+#mkdir $OUTDIR
+
+#nohup nice run_midas.py species $OUTDIR -1 ~/BenNanditaProject/MIDAS_intermediate_files_hmp/joined_fastq_files_hmp_combine_sample_reps/${file}_1.fastq.gz -2 ~/BenNanditaProject/MIDAS_intermediate_files_hmp/joined_fastq_files_hmp_combine_sample_reps/${file}_2.fastq.gz -t 4 &
+
+
+
+################################################################################################
+# Time pairs: run the SNP and gene module using the union of species in time pairs for HMP data
+################################################################################################
+
+# 1: get the time pairs
+# 2: set up commands for running MIDAS with this comma-delimited list
+
+time_pair_species_list_for_midas.py
+
+# obtain a list of tech reps and sample reps to run snps and genes on
+
+#list of non sample reps:
+python ~/ben_nandita_hmp_scripts/list_of_non_sample_reps.py > ~/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/List_of_non_sample_reps.txt
+
+# combined_samples
+~/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/combined_sampleIDs.txt
+
+
+# even though this says 'newDB', this can be run on the old DB. The path of the db needs to be changed, that is all. 
+#combined tech reps
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_tech_combined_newDB_timepts_matched
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_genes_tech_combined_newDB_timepts_matched
+
+# combined samples
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_samples_combined_newDB_timepts_matched
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_genes_samples_combined_newDB_timepts_matched
+
+
+while read dir; do
+    echo $dir
+    wc -l ${dir}/snps/temp/*fai
+    cat ${dir}/snps/temp/*fa | grep '>' | wc -l
+done < tmp
+
+while read dir; do
+    echo $dir
+    mkdir ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_tech_combined_output/${dir}
+    cp -R ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/${dir}/species ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_tech_combined_output/${dir}/
+done < ~/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/List_of_non_sample_reps.txt
+
+
+
+
+
+###############################
+# run MIDAS on Kuleshov data  #
+###############################
+
+# accession list: /netapp/home/ngarud/shattuck/metagenomic_fastq_files/Kuleshov/accession_list.txt
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Kuleshov_MIDAS_species_snps_cnvs_sample1
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Kuleshov_MIDAS_species_snps_cnvs_sample2
+
+########################################################
+# Run MIDAS on Qin et al. healthy samples              #
+########################################################        
+
+# get the meta data for Qin et al. 
+
+mysql -u ngarud -p -e"select subject_id, sample_id, run_accession, country, continent, t2d from MetaQuery.run_to_study a join MetaQuery.run_to_sample b using(run_accession) join MetaQuery.sample_to_subject c using(sample_id) join MetaQuery.subject_attributes d using(subject_id) where study_id ='T2D'" > Qin_2012_ids_all.txt
+
+mysql -u ngarud -p -e"select subject_id, sample_id, run_accession, country, continent, t2d from MetaQuery.run_to_study a join MetaQuery.run_to_sample b using(run_accession) join MetaQuery.sample_to_subject c using(sample_id) join MetaQuery.subject_attributes d using(subject_id) where study_id ='T2D' and healthy=0" > Qin_2012_ids_healthy.txt
+
+cat ~/ben_nandita_hmp_data/Qin_2012_ids_healthy.txt | cut -f3 > ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_IDs_healthy.txt
+
+#copy the species files
+while read dir; do
+    echo $dir
+    mkdir ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output_Oct17/${dir}
+    cp -R ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${dir}/species ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output_Oct17/${dir}/
+done < ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/tmp
+
+
+
+# run midas
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Qin_MIDAS_species_snps_cnvs
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Qin_MIDAS_snps # can run snps and genes in parallel
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Qin_MIDAS_cnvs
+
+
+
+####################
+# copy geens files #
+####################
+
+while read file; do
+    echo $file
+    cp -R ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/${file}/genes ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_tech_combined_output/${file}
+done < ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_tech_combined_output/tech_files.txt
+
+# same for Qin
+while read file; do
+    echo $file
+    cp -R ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output_Oct17/${file}
+done < ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output_Oct17/qin_files.txt
+
+#################################################
+# Merge MIDAS output for HMP, Kuleshov, and Qin #
+#################################################
+
+# Since the output is all in different dirs for each project, I need a list of paths for each sample to be merged.
+# There are a total of 499 samples (Qin and HMP), so I need 499 paths.
+
+# get a list of all the sample paths:
+#python ~/ben_nandita_hmp_scripts/fastq_samples_without_visno_replicate.py 
+ls -d /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_tech_combined_output/** > /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/sample_paths.txt
+
+# combined samples:
+ls -d -1 /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_samples_combined_output/** >> /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/sample_paths.txt
+
+# Kuleshov:
+echo '/netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Kuleshov/MIDAS_1.2.2_output/SRR2822459' >> /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/sample_paths.txt 
+
+# Qin:
+rm /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_Qin.txt
+ls -d -1 /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output_Oct17/** > /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_Qin.txt
+
+cat /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/sample_paths.txt /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_Qin.txt > /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_hmp_Kuleshov_Qin.txt
+
+# merge samples without visno replicates
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_Qin_MIDAS_species_merge_samples_combined
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_Qin_MIDAS_SNPs_merge_5_3_core_and_variable_samples_combined
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_Qin_MIDAS_CNVs_1_merge_samples_combined 
+
+# alternatively, run on Chestnut directly:
+
+# modify sample paths so that there is a copy with paths readable by chestnut
+python ~/ben_nandita_hmp_scripts/replace_path_string.py
+
+OUTDIR=/pollard/home/ngarud/BenNanditaProject/ben_nandita_hmp_data/Qin_HMP
+nohup nice merge_midas.py snps $OUTDIR/snps -i ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_hmp_Kuleshov_Qin_chestnut.txt -t file --sample_depth 5 --site_depth 3 --min_samples 1 --max_species 150 --site_prev 0.0 --threads 19 > $OUTDIR/snps/snps_core_variable_Qin_HMP_samples_combined.log &
+
+#bzip everything
+# need a list of files to bzip (send this to cluster)
+cd /netapp/home/ngarud/shattuck/BenNanditaProject/ben_nandita_hmp_data/Qin_HMP/snps/
+ls > /netapp/home/ngarud/shattuck/BenNanditaProject/ben_nandita_hmp_data/Qin_HMP/snps/species_snps.txt
+
+cd /netapp/home/ngarud/shattuck/BenNanditaProject/ben_nandita_hmp_data/Qin_HMP/genes/
+ls > /netapp/home/ngarud/shattuck/BenNanditaProject/ben_nandita_hmp_data/Qin_HMP/genes/species_genes.txt
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_snps_Qin_HMP
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_Qin_HMP
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_species_Qin_HMP
+
+
+# tar the whole file:
+tar -cf run.tar run
+
+
+#############################################################################################
+# Change the MIDAS database
+# if there is any genome from the HMP project, swap the MIDAS ref genome with the HMP one. 
+#############################################################################################
+
+# 1. Get the species genome IDS from the MIDAS DB genome_info.txt file
+~/midas_db/genome_info.txt
+
+# 2. Look up the source of each genome in the PATRIC genome_metadata file on Pollard server (downloaded by Stephen Nayfach on Nov 14  2015). Determine if genome is HMP reference.
+/pollard/shattuck0/snayfach/databases/PATRIC/metadata/genome_metadata
+
+# list of HMP reference genomes (313, not always for unique species). 
+/pollard/home/ngarud/ben_nandita_hmp_analysis/list_of_HMP_reference_genomes.txt
+
+cat /pollard/shattuck0/snayfach/databases/PATRIC/metadata/genome_metadata | grep 'Reference genome for the Human Microbiome Project' | cut -f2
+
+python replace_rep_genome_with_HMP.py
+
+# also update genome_info.txt with the refdb used (this will be helpful for the supplement)
+
+
+#################################
+# Merge MIDAS output for new db #
+#################################
+# Move the directories of intermediate files for Qin et al. 
+while read file; do
+    echo $file
+    #mv /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/snps /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/snps_original_db 
+    # move snps -> snps_new_db and snps_original_db -> snps (9/26/17)
+    mv /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/snps /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/snps_new_db 
+    mv /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/snps_original_db /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/snps 
+
+    #mv /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes_original_db 
+    mv /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes_new_db 
+    mv /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes_original_db /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output/${file}/genes 
+    
+done <~/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_IDs_healthy.txt
+
+# move the kulshov files too
+mv ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/snps ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/snps_new_db 
+mv ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/snps_original_db ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/snps
+
+mv ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/genes ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/genes_new_db 
+mv ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/genes_original_db ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/SRR2822459/genes 
+
+
+# remove the crassphage file from the genes folder from all 420 outputs because this throws an error when merging genes. 
+while read path; do
+    mv ${path}/genes/output/crassphage.genes.gz ${path}/genes/crassphage.genes.gz
+done < /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_hmp_Kuleshov_Qin.txt
+# also edit the output files for species.txt and summary.txt in the genes intermediate folder to exclude crassphage 
+
+
+############################################
+# Run MIDAS on FMT (Li 2016) data  (old db #
+############################################                                                 
+
+# first, merge all the replicates for paired-end files so that we have a single forward and single reverse file.  
+
+cat ~/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/Li_2016_FMT_run_accessions.txt | grep paired | cut -f1,3 > ~/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/Li_2016_FMT_paired_accessions.txt
+
+cat ~/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/Li_2016_FMT_run_accessions.txt | grep paired | cut -f3 | sort | uniq > ~/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/Li_2016_FMT_paired_samples_only.txt
+
+~/BenNanditaProject/ben_nandita_hmp_scripts/concatenate_Li_2016_FMT_fastq.py $sample
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/concatenate_Li_2016_FMT_fastq
+# need to do this one separately because the donor shows up 3x with different ids
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/concatenate_Li_2016_FMT_fastq_DON_11
+
+# run MIDAS:
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Li_2016_FMT_MIDAS_species_snps_cnvs
+
+# in this merge I will include HMP, Kuleshov, Qin, and FMT:
+# see above for generation of this file. Now add to it:
+path_file=/netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_hmp_Kuleshov_Qin.txt
+
+ls -d -1 /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/MIDAS_1.2.2_output/** > /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/sample_paths_Li_2016_FMT.txt
+
+cat $path_file /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/sample_paths_Li_2016_FMT.txt > /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_Li_2016_FMT/sample_paths_HMP_Kuleshov_Qin_Li.txt 
+
+#merge
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_Kuleshov_Qin_Li_species
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_Kuleshov_Qin_Li_snps
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_Kuleshov_Qin_Li_genes
+
+#bzip
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_snps_HMP_Kuleshov_Qin_Li
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_HMP_Kuleshov_Qin_Li
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_species_HMP_Kuleshov_Qin_Li
+
+# Do another merge without the HMP, Kuleshov, Qin files. 
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Li_FMT_merge_species
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Li_FMT_merge_snps
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Li_FMT_merge_genes
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Li_FMT_merge_genes_5
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_Li_FMT_merge_genes_1
+# bzip
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_snps_Li_FMT
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_Li_FMT
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_species_Li_FMT
+
+ls /netapp/home/ngarud/ben_nandita_hmp_data/Li_FMT/genes_1 > /netapp/home/ngarud/ben_nandita_hmp_data/Li_FMT/genes_1/species_genes.txt
+ls /netapp/home/ngarud/ben_nandita_hmp_data/Li_FMT/genes_5 > /netapp/home/ngarud/ben_nandita_hmp_data/Li_FMT/genes_5/species_genes.txt
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_5_Li_FMT
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_1_Li_FMT
+
+tar -cf Li_FMT.tar Li_FMT
+tar -cf genes_1.tar genes_1
+tar -cf genes_5.tar genes_5
+
+
+#########################################
+# Merge MIDAS: HMP1-2, Qin, Twins (all), Korpela #
+#########################################
+
+rm ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt
+
+# sample path for HMP1-2
+ls -d ~/BenNanditaProject/MIDAS_intermediate_files_HMP1-2/7** > ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt
+
+# Kuleshov
+ls -d ~/BenNanditaProject/MIDAS_intermediate_files_Kuleshov/MIDAS_1.2.2_output/SRR2822459 >> ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt
+
+# Qin:
+ls -d ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/MIDAS_1.2.2_output_Oct17/** >> ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt
+
+# Twins:
+ls -d /pollard/home/ngarud/twin_project/MIDAS_intermediate_files_twins/ERR* >> ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt
+
+# Korpela
+
+while read line; do
+    echo -e '/pollard/home/ngarud/Korpela_2018/MIDAS_intermediate_files/'$line >> ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt
+done < /pollard/home/ngarud/Korpela_2018/family_microbiome_project/korpela_twin_ids_sample_only.txt
+
+OUTDIR=/pollard/home/ngarud/BenNanditaProject/ben_nandita_hmp_data/HMP1_2_Kuleshov_Qin_Twins_Korpela
+
+nohup nice merge_midas.py snps $OUTDIR/snps -i ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt -t file --sample_depth 5 --site_depth 3 --min_samples 1 --max_species 150 --site_prev 0.0 --threads 7 > $OUTDIR/snps/snps.log &
+
+nohup nice merge_midas.py species $OUTDIR/species -i ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt -t file  >& $OUTDIR/species/species.log &
+
+nohup nice merge_midas.py genes $OUTDIR/genes -i ~/BenNanditaProject/MIDAS_intermediate_files_hmp/HMP1-2_Kuleshov_Qin_Twins_Korpela_sample_paths.txt -t file --sample_depth 1 --min_samples 1 --max_species 150 >& $OUTDIR/genes/genes.log &
+
+# bzip files -- REDO
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_snps_Qin_HMP_Twins_Korpela
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_Qin_HMP_Twins_Korpela
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_species_Qin_HMP_Twins_Korpela
+
+################################
+# Merge MIDAS: HMP, Qin, Twins #
+################################
+cat ~/BenNanditaProject/MIDAS_intermediate_files_Qin_2012/sample_paths_hmp_Kuleshov_Qin_chestnut.txt /pollard/home/ngarud/twin_project/MIDAS_intermediate_files_twins/sample_paths_twins.txt > /pollard/home/ngarud/twin_project/MIDAS_intermediate_files_twins/sample_paths_hmp_Kuleshov_Qin_Twins_chestnut.txt
+
+OUTDIR=/pollard/home/ngarud/BenNanditaProject/ben_nandita_hmp_data/Qin_HMP_Twins
+
+nohup nice merge_midas.py snps $OUTDIR/snps -i /pollard/home/ngarud/twin_project/MIDAS_intermediate_files_twins/sample_paths_hmp_Kuleshov_Qin_Twins_chestnut.txt -t file --sample_depth 5 --site_depth 3 --min_samples 1 --max_species 150 --site_prev 0.0 --threads 5 > $OUTDIR/snps/snps_Qin_HMP_Twin.log &
+
+
+nohup nice merge_midas.py species $OUTDIR/species -i /pollard/home/ngarud/twin_project/MIDAS_intermediate_files_twins/sample_paths_hmp_Kuleshov_Qin_Twins_chestnut.txt -t file  >& $OUTDIR/species/species_Qin_HMP_Twin.log &
+
+nohup nice merge_midas.py genes $OUTDIR/genes -i /pollard/home/ngarud/twin_project/MIDAS_intermediate_files_twins/sample_paths_hmp_Kuleshov_Qin_Twins_chestnut.txt -t file --sample_depth 1 --min_samples 1 --max_species 150 >& $OUTDIR/genes/genes.log &
+
+# bzip files
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_snps_Qin_HMP_Twins
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_genes_Qin_HMP_Twins
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/bzip_species_Qin_HMP_Twins
+
+
+
+
+################
+# MIDAS tests  #
+################
+
+#########################################################
+# Run MIDAS using different MAPID values for bowtie     #
+#########################################################
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_mapsid_0.90_test
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_mapsid_0.92_test
+
+# run samtools to create a bai file
+
+for sample in 700037453  700037539; do 
+    for mapid in 0.90 0.92; do
+	cd /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_mapid_test_${mapid}/${sample}/snps/temp
+	nohup nice samtools index genomes.bam  genomes.bam.bai &
+    done
+done
+
+
+for sample in 700037453  700037539; do 
+    cd /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/${sample}/snps/temp
+    nohup nice samtools index genomes.bam  genomes.bam.bai &
+done
+
+for sample in 700037453  700037539; do
+    cd /pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_output/${sample}/genes/temp
+    nohup nice samtools index pangenomes.bam  pangenomes.bam.bai &
+done
+# Grab the FASTA sequence and coords on which the marker genes map:
+#for gene in 411479.10.peg.1275 411479.10.peg.1736 411479.10.peg.250 411479.10.peg.3376 411479.10.peg.340 411479.10.peg.3401 411479.10.peg.3504 411479.10.peg.376 411479.10.peg.3804 411479.10.peg.3997 411479.10.peg.4021 411479.10.peg.513 411479.10.peg.797 411479.10.peg.89; do
+for gene in 411479.10.peg.250 411479.10.peg.3376 411479.10.peg.340 411479.10.peg.3401 411479.10.peg.3504 411479.10.peg.376 411479.10.peg.3804 411479.10.peg.3997 411479.10.peg.4021 411479.10.peg.513 411479.10.peg.797 411479.10.peg.89; do
+  
+   echo $gene
+    bzcat ~/ben_nandita_hmp_data/snps/Bacteroides_uniformis_57318/snps_info.txt.bz2 | grep -w $gene | head -1 | cut -f1 
+    bzcat ~/ben_nandita_hmp_data/snps/Bacteroides_uniformis_57318/snps_info.txt.bz2 | grep -w $gene | tail -1 | cut -f1
+done
+
+###########################################################################
+# Run MIDAS on HMP data using only B. uniformis and A. putredinis genomes #
+# Do we recover reads that are lost?
+###########################################################################
+
+# create folders and a copy of the species output for all the HMP samples for the readstealing test
+
+while read path; do
+    sample=`echo $path | cut -f9 -d'/'`
+    echo $sample
+    #mkdir /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/$sample
+    cp -R  $path/species /netapp/home/ngarud/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/$sample 
+done < ~/shattuck/BenNanditaProject/MIDAS_intermediate_files_hmp/sample_paths.txt
+
+# run species module on B. unif -- the labels dont seem to add up.
+# run midas on the problematic sample only
+path=~/BenNanditaProject/MIDAS_intermediate_files_hmp/joined_fastq_files_hmp_combine_sample_reps
+
+for sample in 700107189c 700038761c 700037284c 700037123c 700034254c; do
+#sample=700037738c
+OUTDIR=~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/Bacteroides_uniformis_57318/${sample}
+
+nohup nice run_midas.py species $OUTDIR -1 ${path}/${sample}_1.fastq.gz -2 ${path}/${sample}_2.fastq.gz &
+
+done
+
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_species_B_unif_only
+
+# Run the gene module of MIDAS using only B. unif and A. putredinis genomes
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_genes_B_unif_only
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_genes_A_put_only
+
+# Run the snp module of MIDAS using only B. unif and A. putredinis genomes
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_B_unif_only
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_A_put_only
+
+# merge 
+
+for species in Alistipes_putredinis_61533 Bacteroides_uniformis_57318; do
+OUTDIR=~/ben_nandita_hmp_data/read_stealing_test/${species}
+
+nohup nice merge_midas.py species $OUTDIR/species -i ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/${species}/ -t dir  >& $OUTDIR/species/species.log &
+
+nohup nice merge_midas.py snps $OUTDIR/snps -i ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/${species}/ -t dir --sample_depth 5 --site_depth 3 --min_samples 1 --max_species 150 --site_prev 0.0 --threads 10 >& $OUTDIR/snps/snps.log &
+
+nohup nice merge_midas.py genes $OUTDIR/genes -i ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/${species}/ -t dir --sample_depth 10 --min_samples 1 --max_species 150 >& $OUTDIR/genes/genes.log &
+
+done 
+
+#bzip
+for species in Alistipes_putredinis_61533 Bacteroides_uniformis_57318; do 
+
+dir=ben_nandita_hmp_data/read_stealing_test/${species}/snps/${species}
+
+bzip2 ${dir}/snps_depth.txt &
+bzip2 ${dir}/snps_info.txt &
+bzip2 ${dir}/snps_ref_freq.txt &
+bzip2 ${dir}/snps_alt_allele.txt &
+
+dir=ben_nandita_hmp_data/read_stealing_test/${species}/genes/${species}
+
+bzip2 ${dir}/genes_copynum.txt &
+bzip2 ${dir}/genes_depth.txt &
+bzip2 ${dir}/genes_presabs.txt &
+bzip2 ${dir}/genes_reads.txt &
+
+dir=ben_nandita_hmp_data/read_stealing_test/${species}/species
+
+bzip2 ${dir}/coverage.txt &
+bzip2 ${dir}/count_reads.txt &
+bzip2 ${dir}/relative_abundance.txt &
+bzip2 ${dir}/species_prevalence.txt &
+
+done
+
+# postprocess (change config file fos that data_directory points to ~/ben_nandita_hmp_data/read_stealing_test/Alistipes_putredinis_61533
+nohup nice postprocess_midas_data.py Alistipes_putredinis_61533 &
+nohup nice postprocess_midas_data.py Bacteroides_uniformis_57318 &
+
+
+###########################
+# Postprocessing of MIDAS #
+###########################
+# The purpose of this step is to and assign a probability tvhat a site's genootype is real or an error. 
+
+# calculate_marker_gene_coverage.py -- (another possibility is to change to using the CNV output)
+    #output: marker_coverage.txt.bz2
+
+# calculate_coverage_distribution.py -- This filters which genes have less than or greater than 2-fold difference from the median coverage in the data set. We want to filter these genes out (i.e. not enough info to call a SNP or too much coverage means that there might be a CNV)
+    #output: sample_coverage_distribution.txt.bz2
+    #output: sample_gene_coverage.txt.bz2
+ 
+# calculate_error_pvalues.py -- (this uses the cpp code Ben wrote)
+    # output: sample_annotated_snps.txt.bz2 
+
+#compile the error_pvalues cpp code as follows: 
+g++ -std=c++11 -O3 *.cpp -o annotate_pvalue
+
+# run core genes first:
+/pollard/home/ngarud/miniconda2/bin/python core_gene_utils.py
+
+# python script to run the above:
+postprocess_midas_data.py $species
+
+
+# qsub script to run the above:
+python ~/ben_nandita_hmp_scripts/print_good_species_list.py name> ~/tmp_intermediate_files/tmp_species_list.txt
+
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/run_postprocessing_scripts 
+
+# run the remaining postprocessing steps
+python postprocess_all_midas_data_serial.py 
+
+# Then generate the figures included in the paper
+python generate_all_figures.py 
+
+python plot_diploid_sweeps.py
+
+
+########################
+# Analyses             #
+########################
+
+####################################
+# Feb 6, 2017                      #
+# code up alpha and beta diversity #
+####################################
+
+#alpha diversity= shannon index
+#beta diversity=gamma_diversity/alpha_diversity
+
+Rscript ~/projectBenNandita/plot_alpha_beta_diversity.R
+
+
+#################################################
+# Feb 7, 2017                                   #
+# Make a plot for # of genes vs piS per sample  #
+#################################################
+# ben has coded up piS per sample
+# I should reuse this + write a piece of code for # of genes per sample. 
+
+# The thing is that I will be merging the fastq files upstream, so spending the time merging right now doesn't make sense. 
+
+# once I have been able to run MIDAS on the merged dat, I can make this plot. This takes advantage of merged gene presabs etc. as well as Ben's code for computing piS per sample. 
+
+~/ben_nandita_hmp_data/species/relative_abundance.txt.bz2
+~/projectBenNandita/loop_over_technical_replicates.py
+
+
+####################
+# Haplotype plots  #
+####################
+# we want to make haplotype plots 
+
+# cluster by H12 algorithm
+
+# plot using haplotype info
+python ~/ben_nandita_hmp_scripts/plot_gene_haplotypes.py $species --chunk-size 100000 --debug 
+
+# later: 
+# order the haplotypes based on pi_S. 
+
+
+###################################################
+# plot LD for different species on the same plot  #
+###################################################
+
+# condition on allele frequency:
+plot_gene_ld_condition_freq.py
+#plot LD for multiple species on the same plot
+python plot_gene_ld_multispecies.py
+
+# LD for syn vs nonsyn rare vs common alleles
+plot_gene_ld_condition_freq_syn_nonsyn.py
+
+#################################
+# Use Rphylip to create a tree  #
+#################################
+species=Bacteroides_uniformis_57318  
+python ~/projectBenNandita/print_distance_matrix.py $species > ~/ben_nandita_hmp_analysis/fst.dist_${species}
+
+# the Rphylip not needed ATM:
+#R script to plot a tree
+install.packages("Rphylip")
+install.packages("phylotools")
+
+# how to install phylip:
+cd ~/software
+wget http://evolution.gs.washington.edu/phylip/download/phylip-3.696.tar.gz
+cd /home/ngarud/software/phylip-3.696/src
+make -f Makefile.unx install
+
+
+     python ~projectBenNandita/plot_tree.py $species
+
+##########################################
+# blast metaphlan2 genes against patric: #
+##########################################
+
+# need to run this on chestnut -- doesn't seem to work on chef (but it is fast). 
+while read species; do
+    bash ~/projectBenNandita/bash_scripts/metaphlan2_blast.sh $species
+done < ~/ben_nandita_hmp_data/snps/species_snps.txt
+
+
+###################################################################
+# read in a list of genes from metaphlan2  to plot piN/piS vs piS #
+###################################################################
+
+genes=/pollard/shattuck0/ngarud/BenNanditaProject/metaphlan2_to_patric/blast/Bacteroides_uniformis_57318_metaphlan2_genes_mapped.txt
+
+species=Bacteroides_uniformis_57318
+python ~/projectBenNandita/plot_pNpS_vs_pi_metaphlan2_genes.py $species
+
+
+#############################################
+# Time series: How many fixations vs time?  #
+#############################################
+
+species=Bacteroides_uniformis_57318  
+species=Bacteroides_vulgatus_57955
+python ~/ben_nandita_hmp_scripts/plot_fixations_vs_time.py $species
+
+
+############
+# Run analysis scripts
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/run_analysis_scripts
+
+# for some reason I get 'Illegal instruction' for species with higher coverages. I can run the scripts fine out here, though. 
+
+head ~/tmp_intermediate_files/tmp_species_list.txt > ~/tmp_intermediate_files/tmp_species_list_top10.txt
+
+head -20 ~/tmp_intermediate_files/tmp_species_list.txt | tail -10 > ~/tmp_intermediate_files/tmp_species_list_next10.txt
+
+head -30 ~/tmp_intermediate_files/tmp_species_list.txt > ~/tmp_intermediate_files/tmp_species_list_top30.txt
+
+
+#####################
+# Fixations vs time
+
+while read species; do
+    nohup nice python ~/ben_nandita_hmp_scripts/plot_fixations_vs_time_snps_genes.py $species --chunk-size 100000 &
+done <  ~/tmp_intermediate_files/tmp_species_list_top30.txt  
+#done < ~/tmp_intermediate_files/tmp_species_list_top10.txt
+
+##########################################
+# piS vs time
+# Q: do haploids ever become polyploids?
+#########################################
+while read species; do
+    nohup nice python ~/ben_nandita_hmp_scripts/plot_piS_ordered_by_time.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt
+
+
+###################################################
+# SFS vs time
+# Q: What do the two SFSs look like side by side?
+# What does the 2D sfs look like?
+##################################################
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_within_sfs_ordered_by_time.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+
+###################################################
+# Kegg pathway analysis
+###################################################
+
+# cut all the Kegg pathway IDs and patric genome IDs 
+
+# make a list of patric genomes. 
+ls /pollard/shattuck0/snayfach/databases/PATRIC/genomes/ > ~/ben_nandita_hmp_data/patric_genomes.txt
+
+while read PATRIC; do 
+  file=`ls /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${PATRIC}/${PATRIC}.PATRIC.features.tab*`
+
+  if file --mime-type "$file" | grep -q gzip$; then
+      zcat /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${PATRIC}/${PATRIC}.PATRIC.features.tab | cut -f6,21 > ~/ben_nandita_hmp_data/kegg/${PATRIC}.kegg.txt
+  else
+      cat /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${PATRIC}/${PATRIC}.PATRIC.features.tab | cut -f6,21 > ~/ben_nandita_hmp_data/kegg/${PATRIC}.kegg.txt  
+	  
+  fi
+done < ~/ben_nandita_hmp_data/patric_genomes.txt
+
+
+nohup nice bash ~/ben_nandita_hmp_scripts/bash_scripts/cut_kegg_pathway.sh &
+
+#  bzip all the files
+while read PATRIC; do
+    nohup nice bzip2 ~/ben_nandita_hmp_data/kegg/${PATRIC}.kegg.txt &
+done < ~/ben_nandita_hmp_data/patric_genomes.txt  
+
+# load in the kegg pathways
+
+plot_kegg_pathway_histogram.py
+
+
+############################
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_fixations_snps_vs_pi.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_kegg_pathway_histogram.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_kegg_pi_distribution.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list.txt 
+
+
+###########################
+# April 30
+# read in the patric genes for ABX resistance
+genome=1154836.3
+path=/pollard/shattuck0/snayfach/databases/PATRIC/genomes/${genome}/${genome}.PATRIC.spgene.tab.gz
+
+ls /pollard/shattuck0/snayfach/databases/PATRIC/genomes/ > ~/ben_nandita_hmp_data/patric_genomes.txt
+
+while read PATRIC; do 
+    cp /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${PATRIC}/${PATRIC}.PATRIC.spgene.tab.gz /pollard/home/ngarud/ben_nandita_hmp_data/patric_spgene
+done < ~/ben_nandita_hmp_data/patric_genomes.txt
+
+nohup nice bash ~/ben_nandita_hmp_scripts/bash_scripts/move_spgenes.sh &
+
+
+
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_spgenes_distribution.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+
+########################
+# May 5, 2017
+# Rerun midas using the 6 differnt reference genomes.
+# use bowtie mapping threshold of 94%
+########################                                                              
+# Goal: replace the following two files genome.features.gz  genome.fna.gz in /pollard/home/ngarud/midas_db/rep_genomes/Bacteroides_uniformis_57318
+                                                                                      # First, identify which are the 7 different genomes
+
+cat /pollard/home/ngarud/midas_db/genome_info.txt | grep Bacteroides_uniformis| cut -f1
+1235787.3
+1339348.3
+411479.10
+457393.3
+585543.3
+997889.3
+997890.3
+
+# create a new midas DB for each reference genome
+
+for genome_id in 1235787.3 1339348.3 457393.3 585543.3 997889.3 997890.3; do
+    nohup nice cp -R ~/ben_nandita_hmp_data/midas_db ~/BenNanditaProject/MIDAS_ref_genome_test/midas_db_new_ref_genomes/midas_db_${genome_id} &
+done
+
+
+# create genome_features files
+python ~/ben_nandita_hmp_scripts/create_genome_features_file.py Bacteroides_uniformis_57318
+
+# copy the new genomes in PATRIC  and the new genome_features files   
+for genome_id in 1235787.3 1339348.3 457393.3 585543.3 997889.3 997890.3; do
+    nohup nice cp /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${genome_id}/${genome_id}.fna.gz ~/BenNanditaProject/MIDAS_ref_genome_test/midas_db_new_ref_genomes/midas_db_${genome_id}/rep_genomes/Bacteroides_uniformis_57318/genome.fna.gz &
+
+    nohup nice cp ~/BenNanditaProject/MIDAS_ref_genome_test/genome_features_files/${genome_id}_features.gz ~/BenNanditaProject/MIDAS_ref_genome_test/midas_db_new_ref_genomes/midas_db_${genome_id}/rep_genomes/Bacteroides_uniformis_57318/genome.features.gz &
+done
+
+# run MIDAS
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_diff_ref_genomes
+
+# create bai file. 
+for genome in 1235787.3 1339348.3 457393.3 585543.3 700037453 997889.3 997890.3; do 
+    cd /pollard/home/ngarud/BenNanditaProject/MIDAS_ref_genome_test/MIDAS_output/${genome}/700037453/snps/temp
+    nohup nice samtools index genomes.bam  genomes.bam.bai &
+done
+
+nohup nice samtools sort pangenomes.bam pangenomes.sorted.bam &
+nohup nice samtools index pangenomes.sorted.bam.bam pangenomes.sorted.bam.bam.bai &
+##################################### 
+# Test the read stealing hypothesis #
+#####################################  
+# run MIDAS with just one species
+qsub ~/ben_nandita_hmp_scripts/qsub_scripts/qsub_script_HMP_MIDAS_snps_B_unif_only
+
+# Run the bowtie converter
+for sample in 700037453  700037539; do 
+    cd ~/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_1.2.2_read_stealing_test/${sample}/snps/temp
+    nohup nice samtools index genomes.bam  genomes.bam.bai &
+done
+
+
+###################################
+# CNV analysis
+##################################
+
+# make a table assessing for each gene the number of reads mapping for each person. 
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/count_reads_per_ref_genome.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_pooled_sfs.py $species &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/plot_clade_statistics.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list_top30.txt 
+
+
+############################################################################################
+# May 24, 2017
+# Blast the first few lines of the single reads files to see if these are 16S sequences.
+############################################################################################       
+
+# grab a test file that is single end. Convert it to fasta.
+
+dir=/pollard/home/ngarud/shattuck/metagenomic_fastq_files/Li_2016_FMT
+cd $dir
+test_file=${dir}/fastq_files/ERR1297575_1.fastq.gz                                                                                                  
+gunzip -c $test_file | paste - - - - | cut -f 1,2 | sed 's/^/>/' | tr "\t" "\n" > ${dir}/blast_test/ERR1297575_1.fasta
+
+# get a data set of unaligned 16S green genes DNA
+cd blast_test
+wget http://greengenes.lbl.gov/Download/Sequence_Data/Fasta_data_files/current_GREENGENES_gg16S_unaligned.fasta.gz
+
+# convert to fasta
+gunzip ${dir}/blast_test/current_GREENGENES_gg16S_unaligned.fasta.gz
+
+# Make a database with 16S sequences
+makeblastdb -in ${dir}/blast_test/current_GREENGENES_gg16S_unaligned.fasta -out ${dir}/blast_test/GG_16S_db -dbtype nucl
+
+# Run blast
+
+nohup nice blastn -db ${dir}/blast_test/GG_16S_db -query ${dir}/blast_test/ERR1297575_1.fasta -outfmt 6 -out ${dir}/blast_test/ERR1297575_1_blast_output.txt &
+
+
+############
+# Kegg to do:
+# 1) CNV analysis
+# 2) some bootstrapping to figure out if the outliers are outliers
+# 3) boxplot treating each species as a point. 
+# 4) Run more species
+# 5) Merge core + var genes -- do the results change?
+# 6) Do the same genes show up in multiple conserved pathways?
+# 7) Drop min no. genes required. 
+# 8) draw a species tree
+
+
+
+# Look into gene changes properties in terms of CNVs and Kegg pathway:
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/gene_differences_kegg_annotations.py $species --chunk-size 100000 &
+done <~/tmp_intermediate_files/tmp_species_list.txt 
+
+############################################################################
+# Blast within-host gene changes against other genomes. Is there a match?  #
+############################################################################
+
+###############################################################################
+# First make a database that includes every species with sufficient coverage  #
+###############################################################################  
+# need a database against which I should map to. Get the list of species with enough data 
+ls ~/ben_nandita_hmp_data/genes > ~/tmp_intermediate_files/list_of_species_with_gene_data.txt
+
+rm ~/tmp_intermediate_files/all_species_pan_genomes_genes.fasta
+while read species_name; do
+    zcat ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species_name}/centroids.ffn.gz >> ~/tmp_intermediate_files/all_species_pan_genomes_genes.fasta
+done < ~/tmp_intermediate_files/list_of_species_with_gene_data.txt
+
+#make the db
+makeblastdb -in ~/tmp_intermediate_files/all_species_pan_genomes_genes.fasta -out ~/tmp_intermediate_files/all_species_pan_genomes_genes_db -dbtype nucl
+
+
+#################################################
+# run blast against the genes that are changing #
+#################################################
+species=Bacteroides_uniformis_57318
+#species=Alistipes_putredinis_61533
+
+# list of genes that show within host chagnes
+file=~/ben_nandita_hmp_analysis/${species}_within_host_gene_changes.txt
+
+# need to get the sequences of the genes that are changing. Grep the gene names and reads from this file. 
+rm ~/tmp_intermediate_files/${species}_within_host_gene_changes.fasta 
+while read gene; do
+    samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species}/centroids.ffn.gz $gene >> ~/tmp_intermediate_files/${species}_within_host_gene_changes.fasta
+done < $file
+
+
+# Run blast
+blastn -db ~/tmp_intermediate_files/all_species_pan_genomes_genes_db  -query ~/tmp_intermediate_files/${species}_within_host_gene_changes.fasta -outfmt 6 -out ~/tmp_intermediate_files/${species}_all_within_host_gene_changes_blast.txt 
+
+# check which species' genomes that the genes are mapping to. Are they random or closely related genomes?
+rm ~/tmp_intermediate_files/${species}_all_within_host_changes_matching_genome.txt 
+while read line; do
+    gene=`echo $line | cut -f1 -d' '`
+    first_no=`echo $line | cut -f2 -d' '| cut -f1 -d'.'`
+    second_no=`echo $line | cut -f2 -d' '| cut -f2 -d'.'`
+    percent=`echo $line | cut -f3 -d' '`
+    bit_score=`echo $line | cut -f12 -d' '`
+    matching_genome=`cat ~/ben_nandita_hmp_data/midas_db/genome_info.txt | grep -w ${first_no}.${second_no} | cut -f6`
+    echo -e "$gene\t$matching_genome\t$percent\t$bit_score" >> ~/tmp_intermediate_files/${species}_all_within_host_changes_matching_genome.txt
+done < ~/tmp_intermediate_files/${species}_all_within_host_gene_changes_blast.txt
+
+
+
+#####################################################################################
+# repeat for a random list of genes from the pangenome of the species of interest.  #
+#####################################################################################
+number_genes=`wc -l $file | cut -f1 -d' '`
+zcat ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species}/centroids.ffn.gz | grep '>' | shuf -n $number_genes | cut -f2 -d'>' > ~/tmp_intermediate_files/${species}_random_gene_set.txt
+
+# need to get the sequences of the random genes
+
+rm ~/tmp_intermediate_files/${species}_random_gene_set.fasta 
+while read gene; do
+    samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species}/centroids.ffn.gz $gene >> ~/tmp_intermediate_files/${species}_random_gene_set.fasta
+done < ~/tmp_intermediate_files/${species}_random_gene_set.txt
+
+
+# Run blast on the random gene set 
+blastn -db ~/tmp_intermediate_files/all_species_pan_genomes_genes_db  -query ~/tmp_intermediate_files/${species}_random_gene_set.fasta -outfmt 6 -out ~/tmp_intermediate_files/${species}_all_random_gene_set_blast.txt 
+
+# check which species' genomes that the genes are mapping to. Are they random or closely related genomes?
+rm ~/tmp_intermediate_files/${species}_all_random_gene_set_matching_genome.txt
+while read line; do
+    gene=`echo $line | cut -f1 -d' '`
+    first_no=`echo $line | cut -f2 -d' '| cut -f1 -d'.'`
+    second_no=`echo $line | cut -f2 -d' '| cut -f2 -d'.'`
+    percent=`echo $line | cut -f3 -d' '`
+    bit_score=`echo $line | cut -f12 -d' '`
+    matching_genome=`cat ~/ben_nandita_hmp_data/midas_db/genome_info.txt | grep -w ${first_no}.${second_no} | cut -f6`
+    echo -e "$gene\t$matching_genome\t$percent\t$bit_score" >> ~/tmp_intermediate_files/${species}_all_random_gene_set_matching_genome.txt
+done < ~/tmp_intermediate_files/${species}_all_random_gene_set_blast.txt
+
+
+# Python script: 
+# quantify the number of species to which the gene can map to with 100% accuracy. 
+
+python ~/ben_nandita_hmp_scripts/find_orthologs.py $species
+
+# run this for all species
+
+while read species; do
+    nohup nice bash ~/ben_nandita_hmp_scripts/bash_scripts/find_matching_genes_blast.sh $species &
+done <~/tmp_intermediate_files/tmp_species_list.txt 
+
+while read species; do
+nohup nice python ~/ben_nandita_hmp_scripts/find_orthologs.py $species &
+done  <~/tmp_intermediate_files/tmp_species_list.txt 
+
+#############
+# plot all points together
+#
+python ~/ben_nandita_hmp_scripts/find_orthologs_multispecies.py
+
+##########################################
+# check: are two genes truly identical?  #
+##########################################
+species=Bacteroides_uniformis_57318
+gene=1339348.3.peg.2126
+samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species}/centroids.ffn.gz $gene
+
+species2=Bacteroides_fragilis_56548
+gene2=1073386.3.peg.2910
+samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species2}/centroids.ffn.gz $gene2
+
+# no -- second gene is way longer. This is a partial match. But, blast doesn't output stats for length of second gene. 
+
+species=Bacteroides_uniformis_57318
+gene=997889.3.peg.1113      
+samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species}/centroids.ffn.gz $gene
+
+species2=Bacteroides_vulgatus_57955 
+gene2=556260.3.peg.2941
+samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species2}/centroids.ffn.gz $gene2
+
+# however this gene does match exactly. 
+
+
+
+##############################################################
+# Blast two genes that show evidence of gene specific sweeps
+# Check if these have paralogs
+###############################################################
+species=Bacteroides_vulgatus_57955
+
+
+
+# look up the centroids (manually):
+'435590.9.peg.1205' --> '997875.3.peg.2989'
+'435590.9.peg.2541' --> '435590.9.peg.2541'
+'435590.9.peg.793' --> '435590.9.peg.793'
+'435590.9.peg.2670' --> '1339350.3.peg.2384'
+
+# need to get the sequences of the genes that are changing. Grep the gene names and reads from this file. 
+rm ~/tmp_intermediate_files/${species}_within_host_gene_changes_2D_SFS.fasta 
+
+for gene in '997875.3.peg.2989' '435590.9.peg.2541' '435590.9.peg.793' '1339350.3.peg.2384'; do
+    samtools faidx ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species}/centroids.ffn.gz $gene >> ~/tmp_intermediate_files/${species}_within_host_gene_changes_2D_SFS.fasta
+done 
+
+
+# Run blast
+blastn -db ~/tmp_intermediate_files/all_species_pan_genomes_genes_db  -query ~/tmp_intermediate_files/${species}_within_host_gene_changes_2D_SFS.fasta -outfmt 6 -out ~/tmp_intermediate_files/${species}_all_within_host_gene_changes_blast_2D_SFS.txt 
+
+
+# check which species' genomes that the genes are mapping to. Are they random or closely related genomes?
+rm ~/tmp_intermediate_files/${species}_all_within_host_changes_matching_genome_2D_SFS.txt 
+while read line; do
+    gene=`echo $line | cut -f1 -d' '`
+    matching_gene=`echo $line | cut -f2 -d' '`
+    first_no=`echo $line | cut -f2 -d' '| cut -f1 -d'.'`
+    second_no=`echo $line | cut -f2 -d' '| cut -f2 -d'.'`
+    percent=`echo $line | cut -f3 -d' '`
+    bit_score=`echo $line | cut -f12 -d' '`
+    matching_genome=`cat ~/ben_nandita_hmp_data/midas_db/genome_info.txt | grep -w ${first_no}.${second_no} | cut -f6`
+    echo -e "$gene\t$matching_gene\t$matching_genome\t$percent\t$bit_score" >> ~/tmp_intermediate_files/${species}_all_within_host_changes_matching_genome_2D_SFS.txt
+done < ~/tmp_intermediate_files/${species}_all_within_host_gene_changes_blast_2D_SFS.txt
+
+
+######################################################
+# Make a plot of some statistic vs piS for our paper #
+######################################################
+python ~/ben_nandita_hmp_scripts/statistics_correlated_with_piS.py 
+
+
+
+
+#########################################################
+# Blast against the reference genomes marker genes      #
+#########################################################
+
+###############################################################################
+# First make a database that includes every species with sufficient coverage  #
+###############################################################################  
+# need a database against which I should map to. Get the list of species with enough data 
+ls ~/ben_nandita_hmp_data/genes > ~/tmp_intermediate_files/list_of_species_with_gene_data.txt
+
+rm ~/tmp_intermediate_files/all_species_pan_genomes_genes.fasta
+while read species_name; do
+    zcat ~/ben_nandita_hmp_data/midas_db/pan_genomes/${species_name}/centroids.ffn.gz >> ~/tmp_intermediate_files/all_species_pan_genomes_genes.fasta
+done < ~/tmp_intermediate_files/list_of_species_with_gene_data.txt
+
+#make the db
+makeblastdb -in ~/tmp_intermediate_files/all_species_pan_genomes_genes.fasta -out ~/tmp_intermediate_files/all_species_pan_genomes_genes_db -dbtype nucl
+
+#########################################################################################################
+# Do genes that get lost within hosts for the full HMP data set  not get lost when run on only B. unif?
+######################################################################################################### 
+# rerun this code, but compare the list with the new changes found in the new data set. 
+nohup nice python ~/ben_nandita_hmp_scripts/gene_differences_kegg_annotations.py $species --chunk-size 100000 &
+
+# which genes are changing between the two runs? 
+Bacteroides_uniformis_57318_within_host_gene_changes_B_unif_only.txt
+Bacteroides_uniformis_57318_within_host_gene_changes.txt
+
+Alistipes_putredinis_61533_within_host_gene_changes_A_put_only.txt
+Alistipes_putredinis_61533_within_host_gene_changes.txt
+
+
+# For those genes that are changing, visualize them in IGV if they share the same reference genome
+
+python ~/ben_nandita_hmp_scripts/gene_differences_reference_genome_change.py $species
+
+# see this file:
+~/ben_nandita_hmp_analysis/${species}_within_host_gene_changes_database_diffs.txt
+
+
+
+
+
+#####################################################################################################
+# August 28, 2017
+# annotate genes
+#####################################################################################################
+
+# Pull out the  patric files for species in the good species list so that Ben and I have the same, but not large-data size copy. 
+python ~/ben_nandita_hmp_scripts/list_of_relevant_patric_files.py > ~/tmp_intermediate_files/relevant_patric_files_1025.txt
+while read genome; do
+    echo $genome
+    cp /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${genome}/${genome}.PATRIC.features.tab.gz ~/patric_db/features/
+done < ~/tmp_intermediate_files/relevant_patric_files.txt
+
+
+# run the gene annotation script in parallel on good_species_list:
+
+# first remove all the old pickles
+rm ~/tmp_intermediate_files/*gene_changes.p
+
+while read species; do
+
+    nohup nice python ~/ben_nandita_hmp_scripts/gene_changes_annotation.py --other-species $species &
+
+done < ~/tmp_intermediate_files/tmp_species_list.txt
+
+# aggregate the results accross species 
+python gene_changes_annotation_cross_species.py
+python snp_changes_annotation_cross_species.py 
+
+#####################################################################################################
+#
+# Sept 5, 2017
+# Do the SNPs that are in the two clades resemble B. Dorei or B. vul more?
+#
+#####################################################################################################
+
+cat /pollard/home/ngarud/midas_db/genome_info.txt | grep Bacteroides_vulgatus
+
+# iterate through, grab the sequence for each rep genome.
+Bacteroides vulgatus ATCC 8482 
+Bacteroides dorei DSM 17855
+
+# possible genes which have a B. vul and a B. dorei:
+1235786.3.peg.2656	B000039
+435590.9.peg.1428	B000039
+997876.3.peg.1306	B000039
+
+1339351.3.peg.1977	B000041
+435590.9.peg.1410	B000041
+997875.3.peg.2675	B000041
+
+435590.9.peg.1989	B000062
+469593.3.peg.4807	B000062
+997875.3.peg.1153	B000062
+
+435590.9.peg.1724	B000071
+457394.3.peg.4119	B000071
+702446.3.peg.22	B000071
+997876.3.peg.5309	B000071
+
+
+1339351.3.peg.403	B000079
+435590.9.peg.1934	B000079
+997876.3.peg.5257	B000079
+
+435590.9.peg.1355	B000096
+483217.6.peg.1552	B000096
+997875.3.peg.2812	B000096
+
+cat phyeco.map | grep Bacteroides_vulgatus | cut -f1,5 | sort -k2,2
+cat /pollard/home/ngarud/midas_db/genome_info.txt | grep Bacteroides_vulgatus   | cut -f1,2
+
+1235786.3	Bacteroides vulgatus dnLKV7
+1339350.3	Bacteroides vulgatus str. 3775 SL(B) 10 (iv)
+1339351.3	Bacteroides vulgatus str. 3775 SR(B) 19
+1339352.3	Bacteroides vulgatus str. 3975 RP4
+435590.9	Bacteroides vulgatus ATCC 8482
+
+
+483217.6	Bacteroides dorei DSM 17855
+556260.3	Bacteroides dorei 5_1_36/D4
+702446.3	Bacteroides vulgatus PC510
+997875.3	Bacteroides dorei CL02T00C15
+997876.3	Bacteroides dorei CL02T12C06
+997877.3	Bacteroides dorei CL03T12C01
+997891.3	Bacteroides vulgatus CL09T03C04
+
+
+1235786.3.peg.2567	435590.9.peg.1355
+1339350.3.peg.218	435590.9.peg.1355
+1339351.3.peg.1687	435590.9.peg.1355
+1339352.3.peg.2789	435590.9.peg.1355
+435590.9.peg.1355	435590.9.peg.1355
+457394.3.peg.445	435590.9.peg.1355
+469593.3.peg.723	435590.9.peg.1355
+469593.3.peg.724	435590.9.peg.1355
+702446.3.peg.68	435590.9.peg.1355
+997891.3.peg.1626	435590.9.peg.1355
+
+
+483217.6.peg.1552	997875.3.peg.2812
+556260.3.peg.3141	997875.3.peg.2812
+
+457391.3.peg.3199	997875.3.peg.2812
+457395.6.peg.3070	997875.3.peg.2812
+483217.6.peg.1552	997875.3.peg.2812
+556260.3.peg.3141	997875.3.peg.2812
+997875.3.peg.2812	997875.3.peg.2812
+997876.3.peg.1461	997875.3.peg.2812
+997877.3.peg.2796	997875.3.peg.2812
+
+##########################
+# v-search test
+########################
+# use the code from the latest version of MIDAS for this
+/pollard/home/ngarud/shattuck/software/new_midas/MIDAS
+
+
+
+
+########
+# Check if all 419 samples had the snps and genes module run on them:
+
+~/tmp_intermediate_files/list_of_samples.txt 
+~/tmp_intermediate_files/list_of_samples_genes.txt
+
+python
+
+files={}
+inFN=open('/pollard/home/ngarud/tmp_intermediate_files/list_of_samples_genes.txt', 'r')
+for line in inFN:
+    files[line.strip()]=0
+
+inFN2=open('/pollard/home/ngarud/tmp_intermediate_files/list_of_samples.txt', 'r')
+for line in inFN2:
+    file=line.strip()
+    if file not in files.keys():
+	print file
+
+##########################
+# Supplemental table:
+# HMP and QIN ids used for the analysis
+
+python supplemental_table_sample_ids.py 
+
+#####################################################
+# October 26 
+# Debug why my time file looks different from Ben's #
+#####################################################
+/pollard/home/ngarud/miniconda2
+
+./pollard/home/ngarud/miniconda2/bin/conda install matplotlib
+
+/pollard/home/ngarud/miniconda2/bin/python2.7 
+
+
+
+
+
+###########################################
+# 
+# May 1, 2018
+# generate fake reads
+#
+###########################################
+source activate anvio4
+source deactivate
+
+# the genomes are here: 
+/pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_B_vulgatus.txt
+/pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_B_fragilis.txt
+/pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_P_distasonis.txt
+
+# copy over the zcat genomes to a local dir
+for species in B_vulgatus B_fragilis P_distasonis; do
+    while read line; do
+	genome=`echo $line | cut -f1 -d' '`
+	# remove quotes
+	genome="${genome%\"}"
+	genome="${genome#\"}"
+	echo $genome
+	zcat /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${genome}/${genome}.fna.gz > ~/BenNanditaProject/fake_data/fasta/${genome}.fa
+    done < /pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_${species}.txt
+done
+
+
+# some genomes did not get copied over. Manually copy. 
+for genome in 821.198 821.287 272559.41 295405.30 817.168 817.199 817.242 817.243 817.244 817.245 817.246 817.247 817.248 817.249 817.250 817.251 817.252 817.253 823.84 823.85 823.97; do
+    cp /pollard/shattuck0/snayfach/databases/PATRIC/genomes/${genome}/${genome}.fna ~/BenNanditaProject/fake_data/${genome}.fa
+done
+
+#some of them still didn't get copied over. Download from PATRIC website: 
+
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/272559.41/272559.41.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/295405.30/295405.30.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.242/817.242.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.243/817.243.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.244/817.244.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.245/817.245.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.246/817.246.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.247/817.247.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.248/817.248.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.249/817.249.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.250/817.250.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.251/817.251.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.252/817.252.fna’: No such file or directory
+cp: cannot stat ‘/pollard/shattuck0/snayfach/databases/PATRIC/genomes/817.253/817.253.fna’: No such file or directory
+
+# python script to create ini files for isolates sequenced to 100 depth
+
+for species in B_vulgatus B_fragilis P_distasonis; do
+    while read line; do
+	genome=`echo $line | cut -f1 -d' '`
+	# remove quotes
+	genome="${genome%\"}"
+	genome="${genome#\"}"
+	echo $genome
+	python ~/ben_nandita_hmp_scripts/generate_ini_files_fake_data.py $genome
+    done < /pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_${species}.txt
+done
+
+# generate the fake data
+for species in B_vulgatus B_fragilis P_distasonis; do
+    while read line; do
+	genome=`echo $line | cut -f1 -d' '`
+	# remove quotes
+	genome="${genome%\"}"
+	genome="${genome#\"}"
+	echo $genome
+	gen-paired-end-reads ~/BenNanditaProject/fake_data/ini_files/isolate_${genome}.ini
+    done < /pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_${species}.txt
+done
+
+# now mix different isolates at different frequencies
+
+python ~/ben_nandita_hmp_scripts/generate_ini_files_fake_data_mixture.py 1235786.3 821.198 1
+
+# second replicate
+python ~/ben_nandita_hmp_scripts/generate_ini_files_fake_data_mixture.py 1235786.3 821.198 2
+
+# different pair of B. vul strains
+python ~/ben_nandita_hmp_scripts/generate_ini_files_fake_data_mixture.py 1339350.3 702446.3 1
+
+# second replicate
+python ~/ben_nandita_hmp_scripts/generate_ini_files_fake_data_mixture.py 1339350.3 702446.3 2
+
+# generate the fake data:
+
+while read line; do
+    gen-paired-end-reads ~/BenNanditaProject/fake_data/ini_files/${line}
+done < ~/BenNanditaProject/fake_data/ini_files/list_of_mixtures.txt
+
+# run MIDAS
+
+
+1235786.3.fna.gz
+gen-paired-end-reads ~/BenNanditaProject/fake_data/ini_files/paired_end_reads_test_B_vul.ini
+[/pollard/shattuck0/snayfach/databases/PATRIC/genomes/821.37/821.37.fna.gz]
+
+
+
+#############
+# run grinder
+##############
+
+# see SCG4 for the documentation about this in the 'simulations dir'
+
+############################
+# Simulate two time points #
+############################
+
+This is the time point pair I will use:
+Bacteroides_vulgatus_57955, 700161742, 700172068, genes, 9.37126e-19, 1235786.3.peg.207;17.59;502.56;104.42;122.64, 1339350.3.peg.4280;12.67;502.56;126.83;122.64, 1339350.3.peg.\
+814;11.37;502.56;70.72;122.64, 1339350.3.peg.843;20.13;502.56;159.01;122.64, 1339351.3.peg.158;15.05;502.56;129.02;122.64, 1339351.3.peg.1708;24.96;502.56;224.73;122.64, 1339351\
+.3.peg.1773;20.37;502.56;156.82;122.64, 1339351.3.peg.4294;18.88;502.56;123.53;122.64, 435590.9.peg.3804;11.61;502.56;96.39;122.64, 435590.9.peg.3805;23.29;502.56;165.52;122.64,\
+ 435590.9.peg.3806;15.85;502.56;138.76;122.64, 435590.9.peg.3807;9.23;502.56;88.06;122.64, 457394.3.peg.1424;10.25;502.56;101.07;122.64, 457394.3.peg.1434;14.77;502.56;163.14;12\
+2.64, 457394.3.peg.3466;12.55;502.56;152.59;122.64, 457394.3.peg.3486;8.78;502.56;102.40;122.64, 457394.3.peg.3489;7.26;502.56;64.58;122.64, 457394.3.peg.3542;22.13;502.56;166.3\
+3;122.64, 457395.6.peg.4439;21.64;502.56;71.30;122.64, 457395.6.peg.702;17.88;502.56;75.78;122.64, 556260.3.peg.4595;21.82;502.56;186.92;122.64, 556260.3.peg.4596;15.17;502.56;1\
+23.40;122.64, 556260.3.peg.4597;12.00;502.56;90.27;122.64, 997875.3.peg.2030;20.73;502.56;179.15;122.64, 997875.3.peg.2166;18.21;502.56;165.12;122.64, 997876.3.peg.2926;12.13;50\
+2.56;96.42;122.64, 997876.3.peg.2927;21.47;502.56;160.08;122.64, 997876.3.peg.2981;13.75;502.56;100.52;122.64, 997876.3.peg.3013;24.08;502.56;139.62;122.64, 997876.3.peg.3053;15\
+.77;502.56;84.58;122.64, 997876.3.peg.5417;24.51;502.56;199.78;122.64, 997891.3.peg.3188;10.77;502.56;91.65;122.64
+
+# list of species to include for the two time points are here:
+/pollard/home/ngarud/BenNanditaProject/MIDAS_intermediate_files_hmp/MIDAS_species_lists_time_pairs/700172068_species_union.txt
+
+# relative abundances are here: 
+/pollard/home/ngarud/ben_nandita_hmp_data/Qin_HMP/species/relative_abundance.txt.bz2 
+
+# gather a list of isolates and put them in a folder
+/pollard/home/ngarud/BenNanditaProject/fake_data/fasta_simulate_timept
+
+python ~/ben_nandita_hmp_scripts/transfer_isolates_to_folder.py
+
+##############
+# Do a search of each bacteria's genome against a DB
+# identify non-zero coverage species
+# any species outputted has coverage >0.0 in at least one sample. 
+
+python identify_nonzero_coverage.py # more than 1000 species identified.
+293 species identified
+
+#instead:
+python ~/ben_nandita_hmp_scripts/print_good_species_list.py names > ~/ben_nandita_hmp_analysis/good_species_list.txt 
+
+
+##############################
+# June 7, 2018               #
+# Analyze the simulated data #
+##############################
+
+
+/pollard/home/ngarud/ben_nandita_hmp_data/simulations/species/relative_abundance.txt.bz2
+
+/pollard/home/ngarud/BenNanditaProject/fake_data/genome_lists/PATRIC_genome_${species}.txt
+
+
+# python script to analyze the data
+for species in B_vulgatus B_fragilis P_distasonis; do
+
+
+python ben_nandita_hmp_scripts/analyze_simulations_species_abundance.py
+
+
+
+
