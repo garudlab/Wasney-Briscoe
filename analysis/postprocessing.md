@@ -4,7 +4,7 @@ During post-processing, merged MIDAS outputs are wrangled into data formats that
 
 ## Set up
 
-Project paths and global parameters are defined in `config.py` file in the [`scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing_scripts/) directory.
+Project paths and global parameters are defined in `config.py` file in the [`scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/postprocessing_scripts) directory.
 
 This file is currently modifed to reflect the directory strucutre of this repository, and will work *sans* modifications if the repository is cloned to your home directory (i.e., `~/`). To Process in another location or use a different set of global parameters, make those changes to the `config.py` directly.
 
