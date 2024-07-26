@@ -8,7 +8,7 @@ Project paths and global parameters are defined in `config.py` file in the [`scr
 
 This file is currently modifed to reflect the directory strucutre of this repository, and will work *sans* modifications if the repository is cloned to your home directory (i.e., `~/`). To Process in another location or use a different set of global parameters, make those changes to the `config.py` directly.
 
-## Calculate core genes, shared genes, and gene prevalences
+## Step 1: Calculate core genes, shared genes, and gene prevalences
 
 In this step, three different outputs of interest are produced:
 - `core_genes.txt.gz`: lists of core genes for all species detected in the dataset. Core genes are genes present in $\ge$ 90% of strains.
@@ -19,7 +19,7 @@ For definitons of core and shared genes, see the methods of Wasney & Briscoe et 
 
 Because this dataset essentially represents the amount of genetic diversity observed in a single individual's microbiome which mostly comprises one to two strains of given species, and designations of "core" and "shared" rely on the prevalence of genes in the broader population of strains we used definitions of core and shared genes calculated in Garud & Good, adding genes to the shared genes list (and removing them from the core genes list) if they showed evidence for cross-species sharing (i.e., copy number $c \gt 3$) in any sample within our dataset.
 
-### Step 1: Create a `core_genes/` directory and add HMP files
+### Create a `core_genes/` directory and add HMP files
 
 In the `merged_data/` directory, create a directory `core_genes/`:
 
@@ -35,6 +35,8 @@ cp ~/Wasney-Briscoe-2024/scripts/postprocessing/core_genes_HMP.txt.gz ~/merged_d
 cp ~/Wasney-Briscoe-2024/scripts/postprocessing/shared_genes_HMP.txt.gz ~/merged_data/core_genes/.
 ```
 
+### Run `core_gene_utils.py`
+
 Next, run `core_gene_utils.py`. The command below will alter the Garud & Good definitions of core and shared genes in the manner described above, and put out modified lists `core_genes.txt.gz` and `shared_genes.txt.gz`. From the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory, run:
 
 ```
@@ -42,7 +44,7 @@ conda activate python27_env
 python core_gene_utils.py
 ```
 
-### Step 2: Process nucleotide diversity
+## Step 2: Process nucleotide diversity
 
 There are many files produced to summarize nucleotide diversity within and across samples, and many steps in this pipeline. 
 
@@ -87,7 +89,13 @@ python calculate_intersample_changes.py
 - In `~/merged_data/intersample_change/` (created by the pipeline)
   - `species_id.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`.
   
-### Step 4: Summarize SNP changes and opportunties in pandas dataframe
+### Step 4: Summarize SNP changes and opportunities in pandas dataframe
+
+Downstream steps require SNP changes to be summarized in a pandas notebook. To do this, run the `summarize_snp_changes.py` script from the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory:
+
+```
+qsub summarize_snp_changes.py
+```
 
 
 
