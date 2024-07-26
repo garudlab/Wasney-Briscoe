@@ -91,11 +91,15 @@ python calculate_intersample_changes.py
   
 ### Step 4: Summarize SNP changes and opportunities in pandas dataframe
 
-Downstream steps require SNP changes to be summarized in a pandas notebook. To do this, run the `summarize_snp_changes.py` script from the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory:
+Downstream steps require SNP changes to be summarized in a pandas notebook. To do this, run the `summarize_snp_changes.py` script from the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory:
 
 ```
-qsub summarize_snp_changes.py
+conda activate python27_env #If python 2.7 isn't already loaded 
+python summarize_snp_changes.py
 ```
 
-
+`summarize_snp_changes.py` will make the following: 
+- A directory called `evolutionary_changes` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
+  - `snp_changes.txt.bz2`: a dataframe containing all SNP changes between samples (i.e., SNPs going from allele frequency $f \le 0.2$ in one sample to $f \ge 0.8$ in another sample).
+  - `opportunities.txt.bz2`: a dataframe quantifying the the number of loci that have high coverage (i.e., coverage $D \ge 20$ reads) in both samples between all pairs of QP samples.
 
