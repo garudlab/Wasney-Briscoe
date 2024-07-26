@@ -121,29 +121,14 @@ echo ""
 
 python calculate_within_person_sfs.py ${species_name}
 
-#STEP 6: Calculate substitution rates 
-echo "Calculating substitution rates"
-echo ""
-
-python calculate_substitution_rates.py ${species_name}
-
-#STEP 7: Calculate singletons 
-echo "Calculating singletons"
-echo ""
-
-python calculate_singletons.py ${species_name}
-
-#STEP 8: Calculate private SNVs 
-echo "Calculating private snvs"
-echo ""
-
-python calculate_private_snvs.py ${species_name}
-
-
-#STEP 9: Calculate intersample changes 
+#STEP 6: Calculate intersample changes 
 echo "Calculating intersample changes"
 echo ""
 
 python calculate_intersample_changes.py ${species_name}
+
+#Step 6: Summarize evolutionary changes in dataframe
+
+
 
 
