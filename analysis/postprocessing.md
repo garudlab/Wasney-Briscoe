@@ -42,7 +42,9 @@ conda activate python27_env
 python core_gene_utils.py
 ```
 
+### Step 2: Process nucleotide diversity
 
+There are many files produced to summarize nucleotide diversity within and across samples. To calculate
 
 
 
