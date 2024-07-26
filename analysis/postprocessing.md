@@ -74,7 +74,7 @@ Note that while the normal Garud & Good pipeline uses the panel in it's own data
 ### Step 3: Calculate evolutionary changes between samples
 
 Next, we identify two types of evolutionary changes between all pairs of samples:
-- SNPs going from low frequency (allele frequency $f \ le 0.2$) in one sample to high frequency in another ($f \ ge 0.8$)
+- SNPs going from low frequency (allele frequency $f \ le 0.2$) in one sample to high frequency in another ($f \ge 0.8$)
 - Genes going from 0 copies (copy number $c \le 0.05$) in one sample to 1 copy ($0.6 \le c \le 1.2$) in another.
 
 To calculate evolutionary changes, navigate to the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory and run:
