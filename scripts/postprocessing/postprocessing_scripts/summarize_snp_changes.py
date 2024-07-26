@@ -25,6 +25,12 @@ sns.set_style("whitegrid")
 
 from annotation import *
 
+# Make evolutionary changes directory if it doesn't already exist
+
+evolutionary_changes_path = os.path.join(config.project_folder, "evolutionary_changes/")
+if not os.path.exists(evolutionary_changes_path):
+    os.makedirs(evolutionary_changes_path)
+
 # Generating species list
 
 species_list_path = "cat /u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species_snps.txt"
