@@ -7,20 +7,20 @@ import os.path
 from math import log10
 
 #CHANGE FOR EACH PROJECT
-data_directory = os.path.expanduser("/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/merged_data/")
-project_folder = os.path.expanduser("/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/")
-HMP_data_directory = os.path.expanduser("/u/project/ngarud/Garud_lab/metagenomic_fastq_files/HMP1_2_Kuleshov_Qin_Twins_Korpela/")
-analysis_directory = os.path.expanduser("/u/project/ngarud/michaelw/Diversity-Along-Gut/HumanizedMouse/") #change this for your project
-metadata_directory = os.path.expanduser("/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/")
-accessions = os.path.expanduser("/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/accessions.txt")
+data_directory = os.path.expanduser("~/merged_data/")
+project_folder = os.path.expanduser("~/")
+HMP_data_directory = os.path.expanduser("~/HMP_data/")
+analysis_directory = os.path.expanduser("~/Wasney-Briscoe-2024/") #change this for your project
+#metadata_directory = os.path.expanduser("~/Wasney-Briscoe-2024/metadata/")
+accessions = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/accessions.txt")
 
 #output
-figure_directory = os.path.expanduser("/u/project/ngarud/michaelw/Diversity-Along-Gut/HumanizedMouse/figures/")
+figure_directory = os.path.expanduser("~/Wasney-Briscoe-2024/figures/")
 
 #STATIC
-scripts_directory = os.path.expanduser("/u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/")
-patric_directory = os.path.expanduser("/u/project/ngarud/Garud_lab/software/PATRIC/")
-midas_directory = os.path.expanduser("/u/project/ngarud/Garud_lab/midas_db_v1.2/")
+scripts_directory = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/postprocessing/")
+patric_directory = os.path.expanduser("~/PATRIC/")
+midas_directory = os.path.expanduser("~/midas_db_v1.2/")
 
 # We use this one to debug because it was the first one we looked at
 debug_species_name = 'Bacteroides_uniformis_57318'
