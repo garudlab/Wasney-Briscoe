@@ -1,6 +1,8 @@
 # Packages
 import sys
 
+sys.path.insert(0, "~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/")
+
 import config
 import pandas as pd
 import numpy as np
