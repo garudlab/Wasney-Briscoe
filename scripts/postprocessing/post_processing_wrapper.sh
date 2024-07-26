@@ -119,7 +119,7 @@ python calculate_snp_prevalences.py ${species_name}
 echo "Calculating withing person SFS"
 echo ""
 
-python calculate_within_person_sfs.py ${species_name}
+python calculate_within_person_sfs.py ${species_name} --use_HMP
 
 #STEP 6: Calculate intersample changes 
 echo "Calculating intersample changes"
