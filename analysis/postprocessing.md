@@ -69,7 +69,7 @@ Note that while the normal Garud & Good pipeline uses the panel in it's own data
   - `annotated_snps.txt.bz2`
   - `within_sample_sfs.txt.bz2`
 - In `~/merged_data/snp_prevalences/` (created by the pipeline)
-  - `*species_id*.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`.
+  - `*species_id*.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`. Note that these files will not be used to generate `within_sample_sfs.txt.bz2` unless removing the  `--use_HMP` flag when running the `calculate_within_person_sfs.py` script.
 
 ### Step 3: Calculate evolutionary changes between samples
 
