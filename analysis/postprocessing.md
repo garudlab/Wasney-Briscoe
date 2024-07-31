@@ -57,7 +57,7 @@ qsub post_processing_wrapper.sh
 This pipeline is performed on all species for which MIDAS-processed SNP data is available (in `~/merged_data/snps/`). A list of those species is present as `species_snps.txt` in [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory. To process a subset of these species, assemble a new list file and pass the path to the `post_processing_wrapper.sh` script using the `-s` or `--species_list` flags, e.g., 
 
 ```
-qsub post_processing_wrapper.sh -m ~/new_species_list.txt
+qsub post_processing_wrapper.sh -s ~/new_species_list.txt
 ```
 
 Note that while the normal Garud & Good pipeline uses the panel in it's own dataset to calculate average rates of between strain diversity per sample and species, we use the Human Microbiome Project (HMP) panel used in Garud & Good to calculate average rates of between host diversity (using files found in the `~/Wasney-Briscoe-2024/scripts/postprocessing/HMP_snp_prevalences/` directory(. To use the mouse dataset itself to estimate rates of between strain diversity, remove the `--use_HMP` flag when running the `calculate_within_person_sfs.py` script in the pipeline. However, doing so will render it impossible to detect monocolonized samples for species that have only a single strain that exists across the entire dataset.
