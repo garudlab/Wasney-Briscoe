@@ -9,7 +9,7 @@ from math import log10
 #CHANGE FOR EACH PROJECT
 data_directory = os.path.expanduser("~/merged_data/")
 project_folder = os.path.expanduser("~/")
-HMP_data_directory = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/postprocessing/HMP_snp_prevalences/")
+HMP_data_directory = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/postprocessing/")
 analysis_directory = os.path.expanduser("~/Wasney-Briscoe-2024/") #change this for your project
 #metadata_directory = os.path.expanduser("~/Wasney-Briscoe-2024/metadata/")
 accessions = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/accessions.txt")
