@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -N calc_intersample_changes
 #$ -l h_data=12G,h_rt=2:00:00,highp
-#$ -o /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/outputs/
-#$ -e /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/errors/
+#$ -e ~/Wasney-Briscoe-2024/scripts/postprocessing/errors/
+#$ -o ~/Wasney-Briscoe-2024/scripts/postprocessing/outputs/
 #$ -t 1-85:1 
 #$ -cwd
 
