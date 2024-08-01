@@ -46,7 +46,7 @@ python core_gene_utils.py
 
 ## Step 2: Process nucleotide diversity
 
-There are many files produced to summarize nucleotide diversity within and across samples, and many steps in this pipeline. 
+In this step, files that summarize nucleotide diversity within and across samples are produced.
 
 To run this pipeline, navigate to the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory and run:
 
