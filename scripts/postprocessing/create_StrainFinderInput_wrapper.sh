@@ -70,5 +70,7 @@ species_name=$(sed -n "$i"p $species_file)
 
 mkdir -p $outdir
 
-python ~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/create_StrainFinderInput.py --species $species_name --outdir $outdir
+cd ~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/
+
+python create_StrainFinderInput.py --species $species_name --outdir $outdir
 
