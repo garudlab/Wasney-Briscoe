@@ -88,5 +88,5 @@ cd $microbiome_scripts_path
 echo "Calculating intersample changes"
 echo ""
 
-python calculate_intersample_changes.py ${species_name} --all_changes
+python calculate_intersample_changes.py ${species_name}
 
