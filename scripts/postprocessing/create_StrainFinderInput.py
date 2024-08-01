@@ -1,7 +1,6 @@
 import tarfile, bz2, cPickle, os, sys
 
 # MIDAS STuff
-sys.path.insert(0, "/u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/")
 import config
 import parse_midas_data
 import numpy as np
