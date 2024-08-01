@@ -73,7 +73,7 @@ Note that while the normal Garud & Good pipeline uses the panel in it's own data
 - In `~/merged_data/snp_prevalences/` (created by the pipeline)
   - `*species_id*.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`. Note that these files will not be used to generate `within_sample_sfs.txt.bz2` unless removing the  `--use_HMP` flag when running the `calculate_within_person_sfs.py` script.
 
-### Step 3: Calculate evolutionary changes between samples
+## Step 3: Calculate evolutionary changes between samples
 
 Next, we identify two types of evolutionary changes between all pairs of samples:
 - SNPs going from low frequency (allele frequency $f \ le 0.2$) in one sample to high frequency in another ($f \ge 0.8$)
@@ -85,7 +85,7 @@ To calculate evolutionary changes, navigate to the [`scripts/postprocessing/`](h
 python calculate_intersample_changes.py
 ```
 
-`calculate_intersample_changes.sh` should produce the following files:
+`calculate_intersample_changes.py` should produce the following files:
 - In `~/merged_data/intersample_change/` (created by the pipeline)
   - `species_id.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`.
   
