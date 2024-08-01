@@ -32,3 +32,26 @@ import matplotlib.gridspec as gridspec
 from matplotlib.colors import ListedColormap
 from strain_phasing_functions import *
 
+# Directories
+strainfinder_dir = "%sinput" % (config.strain_phasing_directory)
+
+### Raw cluster
+raw_cluster_path = "%s%s" % (config.strain_phasing_directory, "strain_clusters/")
+species_raw_cluster_dir = "%s%s/" % (raw_cluster_path, species)
+if not os.path.exists(species_raw_cluster_dir):
+    os.makedirs(species_raw_cluster_dir)
+    print("Cluster directory created successfully!")
+else:
+    print("Cluster directory already exists.")
+species_raw_cluster_path = "%s%s%s" % (species_raw_cluster_dir, species, "_RawCluster.pckl")
+
+### Centroid and polarized cluster paths
+species_centroid_cluster_path = "%s%s%s" % (species_raw_cluster_dir, species, "_ClusterCentroid.pckl")
+species_polarized_cluster_path = "%s%s%s" % (species_raw_cluster_dir, species, "_PolarizedCluster.pckl")
+
+### FINAL Fs path
+final_Fs_path = "%s%s%s" % (species_raw_cluster_dir, species, "_final_Fs.pckl")
+
+#MIDAS data
+annotated_snps_path = "%ssnps/%s/annotated_snps.txt.bz2" % (config.data_directory, species)
+
