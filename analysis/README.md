@@ -11,7 +11,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## Strain abundance analysis
 
-- Infer strain abundances and confidence intervals
+- [Infer strain abundances and confidence intervals](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/strain_inference.md)
 
 ## SNV changes analysis
 
