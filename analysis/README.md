@@ -11,6 +11,8 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## Strain abundance analysis
 
+- Infer strain abundances and confidence intervals
+
 ## SNV changes analysis
 
 ## $\Delta f$ analysis
