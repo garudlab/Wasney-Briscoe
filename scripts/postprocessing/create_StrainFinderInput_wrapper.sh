@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -N strainfinder_preprocessing
 #$ -l h_data=16G,h_rt=24:00:00,highp
-#$ -o /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/outputs/
-#$ -e /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/errors/
+#$ -e ~/Wasney-Briscoe-2024/scripts/postprocessing/errors/
+#$ -o ~/Wasney-Briscoe-2024/scripts/postprocessing/outputs/
 #$ -t 1-85:1
 
 ############################################################
@@ -35,8 +35,8 @@ while getopts ":h" option; do
 done
 
 #Default arguments
-species_file=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species.txt
-outdir=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/strain_phasing/input/
+species_file=~/Wasney-Briscoe-2024/scripts/postprocessing/species_snps.txt
+outdir=~/strain_phasing/input/
 
 #Arguments that are passed
 for arg in "$@"
@@ -70,5 +70,5 @@ species_name=$(sed -n "$i"p $species_file)
 
 mkdir -p $outdir
 
-python /u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/postprocessing_scripts/create_StrainFinderInput.py --species $species_name --outdir $outdir
+python ~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/create_StrainFinderInput.py --species $species_name --outdir $outdir
 
