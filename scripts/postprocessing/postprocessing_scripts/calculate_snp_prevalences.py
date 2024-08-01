@@ -7,7 +7,7 @@ import os.path
 
 
 intermediate_filename_template = config.data_directory+"snp_prevalences/%s.txt.gz"
-intermediate_filename_template_HMP = config.HMP_data_directory+"snp_prevalences/%s.txt.gz" #MW added this 
+intermediate_filename_template_HMP = config.HMP_data_directory+"HMP_snp_prevalences/%s.txt.gz" #MW added this 
     
 # Loading file
 def parse_snp_prevalences(desired_species_name):
