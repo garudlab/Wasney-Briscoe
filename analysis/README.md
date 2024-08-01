@@ -9,9 +9,9 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## $\pi$ analysis
 
-## Strain abundance analysis
+## Strain frequency analysis
 
-- [Infer strain abundances and confidence intervals](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/strain_inference.md)
+- [Infer strain frequencies and confidence intervals](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/strain_inference.md)
 
 ## SNV changes analysis
 
