@@ -47,7 +47,7 @@ qsub midas_merge.sh
 To save space, we compress files into `.bz2` format:
 
 ```
-qsub bzip2_MIDAS_outputs
+qsub bzip2_MIDAS_outputs.sh
 ```
 
 Merged outputs were used in all subsequent analyses performed in this paper. 
