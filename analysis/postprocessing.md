@@ -89,9 +89,9 @@ python calculate_intersample_changes.py
 - In `~/merged_data/intersample_change/` (created by the pipeline)
   - `species_id.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`.
   
-### Step 4: Summarize SNP changes and opportunities in pandas dataframe
+### Step 4: Summarize SNP changes and opportunities in dataframe format
 
-Downstream steps require SNP changes to be summarized in a pandas notebook. To do this, run the `summarize_snp_changes.py` script from the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory:
+Downstream steps require SNP changes to be summarized in a dataframe. To do this, run the `summarize_snp_changes.py` script from the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory:
 
 ```
 conda activate python27_env #If python 2.7 isn't already loaded 
