@@ -121,7 +121,11 @@ The strain frequency inference pipeline requires data be formated in the same ma
 ```
 qsub ./create_StrainFinderInput_wrapper.sh
 ```
-
+`create_StrainFinderInput.py` and its wrapper script will make the following: 
+- A directory/subdirectory with the path `/strain_phasing/input` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
+  - directories for all species processed (defined by the `species_snps.txt` file in
+  - `snp_changes.txt.bz2`: a dataframe containing all SNP changes between samples (i.e., SNPs going from allele frequency $f \le 0.2$ in one sample to $f \ge 0.8$ in another sample).
+  - `opportunities.txt.bz2`: a dataframe quantifying the the number of loci that have high coverage (i.e., coverage $D \ge 20$ reads) in both samples between all pairs of QP samples.
 
 
 
