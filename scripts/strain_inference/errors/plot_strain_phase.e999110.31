@@ -1,0 +1,37 @@
+plot_strain_phase.py:18: MatplotlibDeprecationWarning: 
+The mpl_toolkits.axes_grid module was deprecated in Matplotlib 2.1 and will be removed two minor releases later. Use mpl_toolkits.axes_grid1 and mpl_toolkits.axisartist, which provide the same functionality instead.
+  from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition,
+Processing 20000 SNVs
+
+Cluster 1
+
+	0.0% finished
+	3.442% finished
+	6.883% finished
+	10.325% finished
+	13.767% finished
+	17.209% finished
+	20.65% finished
+	24.092% finished
+	27.534% finished
+	30.976% finished
+	34.417% finished
+	37.859% finished
+	41.301% finished
+	44.743% finished
+	48.184% finished
+	51.626% finished
+	55.068% finished
+	58.51% finished
+	61.951% finished
+	65.393% finished
+	68.835% finished
+	72.277% finished
+	75.718% finished
+	79.16% finished
+	82.602% finished
+	86.044% finished
+	89.485% finished
+	92.927% finished
+	96.369% finished
+	99.811% finished

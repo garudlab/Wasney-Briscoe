@@ -1,0 +1,13 @@
+plot_strain_phase.py:18: MatplotlibDeprecationWarning: 
+The mpl_toolkits.axes_grid module was deprecated in Matplotlib 2.1 and will be removed two minor releases later. Use mpl_toolkits.axes_grid1 and mpl_toolkits.axisartist, which provide the same functionality instead.
+  from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition,
+Processing 2732 SNVs
+
+Cluster 1
+
+	0.0% finished
+	36.603% finished
+	73.206% finishedTraceback (most recent call last):
+  File "plot_strain_phase.py", line 288, in <module>
+    elif ("Inoculum" in final_clusters[0]) & (percent_polymorphic_inoculum > 0.3) & (len(final_clusters) == 1) & ((final_clusters[0].mean() < 0.05).sum()/len(final_clusters[0].columns) > 0.9):
+NameError: name 'percent_polymorphic_inoculum' is not defined

@@ -1,0 +1,7 @@
+plot_strain_phase.py:18: MatplotlibDeprecationWarning: 
+The mpl_toolkits.axes_grid module was deprecated in Matplotlib 2.1 and will be removed two minor releases later. Use mpl_toolkits.axes_grid1 and mpl_toolkits.axisartist, which provide the same functionality instead.
+  from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition,
+Processing 415 SNVsTraceback (most recent call last):
+  File "plot_strain_phase.py", line 350, in <module>
+    Fs = Fs.loc[:,mask]
+NameError: name 'mask' is not defined

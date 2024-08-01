@@ -1,0 +1,35 @@
+plot_strain_phase.py:18: MatplotlibDeprecationWarning: 
+The mpl_toolkits.axes_grid module was deprecated in Matplotlib 2.1 and will be removed two minor releases later. Use mpl_toolkits.axes_grid1 and mpl_toolkits.axisartist, which provide the same functionality instead.
+  from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition,
+Processing 10696 SNVs
+
+Cluster 1
+
+	0.0% finished
+	9.349% finished
+	18.699% finished
+	28.048% finished
+	37.397% finished
+	46.746% finished
+	56.096% finished
+	65.445% finished
+	74.794% finished
+	84.144% finished
+	93.493% finished
+
+Cluster 2
+
+	0.0% finished
+	9.349% finished
+	18.699% finished
+	28.048% finished
+	37.397% finished
+	46.746% finished
+	56.096% finished
+	65.445% finished
+	74.794% finished
+	84.144% finished
+	93.493% finishedTraceback (most recent call last):
+  File "plot_strain_phase.py", line 339, in <module>
+    Fs_inoculum.loc[final_clusters[clus_to_re_pol].index] = 1 -  Fs_inoculum.loc[final_clusters[clus_to_re_pol].index]#polarize inoculum accordingly
+NameError: name 'Fs_inoculum' is not defined
