@@ -1,3 +1,1 @@
-# Strain Frequency Inference
-
-This directory holds scripts for infering strain frequency, as detailed in the Analysis directory of this repository. 
+Instructions on executing these scripts can be found in [analysis/strain_inference.md](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/strain_inference.md)
