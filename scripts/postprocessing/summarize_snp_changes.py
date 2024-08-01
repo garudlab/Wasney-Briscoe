@@ -131,11 +131,14 @@ for species in species_list:
               alternate_freq_2.append(snp[6])
               depth_2.append(snp[7])
               if snp[0] in gene_descriptions:
-                      gene_description_vec.append(gene_descriptions[snp[0]])
-                  elif centroid_gene_map[snp[0]] in gene_descriptions:
+                  gene_description_vec.append(gene_descriptions[snp[0]])
+              elif snp[0] in centroid_gene_map:
+                  if centroid_gene_map[snp[0]] in gene_descriptions:
                       gene_description_vec.append(gene_descriptions[centroid_gene_map[snp[0]]])
                   else:
                       gene_description_vec.append("")
+              else:
+                    gene_description_vec.append("")
   else:
       continue
 
