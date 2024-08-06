@@ -502,11 +502,11 @@ final_f_all_strains = final_f_all_strains.rename(columns = {0.25: "quantile_25",
 
 #Saving 
 ### Make strain_cluster directory if necessary
-output_dir = "%sstrain_phasing/strain_clusters/%s/" % (config.project_directory, species)
+output_dir = "%sstrain_phasing/strain_clusters/%s/" % (config.project_folder, species)
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 ### Saving
-output_file = "%sstrain_phasing/strain_clusters/%s/%s_strain_frequency.csv" % (config.project_directory, species, species)
+output_file = "%sstrain_phasing/strain_clusters/%s/%s_strain_frequency.csv" % (config.project_folder, species, species)
 final_f_all_strains.to_csv(output_file, sep = "\t", index = False)
 
 
