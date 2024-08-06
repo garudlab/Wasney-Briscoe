@@ -10,6 +10,6 @@ python strain_inference.py --species Bacteroides_vulgatus_57955
 
 Ensure that the version of python 3 (not 2.7) is loaded. If `--species` is not passed to the script, it will by default process Bacteroides_vulgatus_57955.
 
-## Outputs
+the `strain_inference.py` script should produce the following files:
 
 
