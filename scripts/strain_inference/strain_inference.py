@@ -34,6 +34,16 @@ import matplotlib.gridspec as gridspec
 from matplotlib.colors import ListedColormap
 from strain_phasing_functions import *
 
+# variables
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-s", "--species", type=str, help="The list of species to use", default = "Bacteroides_vulgatus_57955")
+
+args = parser.parse_args()
+
+species = args.species
 
 #MIDAS data
 annotated_snps_path = "%ssnps/%s/annotated_snps.txt.bz2" % (config.data_directory, species)
