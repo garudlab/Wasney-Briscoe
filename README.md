@@ -1,4 +1,4 @@
-# Genetic homogeneity along the tract of the gut
+# Uniform bacterial genetic diversity along the gut of mice inoculated with human stool
 *Michael Wasney, Leah Briscoe, Richard Wolff, Hans Ghezzi, Carolina Tropini, Nandita Garud*
 
 ## Overview
