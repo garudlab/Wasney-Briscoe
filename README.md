@@ -1,5 +1,5 @@
 # Genetic homogeneity along the tract of the gut
-*Michael Wasney, Leah Briscoe, Ricky Wolff, Hans Ghezzi, Carolina Tropini, Nandita Garud*
+*Michael Wasney, Leah Briscoe, Richard Wolff, Hans Ghezzi, Carolina Tropini, Nandita Garud*
 
 ## Overview
 This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This repository contains scripts used in all analyses performed in this study, as well as instructions on how to recreate the figures, tables, and statistics in our study. 
