@@ -15,8 +15,6 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## SNV changes analysis
 
-## $\Delta f$ analysis
-
 ## Main text figures
 
 ## Supplementary figures
