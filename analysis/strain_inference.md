@@ -1,5 +1,7 @@
 # Strain Frequency Inference
 
+Strain frequencies are inferred from SNV frequency trajectories across samples using a method developed in Roodgar et al., 2018 and extended in Wolff et al., 2023. 
+
 ## Step 1. Reformat SNV data for strain frequency inference pipeline
 
 The pipeline to infer strain frequencies was developed based on a previous method put forth in Roodgar et al., 2021 and extended in Wolff et al., 2023.
@@ -16,9 +18,7 @@ qsub ./create_StrainFinderInput_wrapper.sh
     - `species_id.strainfinder.p`: a pickle file...
     - `species_id.strainfinder.samples.p`: a pickle file...
 
-
-
-Strain frequencies are inferred from SNV frequency trajectories across samples using a method developed in Roodgar et al., 2018 and extended in Wolff et al., 2023. 
+## Step 2. Infer strain frequency from SNV frequencies
 
 To infer strain frequencies, execute the following code in the [`scripts/strain_inference/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/strain_inference) directory for the species of interest:
 
