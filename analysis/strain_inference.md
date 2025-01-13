@@ -28,6 +28,6 @@ python strain_inference.py --species Bacteroides_vulgatus_57955
 
 Ensure that the version of python 3 (not 2.7) is loaded. If `--species` is not passed to the script, it will by default process Bacteroides_vulgatus_57955.
 
-the `strain_inference.py` script should produce the following files:
+the `strain_inference.py` script should produce a file called `species_id_strain_frequency.csv` in `strain_phasing/strain_clusters/species_id/`, where `species_id` is replaced by the actual ID of the species of interst.
 
 
