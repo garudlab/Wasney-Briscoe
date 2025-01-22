@@ -13,9 +13,14 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 - [Infer strain frequencies and confidence intervals](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/strain_inference.md)
 
-## SNV changes analysis
-
 ## Main text figures
+
+- Figure 2
+- Figure 3
+- Figure 4
+- Figure 5
+
+Guides on how to process data for and create main text figures 2-5 can be found [here)](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/figures/README.md).
 
 ## Supplementary figures
 
