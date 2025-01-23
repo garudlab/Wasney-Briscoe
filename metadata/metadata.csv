@@ -1,0 +1,42 @@
+accession,sample_id,tissue_type,subject_id,Diet,coarse_position
+M1CeC_CKDN220050952-1A_H7MMHDSX5_L3,M1CeC,Cecum,1,Control,Lower gut
+M2CeC_CKDN220050953-1A_merge,M2CeC,Cecum,2,Control,Lower gut
+M3CeC_CKDN220050954-1A_H7MMHDSX5_L2,M3CeC,Cecum,3,Control,Lower gut
+M4CeG_CKDN220050955-1A_H7MMHDSX5_L2,M4CeG,Cecum,4,Guar Gum,Lower gut
+M5CeG_CKDN220050956-1A_H7MMHDSX5_L2,M5CeG,Cecum,5,Guar Gum,Lower gut
+M6CeG_CKDN220050957-1A_H7MMGDSX5_L2,M6CeG,Cecum,6,Guar Gum,Lower gut
+M1CoC_CKDN220050958-1A_H7MMHDSX5_L2,M1CoC,Colon,1,Control,Lower gut
+M2CoC_CKDN220050959-1A_H7MMHDSX5_L2,M2CoC,Colon,2,Control,Lower gut
+M3CoC_CKDN220050960-1A_H7MMHDSX5_L2,M3CoC,Colon,3,Control,Lower gut
+M4CoG_CKDN220050961-1A_merge,M4CoG,Colon,4,Guar Gum,Lower gut
+M5CoG_CKDN220050962-1A_merge,M5CoG,Colon,5,Guar Gum,Lower gut
+M6CoG_CKDN220050963-1A_H7MMHDSX5_L2,M6CoG,Colon,6,Guar Gum,Lower gut
+M1DC_CKDN220050964-1A_H7MMHDSX5_L2,M1DC,Duodenum,1,Control,Upper gut
+M2DC_CKDN220050965-1A_H7MMHDSX5_L2,M2DC,Duodenum,2,Control,Upper gut
+M3DC_CKDN220050966-1A_H7MMHDSX5_L2,M3DC,Duodenum,3,Control,Upper gut
+M4DG_CKDN220050967-1A_H7MMHDSX5_L3,M4DG,Duodenum,4,Guar Gum,Upper gut
+M5DG_CKDN220050968-1A_merge,M5DG,Duodenum,5,Guar Gum,Upper gut
+M6DG_CKDN220050969-1A_H7MMGDSX5_L1,M6DG,Duodenum,6,Guar Gum,Upper gut
+M1JC_CKDN220050970-1A_H7MMHDSX5_L2,M1JC,Jejunum,1,Control,Upper gut
+M2JC_CKDN220050971-1A_H7MMHDSX5_L2,M2JC,Jejunum,2,Control,Upper gut
+M3JC_CKDN220050972-1A_H7MMHDSX5_L2,M3JC,Jejunum,3,Control,Upper gut
+M4JG_CKDN220050973-1A_merge,M4JG,Jejunum,4,Guar Gum,Upper gut
+M5JG_CKDN220050974-1A_merge,M5JG,Jejunum,5,Guar Gum,Upper gut
+M6JG_CKDN220050975-1A_H7MMHDSX5_L2,M6JG,Jejunum,6,Guar Gum,Upper gut
+M1IC_CKDN220050976-1A_H7MMHDSX5_L2,M1IC,Ileum,1,Control,Upper gut
+M2IC_CKDN220050977-1A_H7MMHDSX5_L2,M2IC,Ileum,2,Control,Upper gut
+M3IC_CKDN220050978-1A_H7MMHDSX5_L2,M3IC,Ileum,3,Control,Upper gut
+M4IG_CKDN220050979-1A_H7MMHDSX5_L2,M4IG,Ileum,4,Guar Gum,Upper gut
+M5IG_CKDN220050980-1A_HF3V5DSX5_L1,M5IG,Ileum,5,Guar Gum,Upper gut
+M6IG_CKDN220050981-1A_HF3V5DSX5_L1,M6IG,Ileum,6,Guar Gum,Upper gut
+M7CecGG,M7CeG,Cecum,7,Guar Gum,Lower gut
+M7IGG_2,M7IG,Ileum,7,Guar Gum,Upper gut
+M7ColonGG,M7CoG,Colon,7,Guar Gum,Lower gut
+M7JGG,M7JG,Jejunum,7,Guar Gum,Upper gut
+M7DGG,M7DG,Duodenum,7,Guar Gum,Upper gut
+M8D,M8DG,Duodenum,8,Guar Gum,Upper gut
+M8ColonGG_2,M8CoG,Colon,8,Guar Gum,Lower gut
+M8CeCGG,M8CeG,Cecum,8,Guar Gum,Lower gut
+M8JGG_2,M8JG,Jejunum,8,Guar Gum,Upper gut
+M8IGG_2,M8IG,Ileum,8,Guar Gum,Upper gut
+TL1gDNAshort,TL1,Stool,0,Human Diet,Stool
