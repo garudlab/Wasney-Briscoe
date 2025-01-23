@@ -20,7 +20,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 - Figure 4
 - Figure 5
 
-Guides on how to process data for and create main text figures 2-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/figures/README.md).
+Guides on how to process data for and create main text figures 2-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/figures/figures.md).
 
 ## Supplementary figures
 
