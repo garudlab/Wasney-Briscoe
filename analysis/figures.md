@@ -1,3 +1,3 @@
-# Main Text Figures
+# Creating main text figures
 
 ## Figure 2
