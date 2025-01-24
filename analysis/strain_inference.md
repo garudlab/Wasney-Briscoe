@@ -6,7 +6,7 @@ Strain frequencies are inferred from SNV frequency trajectories across samples u
 
 The pipeline to infer strain frequencies was developed based on a previous method put forth in Roodgar et al., 2021 and extended in Wolff et al., 2023.
 
-The strain frequency inference pipeline requires data be formated in the same manner as inputs to the [StrainFinder](https://github.com/cssmillie/StrainFinder) software package (Smillie et al., 2018). To reformat data like so, navigate to the [`scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory and run:
+The strain frequency inference pipeline requires data be formated in the same manner as inputs to the [StrainFinder](https://github.com/cssmillie/StrainFinder) software package (Smillie et al., 2018). To reformat data like so, navigate to the [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory and run:
 
 ```
 qsub ./create_StrainFinderInput_wrapper.sh
@@ -20,7 +20,7 @@ qsub ./create_StrainFinderInput_wrapper.sh
 
 ## Step 2. Infer strain frequency from SNV frequencies
 
-To infer strain frequencies, execute the following code in the [`scripts/strain_inference/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/strain_inference) directory for the species of interest:
+To infer strain frequencies, execute the following code in the [`Wasney-Briscoe-2024/scripts/strain_inference/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/strain_inference) directory for the species of interest:
 
 ```
 python strain_inference.py --species Bacteroides_vulgatus_57955
