@@ -179,7 +179,7 @@ for i,snp_change in snp_changes_df.iterrows():
     
 snp_changes_df['strain_orientation'] = strain_orientation   
 
-snp_changes_path = "%s%s%s" % (config.project_folder, "evolutionary_changes/", "snp_changes.txt")
+snp_changes_path = "%s%s%s" % (config.project_folder, "evolutionary_changes/", "snp_changes.txt.bz2")
 snp_changes_df.to_csv(snp_changes_path, sep = ",")
 
 #################################################################################################################################################################
