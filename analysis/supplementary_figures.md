@@ -26,7 +26,15 @@ Run `figure_S4.R` in [`Wasney-Briscoe-2024/scripts/figures/figure_S4.R`](https:/
 
 This script will output `figure_S4.png` in your home directory (`~/`).
 
-## Figure 5
+## Supplementary Figure 5
+
+To generate the plot a single trajectory representing both strains of _B. uniformis_, execute the `strain_inference.py` script at [~/Wasney-Briscoe-2024/scripts/strain_inference/strain_inference.py](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/strain_inference/strain_inference.py) with the following flags:
+
+```
+python strain_inference.py --species Bacteroides_uniformis_57318 --single_trajectory
+```
+
+This will output a figure called `Bacteroides_uniformis_57318_single_strain_trajectory.png` in your home directory (`~/`), which is equivalent to supplementary figure 5.
 
 ## Figure 6
 
