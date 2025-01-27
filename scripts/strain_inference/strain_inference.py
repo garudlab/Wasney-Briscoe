@@ -40,10 +40,12 @@ import argparse
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-s", "--species", type=str, help="The list of species to use", default = "Bacteroides_vulgatus_57955")
+parser.add_argument("-S", "--single_trajectory", help="Plot only a single trajectory representing one of the strains", action = "store_true")
 
 args = parser.parse_args()
 
 species = args.species
+single_trajectory = args.single_trajectory
 
 #MIDAS data
 annotated_snps_path = "%ssnps/%s/annotated_snps.txt.bz2" % (config.data_directory, species)
@@ -396,6 +398,9 @@ else:
             Fs_inoculum.loc[final_clusters[clus_to_re_pol].index] = 1 -  Fs_inoculum.loc[final_clusters[clus_to_re_pol].index]#polarize inoculum accordingly
 
     
+if single_trajectory:
+  final_clusters.pop(0)
+  final_f.pop(0)
 
 #Filtering out samples without adequate coverage
 good_indices = []
