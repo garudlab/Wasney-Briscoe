@@ -353,6 +353,6 @@ figure_2 <- ggdraw() +
   draw_plot_label(c("A", "B"), c(0, 0), c(1, prop_c), size = 16, family = "Helvetica")
 
 
-out_file <- "~/Wasney-Briscoe-2024/scripts/figures/figure_2.png"
+out_file <- "~/figure_2.png"
 ggsave(out_file,figure_2,dpi=300,width=7.5,height=10, units = "in", bg="white")
 
