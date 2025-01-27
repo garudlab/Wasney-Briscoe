@@ -35,7 +35,7 @@ if not os.path.exists(evolutionary_changes_path):
 
 # Generating species list
 
-species_list_path = "cat /u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species_snps.txt"
+species_list_path = "cat /u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species_snps.txt.bz2"
 species_list = subprocess.check_output(species_list_path, shell=True, stderr=subprocess.STDOUT).split("\n")
 species_list = [species for species in species_list if species != ""]
 
@@ -183,7 +183,7 @@ snp_changes_path = "%s%s%s" % (config.project_folder, "evolutionary_changes/", "
 snp_changes_df.to_csv(snp_changes_path, sep = ",")
 
 #################################################################################################################################################################
-################################################################ Extracting Opportunites changes ################################################################
+################################################################ Extracting Opportunities #######################################################################
 #################################################################################################################################################################
 
 opportunities_df = pd.DataFrame(columns = ['species', 'sample_1', 'sample_2', 'opportunities'])
