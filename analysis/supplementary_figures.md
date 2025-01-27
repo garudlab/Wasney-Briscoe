@@ -34,7 +34,7 @@ To generate the plot a single trajectory representing both strains of _B. unifor
 python strain_inference.py --species Bacteroides_uniformis_57318 --single_trajectory
 ```
 
-This will output a figure called `Bacteroides_uniformis_57318_single_strain_trajectory.png` in your home directory (`~/`), which is equivalent to supplementary figure 5.
+The `--species` flag specifies the species to be plotted (Bacteroides_uniformis_57318), and the `--single_trajectory` creates a figure called `Bacteroides_uniformis_57318_single_strain_trajectory.png` in your home directory (`~/`) in which a single trajectory represents the frequency of one of two strains colonizing the mice. The figure produced by this code is equivalent to supplementary figure 5.
 
 ## Figure 6
 
