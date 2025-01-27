@@ -24,5 +24,14 @@ Guides on how to process data for and create main text figures 2-5 can be found 
 
 ## Supplementary figures
 
+- Supplementary Figure 1
+- Supplementary Figure 2B
+- Supplementary Figure 3
+- Supplementary Figure 4
+- Supplementary Figure 5
+- Supplementary Figure 6
+
+Guides on how to process data for and create supplementary figures 1-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/supplementary_figures.md).
+
 ## Supplementary tables
 
