@@ -20,7 +20,7 @@ qsub ./create_StrainFinderInput_wrapper.sh
 
 ## Step 2. Infer strain frequency from SNV frequencies
 
-To infer strain frequencies, execute the following code in the [`Wasney-Briscoe-2024/scripts/strain_inference/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/strain_inference) directory for the species of interest:
+To infer strain frequencies, execute the following code in the [`Wasney-Briscoe/scripts/strain_inference/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference) directory for the species of interest:
 
 ```
 python strain_inference.py --species Bacteroides_vulgatus_57955
