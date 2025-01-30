@@ -114,7 +114,7 @@ python summarize_snp_changes.py
 
 ### Extract frequencies of evolutionary SNPs from all samples
 
-The generation of certain plots and tables requires having allele frequency information of evolutionary SNPs in all samples. However, `snp_changes.txt.bz2` only contains allele frequency information for evolutionary SNPs in samples in which their allele frequency is $f \le 0.2$ or $f \ge 0.8$. To extract allele frequencies across all scripts, run the [extract_snv_freqs.py](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/extract_snv_freqs.py](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/extract_snv_freqs.py).
+The generation of certain plots and tables requires having allele frequency information of evolutionary SNPs in all samples. However, `snp_changes.txt.bz2` only contains allele frequency information for evolutionary SNPs in samples in which their allele frequency is $f \le 0.2$ or $f \ge 0.8$. To extract allele frequencies across all scripts, run the [extract_snv_freqs.py](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/extract_snv_freqs.py).
 
 ```
 conda activate python27_env #If python 2.7 isn't already loaded 
