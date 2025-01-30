@@ -18,7 +18,7 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 
 ### 2. Run MIDAS
 
-Ensure you are running MIDAS v1.2.2. To download MIDAS v1.2.2, consult the official [MIDAS repository](https://github.com/snayfach/MIDAS).
+Ensure you are running MIDAS v1.2.2. To download MIDAS v1.2.2, consult the official [MIDAS v1 documentation](https://github.com/snayfach/MIDAS).
 
 Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md)
 
