@@ -4,14 +4,14 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## MIDAS
 
-- [Running MIDAS](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/MIDAS.md)
-- [Post-processing MIDAS data](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/postprocessing.md)
+- [Running MIDAS](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md)
+- [Post-processing MIDAS data](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md)
 
 ## $\pi$ analysis
 
 ## Strain frequency analysis
 
-- [Infer strain frequencies and confidence intervals](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/strain_inference.md)
+- [Infer strain frequencies and confidence intervals](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/strain_inference.md)
 
 ## Main text figures
 
@@ -20,7 +20,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 - Figure 4
 - Figure 5
 
-Guides on how to process data for and create main text figures 2-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/figures.md).
+Guides on how to process data for and create main text figures 2-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/figures.md).
 
 ## Supplementary figures
 
@@ -31,7 +31,7 @@ Guides on how to process data for and create main text figures 2-5 can be found 
 - Supplementary Figure 5
 - Supplementary Figure 6
 
-Guides on how to process data for and create supplementary figures 1-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/supplementary_figures.md).
+Guides on how to process data for and create supplementary figures 1-5 can be found [here](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/supplementary_figures.md).
 
 ## Supplementary tables
 
