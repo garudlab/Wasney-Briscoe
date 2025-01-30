@@ -23,8 +23,8 @@ subtext_size = 10
 # Directories
 
 study <- "HumanizedMouse_Batch2" 
-code_dir <- "~/Wasney-Briscoe-2024/scripts/figures/"
-metadata_dir <- "~/Wasney-Briscoe-2024/metadata/"
+code_dir <- "~/Wasney-Briscoe/scripts/figures/"
+metadata_dir <- "~/Wasney-Briscoe/metadata/"
 data_dir <-  "~/"
 
 

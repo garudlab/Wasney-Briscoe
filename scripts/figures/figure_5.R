@@ -16,7 +16,7 @@ subtext_size = 10
 
 # Helper scripts
 
-code_dir <- "~/Wasney-Briscoe-2024/scripts/figures/"
+code_dir <- "~/Wasney-Briscoe/scripts/figures/"
 data_dir <-  "~/"
 source(paste0(code_dir,"helper_scripts/SNV_plot_helper_scripts.R"))
 
