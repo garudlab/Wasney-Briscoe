@@ -41,11 +41,18 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument("-s", "--species", type=str, help="The list of species to use", default = "Bacteroides_vulgatus_57955")
 parser.add_argument("-S", "--remove_minor_strain", help="Plot only a single trajectory representing one of the strains", action = "store_true")
+parser.add_argument("-k", "--skip_merge", help="Do not merge B. uniformis strain clusters.", action = "store_true)
 
 args = parser.parse_args()
 
 species = args.species
 remove_minor_strain = args.single_trajectory
+skip_merge = args.skip_merge
+
+if skip_merge:
+  combine_clusters=False
+else:
+  combine_clusters=True
 
 #MIDAS data
 annotated_snps_path = "%ssnps/%s/annotated_snps.txt.bz2" % (config.data_directory, species)
@@ -178,7 +185,7 @@ all_clus_D = []
 
 all_clus_F = []
 
-if species == "Bacteroides_uniformis_57318": #MW 7/17/2024
+if (species == "Bacteroides_uniformis_57318") & (combine_clusters): #MW 7/17/2024
     
     clus_1,clus_idxs_1 = return_clus(D_mat_close,Fs_sub)
     clus_pol_1 = polarize_clus(clus_1,clus_idxs_1,D_mat_1,D_mat_2)
@@ -274,7 +281,17 @@ for i in range(len(all_clus_D)):
 #Creating polarized clusters
 no_cluster = False
 multiple_inoculum_strains = False
-if (len(final_clusters) == 0):
+
+if (species == "Bacteroides_uniformis_57318") & (skip_merge):
+  final_f = []
+  counter = 0
+  for cluster in final_clusters:
+      cluster = 1 - cluster
+      final_clusters[counter] = cluster
+      final_f.append(cluster.mean())
+      counter += 1
+  df_final_f = pd.DataFrame(final_f)
+elif (len(final_clusters) == 0):
     sys.stderr.write("No clusters detected.\n")
     no_cluster = True
     
@@ -433,7 +450,7 @@ if len(final_clusters) > 0:
         final_f[i] = final_f[i][mask]
     Fs = Fs.loc[:,mask]
 
-if not remove_minor_strain:
+if (not remove_minor_strain) | (skip_merge):
   #Creating output for R plotting (with bootstrapped 95% confidence intervals
   bootstrap_ci = True
   boostrap_k = 100
@@ -720,9 +737,13 @@ else:
   
       # Set the title for the histogram
       ax_hist.set_xlabel("Inoculum", fontsize = 20, labelpad=17.5)
-  
-  figure_path = "%s%s%s" % (config.project_folder, species,"_major_strain_trajectory.png")
-  fig.savefig(figure_path, facecolor='white', transparent=False, dpi=300,bbox_inches='tight')
+
+  if skip_merge:
+    figure_path = "%s%s%s" % (config.project_folder, species,"_unmerged_strain_trajectory.png")
+    fig.savefig(figure_path, facecolor='white', transparent=False, dpi=300,bbox_inches='tight')
+  else:
+    figure_path = "%s%s%s" % (config.project_folder, species,"_major_strain_trajectory.png")
+     fig.savefig(figure_path, facecolor='white', transparent=False, dpi=300,bbox_inches='tight')
 
   
 
