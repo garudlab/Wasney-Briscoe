@@ -11,11 +11,15 @@ library(ggpubr)
 
 font_size <- 12
 
+data_dir <- "~/"
+
+
 plot_snvs <- function(species_name, output = "normal",min_coverage = 20, snv_filter = FALSE, focal_contig = NA, focal_site_pos = NA, polarize_by_inoculum = TRUE) {
   # output: "normal", "legend"
   
   # Loading SNVs
-  snv_data_path <- "~/evolutionary_changes/SNV_freqs.txt"
+  snv_data_path <- paste0(data_dir,
+                          "evolutionary_changes/SNV_freqs.txt")
 
   snv_data <- read.csv2(snv_data_path, sep = "\t", row.names = "X") %>%
     mutate(allele_frequency = as.numeric(allele_frequency),
@@ -26,10 +30,10 @@ plot_snvs <- function(species_name, output = "normal",min_coverage = 20, snv_fil
   
   species_with_adaptation <- snv_data %>% select(species) %>% unique() %>% pull()
   
-  strain_trajectory_path <- paste0("~/strain_phasing/strain_clusters/", 
-                                   species_name, 
+  strain_trajectory_path <- paste0(data_dir,"strain_phasing/strain_clusters/", 
+                                   species, 
                                    "/",
-                                   species_name, 
+                                   species, 
                                    "_strain_frequency.csv")
   
   
