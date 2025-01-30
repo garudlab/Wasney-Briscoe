@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -N post_processing_MIDAS_data
 #$ -l h_data=8G,h_rt=2:00:00,highp
-#$ -e ~/Wasney-Briscoe-2024/scripts/postprocessing/errors/
-#$ -o ~/Wasney-Briscoe-2024/scripts/postprocessing/outputs/
+#$ -e ~/Wasney-Briscoe/scripts/postprocessing/errors/
+#$ -o ~/Wasney-Briscoe/scripts/postprocessing/outputs/
 #$ -t 1-85:1 
 #$ -cwd
 
@@ -37,8 +37,8 @@ while getopts ":h" option; do
 done
 
 #Default arguments
-species_list=~/Wasney-Briscoe-2024/scripts/postprocessing/species_snps.txt
-microbiome_scripts_path=~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/
+species_list=~/Wasney-Briscoe/scripts/postprocessing/species_snps.txt
+microbiome_scripts_path=~/Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/
 data_directory=~/merged_data/
 
 #Arguments that are passed

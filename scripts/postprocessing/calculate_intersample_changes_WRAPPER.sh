@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -N calc_intersample_changes
 #$ -l h_data=12G,h_rt=2:00:00,highp
-#$ -e ~/Wasney-Briscoe-2024/scripts/postprocessing/errors/
-#$ -o ~/Wasney-Briscoe-2024/scripts/postprocessing/outputs/
+#$ -e ~/Wasney-Briscoe/scripts/postprocessing/errors/
+#$ -o ~/Wasney-Briscoe/scripts/postprocessing/outputs/
 #$ -t 1-85:1 
 #$ -cwd
 
@@ -37,9 +37,9 @@ while getopts ":h" option; do
 done
 
 #Default arguments
-species_list=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species_snps.txt
-microbiome_scripts_path=/u/project/ngarud/michaelw/microbiome_evolution/microbiome_evolution_MOUSE/
-data_directory=/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/merged_data/
+species_list=~/Wasney-Briscoe/metadata/species_snps.txt
+microbiome_scripts_path=~/Wasney-Briscoe/postprocessing_scripts/
+data_directory=~/merged_data/
 
 #Arguments that are passed
 for arg in "$@"

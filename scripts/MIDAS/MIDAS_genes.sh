@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -N MIDAS_genes
-#$ -e ~/Wasney-Briscoe-2024/scripts/MIDAS/errors/
-#$ -o ~/Wasney-Briscoe-2024/scripts/MIDAS/outputs/
+#$ -e ~/Wasney-Briscoe/scripts/MIDAS/errors/
+#$ -o ~/Wasney-Briscoe/scripts/MIDAS/outputs/
 #$ -cwd
 #$ -r y
 #$ -j y
@@ -23,13 +23,13 @@ export PATH=$PATH:/u/project/ngarud/Garud_lab/MIDAS_mod/scripts
 export MIDAS_DB=/u/project/ngarud/Garud_lab/midas_db_v1.2
 
 #Accessions
-readarray accs < ~/Wasney-Briscoe-2024/scripts/accessions.txt
+readarray accs < ~/Wasney-Briscoe/scripts/accessions.txt
 accs=(null ${accs[@]}) # zero to one start index
 acc=${accs[$SGE_TASK_ID]}
 echo $acc
 
 #Accession paths
-readarray accs_paths < ~/Wasney-Briscoe-2024/scripts/accession_paths.txt
+readarray accs_paths < ~/Wasney-Briscoe/scripts/accession_paths.txt
 accs_paths=(null ${accs_paths[@]}) # zero to one start index
 acc_path=${accs_paths[$SGE_TASK_ID]}
 echo $acc_path

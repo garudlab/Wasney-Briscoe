@@ -9,16 +9,16 @@ from math import log10
 #CHANGE FOR EACH PROJECT
 data_directory = os.path.expanduser("~/merged_data/")
 project_folder = os.path.expanduser("~/")
-HMP_data_directory = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/postprocessing/")
-analysis_directory = os.path.expanduser("~/Wasney-Briscoe-2024/") #change this for your project
-#metadata_directory = os.path.expanduser("~/Wasney-Briscoe-2024/metadata/")
-accessions = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/accessions.txt")
+HMP_data_directory = os.path.expanduser("~/Wasney-Briscoe/scripts/postprocessing/")
+analysis_directory = os.path.expanduser("~/Wasney-Briscoe/") #change this for your project
+metadata_directory = os.path.expanduser("~/Wasney-Briscoe/metadata/")
+accessions = os.path.expanduser("~/Wasney-Briscoe/scripts/accessions.txt")
 
 #output
-figure_directory = os.path.expanduser("~/Wasney-Briscoe-2024/figures/")
+figure_directory = os.path.expanduser("~/Wasney-Briscoe/figures/")
 
 #STATIC
-scripts_directory = os.path.expanduser("~/Wasney-Briscoe-2024/scripts/postprocessing/")
+scripts_directory = os.path.expanduser("~/Wasney-Briscoe/scripts/postprocessing/")
 patric_directory = os.path.expanduser("~/PATRIC/")
 midas_directory = os.path.expanduser("~/midas_db_v1.2/")
 

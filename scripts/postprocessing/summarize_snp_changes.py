@@ -1,7 +1,7 @@
 # Packages
 import sys
 
-sys.path.insert(0, "~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/")
+sys.path.insert(0, "~/Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/")
 
 import config
 import pandas as pd

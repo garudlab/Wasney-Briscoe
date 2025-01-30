@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -N MIDAS_merge
-#$ -e ~/Wasney-Briscoe-2024/scripts/MIDAS/errors/
-#$ -o ~/Wasney-Briscoe-2024/scripts/MIDAS/outputs/
+#$ -e ~/Wasney-Briscoe/scripts/MIDAS/errors/
+#$ -o ~/Wasney-Briscoe/scripts/MIDAS/outputs/
 #$ -cwd
 #$ -r y
 #$ -j y

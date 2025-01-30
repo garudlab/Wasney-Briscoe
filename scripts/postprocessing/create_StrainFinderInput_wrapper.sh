@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -N strainfinder_preprocessing
 #$ -l h_data=16G,h_rt=24:00:00,highp
-#$ -e ~/Wasney-Briscoe-2024/scripts/postprocessing/errors/
-#$ -o ~/Wasney-Briscoe-2024/scripts/postprocessing/outputs/
+#$ -e ~/Wasney-Briscoe/scripts/postprocessing/errors/
+#$ -o ~/Wasney-Briscoe/scripts/postprocessing/outputs/
 #$ -t 1-85:1
 
 ############################################################
@@ -35,7 +35,7 @@ while getopts ":h" option; do
 done
 
 #Default arguments
-species_file=~/Wasney-Briscoe-2024/scripts/postprocessing/species_snps.txt
+species_file=~/Wasney-Briscoe/scripts/postprocessing/species_snps.txt
 outdir=~/strain_phasing/input/
 
 #Arguments that are passed
@@ -70,7 +70,7 @@ species_name=$(sed -n "$i"p $species_file)
 
 mkdir -p $outdir
 
-cd ~/Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/
+cd ~/Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/
 
 python create_StrainFinderInput.py --species $species_name --outdir $outdir
 

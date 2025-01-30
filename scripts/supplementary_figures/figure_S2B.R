@@ -8,7 +8,7 @@ subtext_size = 10
 
 # Paths
 data_dir <-  "~/"
-metadata_dir <- "~/Wasney-Briscoe-2024/metadata/"
+metadata_dir <- "~/Wasney-Briscoe/metadata/"
 
 ### Haploid info df path
 haploid_info_path <- paste0(metadata_dir, "sample_haploid_status.txt")

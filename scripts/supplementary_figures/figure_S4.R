@@ -10,7 +10,7 @@ library(scales)
 library(ggpubr)
 
 # Directories
-code_dir <- "~/Wasney-Briscoe-2024/scripts/figures/"
+code_dir <- "~/Wasney-Briscoe/scripts/figures/"
 data_dir <-  "~/"
 
 # Functions

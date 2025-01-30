@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -N MIDAS_species_union_step
-#$ -o ~/Wasney-Briscoe-2024/scripts/MIDAS/errors/
-#$ -e ~/Wasney-Briscoe-2024/scripts/MIDAS/outputs/
+#$ -o ~/Wasney-Briscoe/scripts/MIDAS/errors/
+#$ -e ~/Wasney-Briscoe/scripts/MIDAS/outputs/
 #$ -cwd
 #$ -r y
 #$ -j y
@@ -52,7 +52,7 @@ done
 
 #Default arguments
 midas_path=~/
-accession_list=~/Wasney-Briscoe-2024/scripts/MIDAS/species_union_list.txt
+accession_list=~/Wasney-Briscoe/scripts/MIDAS/species_union_list.txt
 
 
 #Arguments that are passed

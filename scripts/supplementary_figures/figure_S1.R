@@ -22,7 +22,7 @@ subtext_size = 10
 
 # Directories
 
-code_dir <- "~/Wasney-Briscoe-2024/scripts/figures/"
+code_dir <- "~/Wasney-Briscoe/scripts/figures/"
 data_dir <-  "~/"
 
 source(paste0(code_dir,"helper_scripts/humanized_mouse_utilities.R"))
