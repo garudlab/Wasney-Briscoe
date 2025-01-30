@@ -6,14 +6,14 @@ Strain frequencies are inferred from SNV frequency trajectories across samples u
 
 The pipeline to infer strain frequencies was developed based on a previous method put forth in Roodgar et al., 2021 and extended in Wolff et al., 2023.
 
-The strain frequency inference pipeline requires data be formated in the same manner as inputs to the [StrainFinder](https://github.com/cssmillie/StrainFinder) software package (Smillie et al., 2018). To reformat data like so, navigate to the [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory and run:
+The strain frequency inference pipeline requires data be formated in the same manner as inputs to the [StrainFinder](https://github.com/cssmillie/StrainFinder) software package (Smillie et al., 2018). To reformat data like so, navigate to the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/) directory and run:
 
 ```
 qsub ./create_StrainFinderInput_wrapper.sh
 ```
 `create_StrainFinderInput.py` and its wrapper script will make the following: 
-- A directory/subdirectory with the path `/strain_phasing/input` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
-  - directories for all species processed (defined by the [`species_snps.txt`](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/postprocessing/species_snps.txt) file). Within each species folder:
+- A directory/subdirectory with the path `/strain_phasing/input` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
+  - directories for all species processed (defined by the [`species_snps.txt`](https://github.com/garudlab/Wasney-Briscoe/blob/main/metadata/species_snps.txt) file). Within each species folder:
     - `species_id.strainfinder.locations.p`: a pickle file...
     - `species_id.strainfinder.p`: a pickle file...
     - `species_id.strainfinder.samples.p`: a pickle file...
