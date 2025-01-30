@@ -31,18 +31,26 @@ This script will output `figure_S4.png` in your home directory (`~/`).
 Run [`strain_inference.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference/strain_inference.py) with the following flags:
 
 ```
-python strain_inference.py --species Bacteroides_vulgatus_57955 --single_trajectory
+python strain_inference.py --species Bacteroides_vulgatus_57955 --remove_minor_strain
 ```
 
-The `--species` flag specifies the species to be plotted (Bacteroides_vulgatus_57955), and the `--single_trajectory` creates a figure called `Bacteroides_uniformis_57318_single_strain_trajectory.png` in your home directory (`~/`) in which a single trajectory represents the frequency of one of two strains colonizing the mice. The figure produced by this code is equivalent to supplementary figure 5.
+The `--species` flag specifies the species to be plotted (Bacteroides_vulgatus_57955), and the `--remove_minor_strain` flag creates a figure called `Bacteroides_vulgatus_57955_major_strain_trajectory.png` in your home directory (`~/`) in which the frequency of the major strain only is plotted. The figure produced by this code is equivalent to supplementary figure 5.
 
 ## Figure 6
 
 To generage figure 6A, run [`strain_inference.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference/strain_inference.py) with the following flags:
 
 ```
-python strain_inference.py --species Bacteroides_uniformis_57318 --unpolarized -bu_unif_unmerged
+python strain_inference.py --species Bacteroides_uniformis_57318 -skip_merge
 ```
+The `--skip_merge` flag creates a figure called `Bacteroides_uniformis_57318_unmerged_strain_trajectory.png` in your home directory (`~/`) in which the frequency of both _B. uniformis_ SNV clusters are plotted.
+
+To generate figure 6B, run [`strain_inference.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference/strain_inference.py) with the following flags:
+
+```
+python strain_inference.py --species Bacteroides_uniformis_57318 --remove_minor_strain
+```
+The `--remove_minor_strain` flag creates a figure called `Bacteroides_uniformis_57318_major_strain_trajectory.png` in your home directory (`~/`) in which the frequency of the major strain only is plotted.
 
 
 
