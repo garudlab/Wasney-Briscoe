@@ -40,12 +40,12 @@ import argparse
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-s", "--species", type=str, help="The list of species to use", default = "Bacteroides_vulgatus_57955")
-parser.add_argument("-S", "--single_trajectory", help="Plot only a single trajectory representing one of the strains", action = "store_true")
+parser.add_argument("-S", "--remove_minor_strain", help="Plot only a single trajectory representing one of the strains", action = "store_true")
 
 args = parser.parse_args()
 
 species = args.species
-single_trajectory = args.single_trajectory
+remove_minor_strain = args.single_trajectory
 
 #MIDAS data
 annotated_snps_path = "%ssnps/%s/annotated_snps.txt.bz2" % (config.data_directory, species)
@@ -398,7 +398,7 @@ else:
             Fs_inoculum.loc[final_clusters[clus_to_re_pol].index] = 1 -  Fs_inoculum.loc[final_clusters[clus_to_re_pol].index]#polarize inoculum accordingly
 
     
-if single_trajectory:
+if remove_minor_strain:
   final_clusters.pop(0)
   final_f.pop(0)
 
@@ -433,7 +433,7 @@ if len(final_clusters) > 0:
         final_f[i] = final_f[i][mask]
     Fs = Fs.loc[:,mask]
 
-if not single_trajectory:
+if not remove_minor_strain:
   #Creating output for R plotting (with bootstrapped 95% confidence intervals
   bootstrap_ci = True
   boostrap_k = 100
@@ -721,7 +721,7 @@ else:
       # Set the title for the histogram
       ax_hist.set_xlabel("Inoculum", fontsize = 20, labelpad=17.5)
   
-  figure_path = "%s%s%s" % (config.project_folder, species,"_single_strain_trajectory.png")
+  figure_path = "%s%s%s" % (config.project_folder, species,"_major_strain_trajectory.png")
   fig.savefig(figure_path, facecolor='white', transparent=False, dpi=300,bbox_inches='tight')
 
   
