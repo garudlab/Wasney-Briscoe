@@ -4,7 +4,7 @@ During post-processing, merged MIDAS outputs are wrangled into data formats that
 
 ## Set up
 
-Project paths and global parameters are defined in `config.py` file in the [`Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/postprocessing_scripts) directory.
+Project paths and global parameters are defined in `config.py` file in the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts) directory.
 
 This file is currently modifed to reflect the directory strucutre of this repository, and will work *sans* modifications if the repository is cloned to your home directory (i.e., `~/`). To Process in another location or use a different set of global parameters, make those changes to the `config.py` directly.
 
@@ -28,7 +28,7 @@ cd ~/merged_data/
 mkdir core_genes/
 ```
 
-In the [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory, you will find the files `core_genes_HMP.txt.gz` and `shared_genes_HMP.txt.gz`. These are lists of core and shared genes defined in Garud & Good. **Move these to your. Copy these files into the `core_genes/` directory:
+In the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing) directory, you will find the files `core_genes_HMP.txt.gz` and `shared_genes_HMP.txt.gz`. These are lists of core and shared genes defined in Garud & Good. **Move these to your. Copy these files into the `core_genes/` directory:
 
 ```
 cp ~/Wasney-Briscoe-2024/scripts/postprocessing/core_genes_HMP.txt.gz ~/merged_data/core_genes/.
@@ -37,7 +37,7 @@ cp ~/Wasney-Briscoe-2024/scripts/postprocessing/shared_genes_HMP.txt.gz ~/merged
 
 ### Run `core_gene_utils.py`
 
-Next, run `core_gene_utils.py`. The command below will alter the Garud & Good definitions of core and shared genes in the manner described above, and put out modified lists `core_genes.txt.gz` and `shared_genes.txt.gz`. From the [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory, run:
+Next, run `core_gene_utils.py`. The command below will alter the Garud & Good definitions of core and shared genes in the manner described above, and put out modified lists `core_genes.txt.gz` and `shared_genes.txt.gz`. From the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing) directory, run:
 
 ```
 conda activate python27_env
@@ -48,13 +48,13 @@ python core_gene_utils.py
 
 In this step, files that summarize nucleotide diversity within and across samples are produced.
 
-To run this pipeline, navigate to the [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory and run:
+To run this pipeline, navigate to the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing) directory and run:
 
 ```
 qsub post_processing_wrapper.sh
 ```
 
-This pipeline is performed on all species for which MIDAS-processed SNP data is available (in `~/merged_data/snps/`). A list of those species is present as `species_snps.txt` in [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing) directory. To process a subset of these species, assemble a new list file and pass the path to the `post_processing_wrapper.sh` script using the `-s` or `--species_list` flags, e.g., 
+This pipeline is performed on all species for which MIDAS-processed SNP data is available (in `~/merged_data/snps/`). A list of those species is present as `species_snps.txt` in [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing) directory. To process a subset of these species, assemble a new list file and pass the path to the `post_processing_wrapper.sh` script using the `-s` or `--species_list` flags, e.g., 
 
 ```
 qsub post_processing_wrapper.sh -s ~/new_species_list.txt
@@ -81,14 +81,14 @@ Next, we identify two types of evolutionary changes between all pairs of samples
 - SNPs going from low frequency (allele frequency $f \le 0.2$) in one sample to high frequency in another ($f \ge 0.8$)
 - Genes going from 0 copies (copy number $c \le 0.05$) in one sample to 1 copy ($0.6 \le c \le 1.2$) in another.
 
-To calculate evolutionary changes, navigate to the [`Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/postprocessing_scripts) directory and run:
+To calculate evolutionary changes, navigate to the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts) directory and run:
 
 ```
 python calculate_intersample_changes.py
 ```
 
 
-Alternatively, from the [`Wasney-Briscoe-2024/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/) directory, you can run submit the `calculate_intersample_changes.py` script as a job:
+Alternatively, from the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/) directory, you can run submit the `calculate_intersample_changes.py` script as a job:
 
 ```
 qsub ./calculate_intersample_changes_WRAPPER.sh
@@ -100,7 +100,7 @@ qsub ./calculate_intersample_changes_WRAPPER.sh
   
 ### Summarize SNP changes and opportunities in dataframe format
 
-Downstream steps require SNP changes to be summarized in a dataframe. To do this, run the `summarize_snp_changes.py` script from the [`Wasney-Briscoe-2024/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe-2024/tree/main/scripts/postprocessing/postprocessing_scripts/) directory:
+Downstream steps require SNP changes to be summarized in a dataframe. To do this, run the `summarize_snp_changes.py` script from the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts/) directory:
 
 ```
 conda activate python27_env #If python 2.7 isn't already loaded 
@@ -108,6 +108,6 @@ python summarize_snp_changes.py
 ```
 
 `summarize_snp_changes.py` will make the following: 
-- A directory called `evolutionary_changes` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
+- A directory called `evolutionary_changes` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
   - `snp_changes.txt.bz2`: a dataframe containing all SNP changes between samples (i.e., SNPs going from allele frequency $f \le 0.2$ in one sample to $f \ge 0.8$ in another sample).
   - `opportunities.txt.bz2`: a dataframe quantifying the the number of loci that have high coverage (i.e., coverage $D \ge 20$ reads) in both samples between all pairs of QP samples.
