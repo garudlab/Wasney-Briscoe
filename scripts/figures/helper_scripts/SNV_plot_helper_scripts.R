@@ -15,7 +15,7 @@ plot_snvs <- function(species_name, output = "normal",min_coverage = 20, snv_fil
   # output: "normal", "legend"
   
   # Loading SNVs
-  snv_data_path <- "/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/evolutionary_changes/SNV_freqs.txt"
+  snv_data_path <- "~/evolutionary_changes/SNV_freqs.txt"
 
   snv_data <- read.csv2(snv_data_path, sep = "\t", row.names = "X") %>%
     mutate(allele_frequency = as.numeric(allele_frequency),
@@ -26,7 +26,7 @@ plot_snvs <- function(species_name, output = "normal",min_coverage = 20, snv_fil
   
   species_with_adaptation <- snv_data %>% select(species) %>% unique() %>% pull()
   
-  strain_trajectory_path <- paste0("/u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/strain_phasing/strain_clusters/", 
+  strain_trajectory_path <- paste0("~/strain_phasing/strain_clusters/", 
                                    species_name, 
                                    "/",
                                    species_name, 
