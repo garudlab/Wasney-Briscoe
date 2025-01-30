@@ -111,3 +111,14 @@ python summarize_snp_changes.py
 - A directory called `evolutionary_changes` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
   - `snp_changes.txt.bz2`: a dataframe containing all SNP changes between samples (i.e., SNPs going from allele frequency $f \le 0.2$ in one sample to $f \ge 0.8$ in another sample).
   - `opportunities.txt.bz2`: a dataframe quantifying the the number of loci that have high coverage (i.e., coverage $D \ge 20$ reads) in both samples between all pairs of QP samples.
+
+### Extract frequencies of evolutionary SNPs from all samples
+
+The generation of certain plots and tables requires having allele frequency information of evolutionary SNPs in all samples. However, `snp_changes.txt.bz2` only contains allele frequency information for evolutionary SNPs in samples in which their allele frequency is $f \le 0.2$ or $f \ge 0.8$. To extract allele frequencies across all scripts, run the [extract_snv_freqs.py](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/extract_snv_freqs.py](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/extract_snv_freqs.py).
+
+```
+conda activate python27_env #If python 2.7 isn't already loaded 
+python extract_snv_freqs.py
+```
+
+`extract_snv_freqs.py` will make a file called `SNV_freqs.txt.bz2` in `~/evolutionary_changes/`. This file contains the allele frequencies for evolutionary SNVs in all samples in which they have a minimum read coverage of 20.
