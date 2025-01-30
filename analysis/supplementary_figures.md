@@ -41,7 +41,7 @@ The `--species` flag specifies the species to be plotted (Bacteroides_vulgatus_5
 To generage figure 6A, run [`strain_inference.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference/strain_inference.py) with the following flags:
 
 ```
-python strain_inference.py --species Bacteroides_uniformis_57318 -skip_merge
+python strain_inference.py --species Bacteroides_uniformis_57318 --skip_merge
 ```
 The `--skip_merge` flag creates a figure called `Bacteroides_uniformis_57318_unmerged_strain_trajectory.png` in your home directory (`~/`) in which the frequency of both _B. uniformis_ SNV clusters are plotted.
 
