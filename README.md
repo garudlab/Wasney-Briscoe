@@ -18,8 +18,8 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 
 ### 2. Run MIDAS
 
-Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/MIDAS.md)
+Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md)
 
 ### 3. Run post-processing on data
 
-Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe-2024/blob/main/analysis/postprocessing.md)
+Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md)
