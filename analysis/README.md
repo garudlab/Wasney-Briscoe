@@ -9,6 +9,8 @@ The analysis subdirectory contains instructions on running all analyses and repr
 
 ## $\pi$ analysis
 
+- [Calculate pi](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/pi.md)
+
 ## Strain frequency analysis
 
 - [Infer strain frequencies and confidence intervals](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/strain_inference.md)
