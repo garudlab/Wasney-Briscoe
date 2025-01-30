@@ -100,7 +100,7 @@ qsub ./calculate_intersample_changes_WRAPPER.sh
   
 ### Summarize SNP changes and opportunities in dataframe format
 
-Downstream steps require SNP changes to be summarized in a dataframe. To do this, run the [`summarize_snp_changes.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts/summarize_snp_changes.py) script from the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts/) directory:
+Downstream steps require SNP changes to be summarized in a dataframe. To do this, run the [`summarize_snp_changes.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/summarize_snp_changes.py) script from the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/) directory:
 
 ```
 conda activate python27_env #If python 2.7 isn't already loaded 
