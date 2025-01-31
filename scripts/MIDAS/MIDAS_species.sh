@@ -14,9 +14,9 @@ source /u/local/Modules/default/init/modules.sh
 module load anaconda3
 source activate python27_env
 
-export PYTHONPATH=$PYTHONPATH:/u/project/ngarud/Garud_lab/MIDAS
-export PATH=$PATH:/u/project/ngarud/Garud_lab/MIDAS/scripts
-export MIDAS_DB=/u/project/ngarud/Garud_lab/midas_db_v1.2
+export PYTHONPATH=$PYTHONPATH:~/MIDAS_mod
+export PATH=$PATH:~/MIDAS_mod/scripts
+export MIDAS_DB=~/midas_db_v1.2
 
 
 #Accessions

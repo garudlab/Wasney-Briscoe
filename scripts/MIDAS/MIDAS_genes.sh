@@ -18,9 +18,9 @@ module load singularity
 #Load python 2.7 conda environment
 conda activate python27_env
 
-export PYTHONPATH=$PYTHONPATH:/u/project/ngarud/Garud_lab/MIDAS_mod
-export PATH=$PATH:/u/project/ngarud/Garud_lab/MIDAS_mod/scripts
-export MIDAS_DB=/u/project/ngarud/Garud_lab/midas_db_v1.2
+export PYTHONPATH=$PYTHONPATH:~/MIDAS_mod
+export PATH=$PATH:~/MIDAS_mod/scripts
+export MIDAS_DB=~/midas_db_v1.2
 
 #Accessions
 readarray accs < ~/Wasney-Briscoe/scripts/accessions.txt

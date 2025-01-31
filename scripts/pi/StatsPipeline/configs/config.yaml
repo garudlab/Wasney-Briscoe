@@ -1,0 +1,17 @@
+normal:
+  input_dir: '~/'
+  snp_dir: '~/merged_data/snps/'
+  gene_dir: '~merged_data/genes/'
+
+SiteDownsampled:
+  input_dir: '~/'
+  snp_dir: '~/merged_data_downsampled/snps/'
+  gene_dir: '~merged_data_downsampled/genes/'
+
+pangenome: 
+  hoffman: '~/midas_db_v1.2/pan_genomes/'
+  local: '~/midas_db_v1.2/pan_genomes/'
+
+blacklist:
+  hoffman: '~/Wasney-Briscoe/scripts/pi/StatsPipeline/BlacklistGenes/cross_species_centroids_clean.csv'
+  local: '~/Wasney-Briscoe/scripts/pi/StatsPipeline/BlacklistGenes/cross_species_centroids_clean.csv'

@@ -40,7 +40,7 @@ metadata = read.csv(paste0(metadata_dir,"metadata.csv"),sep="\t",stringsAsFactor
 
 ## Data
 
-data_single <- read.csv(paste0(data_dir, "popgen_stats/SinglePi_SchloissnigPi_cov4_SiteDownsampled.csv")) #%>%
+data_single <- read.csv(paste0(data_dir, "popgen_stats/SinglePi_SchloissnigPi_cov4.csv")) #%>%
 
 
 # Filtering the data

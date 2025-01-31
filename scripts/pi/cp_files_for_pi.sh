@@ -18,11 +18,11 @@ i=$((SGE_TASK_ID))
 species_name=$(sed -n "$i"p $species_file)
 
 # Making gene directory, if necessary
-mkdir -p ${project_directory}/merged_data/genes/${species_name}/
+mkdir -p ${project_directory}/merged_data_downsampled/genes/${species_name}/
 
 # Copying snp files
-cp ~/merged_data/snps/${species_name}/snps_info.txt.bz2 ${project_directory}/merged_data/snps/${species_name}/.
+cp ~/merged_data/snps/${species_name}/snps_info.txt.bz2 ${project_directory}/merged_data_downsampled/snps/${species_name}/.
 
 # Copying gene files
 
-cp ~/merged_data/genes/${species_name}/genes_copynum.txt.bz2 ${project_directory}/merged_data/genes/${species_name}/.
+cp ~/merged_data/genes/${species_name}/genes_copynum.txt.bz2 ${project_directory}/merged_data_downsampled/genes/${species_name}/.
