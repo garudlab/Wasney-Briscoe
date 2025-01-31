@@ -24,4 +24,14 @@ done < ~/Wasney-Briscoe/metadata/species_snps.txt
 
 ## Step 2. Copying files from normal MIDAS output directory to the downsampled directory
 
+Run [`cp_files_for_pi.sh`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi/cp_files_for_pi.sh) in [~/Wasney-Briscoe/scripts/pi/](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi/):
+
+```
+sh ./cp_files_for_pi.sh
+```
+
+This script creates a folder called `merged_data_downsampled` in your home directory (`~/`) and copy the MIDAS files `snps_info.txt.bz2` and `genes_copynum.txt.bz2` for all species from the normal MIDAS `merged_data/` output directory to this new directory. These files are subsequently used to infer pi. 
+
 ## step 3. Inferring $\pi$
+
+
