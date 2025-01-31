@@ -1,8 +1,8 @@
-# Calculating pi for bacterial species
+# Calculating $\pi$ for bacterial species
 
 ## Step 1. Downsampling nucleotide sites with high coverage in mice 7 and 8
 
-This code produces a midas-format snps_ref_freq.txt.bz2 and snps_depth.txt.bz2 where the columns for samples in Mouse 7 and Mouse 8 are updated on a genomic site-by-genomic site basis if the depth of those samples is above the median depth for samples from Mouse 1 through 6. If the median depth for Mouse 1 through 6 is less than 4, then the sample depth in Mouse 7 and 8 are automatically converted to 0 at that site because a site with less than 4 depth will not be considered in pi calcultion regardless. 
+This code produces a midas-format snps_ref_freq.txt.bz2 and snps_depth.txt.bz2 where the columns for samples in Mouse 7 and Mouse 8 are updated on a genomic site-by-genomic site basis if the depth of those samples is above the median depth for samples from Mouse 1 through 6. If the median depth for Mouse 1 through 6 is less than 4, then the sample depth in Mouse 7 and 8 are automatically converted to 0 at that site because a site with less than 4 depth will not be considered in $\pi$ calcultion regardless. 
 
 Input: `snps_ref_freq.txt.bz2` and `snps_depth.txt.bz2`
 Output: snps_ref_freq.txt.bz2 and snps_depth.txt.bz2 with modifications to columns corresponding to Mouse 7 and 8. These files can be found in a new directory: 
