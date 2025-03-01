@@ -4,6 +4,6 @@ This directory holds the following MIDAS outputs:
 - MIDAS snps output for _Bacteroides vulgatus_ (Bacteroides_vulgatus_57955)
 
 MIDAS snps and genes outputs can be used to conduct the following analyses for _B. vulgatus_ for demonstration purposes:
-- pi
+- $\pi$
 - strain phasing
 - SNV change analyses
