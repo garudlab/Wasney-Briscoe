@@ -24,7 +24,7 @@ This repository contains all code necessary to analyze the raw data and generate
 
 Ensure you are running MIDAS v1.2.2. To download MIDAS v1.2.2, consult the official [MIDAS v1 documentation](https://github.com/snayfach/MIDAS).
 
-Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md) for instructions on running MIDAS on the mouse data.
+Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md) for instructions on running MIDAS on the mouse data. Note that running MIDAS can require significant computational resources, and we therefore recommend that this step is performed on a high performance computing cluster.
 
 ### 4. Run post-processing on data
 
