@@ -197,12 +197,23 @@ def parse_personal_core_genes(desired_species_name):
 if __name__=='__main__':
     
     import parse_midas_data
+    import argparse
     
     os.system('mkdir -p %s' % core_genes_directory)
     os.system('mkdir -p %s' % external_core_genes_directory)
-    
-    pangenome_species = parse_midas_data.parse_good_species_list()
- 
+
+    parser = argparse.ArgumentParser(description='Process core gene utilities')
+    parser.add_argument('--species', type=str, help='Specify a species name')
+
+    # Parse the arguments
+    args = parser.parse_args()
+
+    # If --species flag is passed, use it, otherwise load the full list
+    if args.species:
+        pangenome_species = [args.species]
+    else:
+        pangenome_species = parse_midas_data.parse_good_species_list()
+     
     cmin = config.core_genome_min_copynum
     cmax = config.core_genome_max_copynum  
     shared_cmin = config.shared_genome_min_copynum
