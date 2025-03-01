@@ -34,6 +34,6 @@ Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe/tree/main
 ## Demonstrate
 
 The following MIDAS outputs have been included in the [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data) directory:
-- [MIDAS species outputs](https://github.com/garudlab/Wasney-Briscoe/example_data/merged_data/species/): this includes the MIDAS species output corresponding to all species.
+- [MIDAS species outputs](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data/merged_data/species/): this includes the MIDAS species output corresponding to all species.
 - [MIDAS genes outputs](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data/merged_data/genes/): this includes the MIDAS genes output corresponding to _B. vulgatus_.
 - [MIDAS genes outputs](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data/merged_data/snps/): this includes the MIDAS snps output corresponding to _B. vulgatus_.
