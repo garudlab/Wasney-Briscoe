@@ -38,4 +38,4 @@ M8CoG
 M8CeG
 M8JG
 M8IG
-TL1
+TL1gDNAshort
