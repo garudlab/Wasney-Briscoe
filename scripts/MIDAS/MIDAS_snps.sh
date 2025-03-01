@@ -29,21 +29,10 @@ accs=(null ${accs[@]}) # zero to one start index
 acc=${accs[$SGE_TASK_ID]}
 echo $acc
 
-#Accession paths
-readarray accs_paths < ~/Wasney-Briscoe/scripts/accession_paths.txt
-accs_paths=(null ${accs_paths[@]}) # zero to one start index
-acc_path=${accs_paths[$SGE_TASK_ID]}
-echo $acc_path
-
-# readarray accs_paths < /u/project/ngarud/Garud_lab/HumanizedMouse_Batch2/metadata/accession_paths.txt
-# accs_paths=(null ${accs_paths[@]}) # zero to one start index
-# acc_path=${accs_paths[$SGE_TASK_ID]}
-# echo $acc_path
-
 OUTDIR=~/midas_output/${acc}
 
-fastq1=~/fastqs/${acc_path}_1.fq.gz
-fastq2=~/fastqs/${acc_path}_2.fq.gz
+fastq1=~/fastqs/${acc}_1.fq.gz
+fastq2=~/fastqs/${acc}_2.fq.gz
 species_union=~/species_union/${acc}/species_union.txt
 
 ### MIDAS SNPs
