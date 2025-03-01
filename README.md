@@ -37,3 +37,5 @@ The following MIDAS outputs have been included in the [example_data](https://git
 - [MIDAS species outputs](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data/merged_data/species/): this includes the MIDAS species output corresponding to all species.
 - [MIDAS genes outputs](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data/merged_data/genes/Bacteroides_vulgatus_57955): this includes the MIDAS genes output corresponding to _B. vulgatus_.
 - [MIDAS genes outputs](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data/merged_data/snps/Bacteroides_vulgatus_57955): this includes the MIDAS snps output corresponding to _B. vulgatus_.
+
+For demonstrating post-processing, $\pi$, and strain phasing pipeline and plotting the strain and SNV frequencies of _B. vulgatus_, consult demonstration.MD
