@@ -16,12 +16,16 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 
 *Coming soon.*
 
-### 2. Run MIDAS
+### 2. Clone this repository
+
+This repository contains all code necessary to analyze the raw data and generate figures/tables. 
+
+### 3. Run MIDAS
 
 Ensure you are running MIDAS v1.2.2. To download MIDAS v1.2.2, consult the official [MIDAS v1 documentation](https://github.com/snayfach/MIDAS).
 
-Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md)
+Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md) for instructions on running MIDAS on the mouse data.
 
-### 3. Run post-processing on data
+### 4. Run post-processing on data
 
 Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md)
