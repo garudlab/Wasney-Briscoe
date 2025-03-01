@@ -1,0 +1,1 @@
+This directory holds MIDAS species output, as well as the MIDAS snps and genes outputs for _Bacteroides vulgatus_ (Bacteroides_vulgatus_57955). This example can be used to run all family-/species-level analyses (e.g., those visualized in figure 2) including all species, as well as the pi, strain phasing, and SNV change analyses for _B. vulgatus_ for demonstration purposes. 
