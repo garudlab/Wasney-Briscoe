@@ -44,6 +44,14 @@ conda activate python27_env
 python core_gene_utils.py
 ```
 
+If running  `core_gene_utils.py` for a single species, execute the second line like so:
+
+```
+python core_gene_utils.py --species Bacteroides_vulgatus_57955
+```
+
+where `Bacteroides_vulgatus_57955` is the species of interest.
+
 ## Step 2: Process nucleotide diversity
 
 In this step, files that summarize nucleotide diversity within and across samples are produced.
@@ -57,10 +65,12 @@ qsub post_processing_wrapper.sh
 This pipeline is performed on all species for which MIDAS-processed SNP data is available (in `~/merged_data/snps/`). A list of those species is present as `species_snps.txt` in [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing) directory. To process a subset of these species, assemble a new list file and pass the path to the `post_processing_wrapper.sh` script using the `-s` or `--species_list` flags, e.g., 
 
 ```
-qsub post_processing_wrapper.sh -s ~/new_species_list.txt
+qsub post_processing_wrapper.sh -species_list ~/new_species_list.txt
 ```
 
-Note that while the normal Garud & Good pipeline uses the panel in it's own dataset to calculate average rates of between strain diversity per sample and species, we use the Human Microbiome Project (HMP) panel used in Garud & Good to calculate average rates of between host diversity (using files found in the `Wasney-Briscoe-2024/scripts/postprocessing/HMP_snp_prevalences/` directory(. To use the mouse dataset itself to estimate rates of between strain diversity, remove the `--use_HMP` flag when running the `calculate_within_person_sfs.py` script in the pipeline. However, doing so will render it impossible to detect monocolonized samples for species that have only a single strain that exists across the entire dataset.
+When passing a new species list, ensure that the number of tasks in the wrapper script (`#$ -t 1-85:1`, line 6) reflects the number of species in that list (e.g., if the list comprises 3 species, line 6 should read `#$ -t 1-3:1`).
+
+Note that while the normal Garud & Good pipeline uses the panel in it's own dataset to calculate average rates of between strain diversity per sample and species, we use the Human Microbiome Project (HMP) panel used in Garud & Good to calculate average rates of between host diversity (using files found in the `Wasney-Briscoe-2024/scripts/postprocessing/HMP_snp_prevalences/` directory). To use the mouse dataset itself to estimate rates of between strain diversity, remove the `--use_HMP` flag when running the `calculate_within_person_sfs.py` script in the pipeline. However, doing so will render it impossible to detect monocolonized samples for species that have only a single strain that exists across the entire dataset.
 
 `post_processing_wrapper.sh` should produce the following files:
 - In `~/merged_data/snps/`:
@@ -81,14 +91,7 @@ Next, we identify two types of evolutionary changes between all pairs of samples
 - SNPs going from low frequency (allele frequency $f \le 0.2$) in one sample to high frequency in another ($f \ge 0.8$)
 - Genes going from 0 copies (copy number $c \le 0.05$) in one sample to 1 copy ($0.6 \le c \le 1.2$) in another.
 
-To calculate evolutionary changes, navigate to the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts) directory and run:
-
-```
-python calculate_intersample_changes.py
-```
-
-
-Alternatively, from the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/) directory, you can run submit the `calculate_intersample_changes.py` script as a job:
+To calculate evolutionary changes, navigate to the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts) directory and run the following wrapper script:
 
 ```
 qsub ./calculate_intersample_changes_WRAPPER.sh
@@ -97,7 +100,25 @@ qsub ./calculate_intersample_changes_WRAPPER.sh
 `calculate_intersample_changes.py` should produce the following files:
 - In `~/merged_data/intersample_change/` (created by the pipeline)
   - `species_id.txt.gz`, where *species_id* is the species id for all species passed to the script in `species_snps.txt`.
-  
+
+You can also run the `calculate_intersample_changes.py` on a specific subset of species. If you have list of species on which you wish to do so, you can run the following script:
+
+If you intend to run `calculate_intersample_changes.py` on a subset of species, you can do so like so:
+
+```
+qsub ./calculate_intersample_changes_WRAPPER.sh --species_list ~/new_species_list.txt
+```
+
+As with `post_processing_wrapper.sh`, make sure the the number of tasks (`#$ -t 1-85:1`, line 6) reflects the number of species in that list.
+
+If you wish to calculate intersample changes for only a single species, you can do so by submitting the following script from [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts): 
+
+```
+python calculate_intersample_changes.py -species Bacteroides_vulgatus_57955
+```
+where `Bacteroides_vulgatus_57955` is the species of interest.
+
+
 ### Summarize SNP changes and opportunities in dataframe format
 
 Downstream steps require SNP changes to be summarized in a dataframe. To do this, run the [`summarize_snp_changes.py`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/summarize_snp_changes.py) script from the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/) directory:
