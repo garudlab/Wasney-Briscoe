@@ -25,18 +25,12 @@ accs=(null ${accs[@]}) # zero to one start index
 acc=${accs[$SGE_TASK_ID]}
 echo $acc
 
-#Accession paths
-readarray accs_paths < ~/Wasney-Briscoe/scripts/accession_paths.txt
-accs_paths=(null ${accs_paths[@]}) # zero to one start index
-acc_path=${accs_paths[$SGE_TASK_ID]}
-echo $acc_path
-
 OUTDIR=~/midas_output/${acc}
 
 mkdir -p $OUTDIR
 
-fastq1=~/fastqs/${acc_path}_1.fq.gz
-fastq2=~/fastqs/${acc_path}_2.fq.gz
+fastq1=~/fastqs/${acc}_1.fq.gz
+fastq2=~/fastqs/${acc}_2.fq.gz
 
 #run_midas.py species $OUTDIR -1 $fastq1 -2 $fastq2 --remove_temp
 module load singularity
