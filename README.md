@@ -18,7 +18,7 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 
 ### 2. Clone this repository
 
-This repository contains all code necessary to analyze the raw data and generate figures/tables. 
+This repository contains all code necessary to analyze the raw data and generate figures/tables. This process typicaly only takes a couple of seconds.
 
 ### 3. Run MIDAS
 
