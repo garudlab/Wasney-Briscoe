@@ -25,8 +25,15 @@ This repository contains all code necessary to analyze the raw data and generate
 
 Ensure you are running MIDAS v1.2.2. To download MIDAS v1.2.2, consult the official [MIDAS v1 documentation](https://github.com/snayfach/MIDAS).
 
-Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md) for instructions on running MIDAS on the mouse data. Note that running MIDAS can require significant computational resources, and we therefore recommend that this step is performed on a high performance computing cluster.
+Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/analysis/MIDAS.md) for instructions on running MIDAS on the mouse data. Note that running MIDAS can require significant computational resources, and we therefore recommend that this step is performed on a high performance computing cluster.
 
 ### 4. Run post-processing on data
 
-Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md)
+Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe/analysis/postprocessing.md)
+
+## Demonstrate
+
+The following MIDAS outputs have been included in the [example_data](https://github.com/garudlab/Wasney-Briscoe/example_data) directory:
+- [MIDAS species outputs](https://github.com/garudlab/Wasney-Briscoe/example_data/merged_data/species/): this includes the MIDAS species output corresponding to all species.
+- [MIDAS genes outputs](https://github.com/garudlab/Wasney-Briscoe/example_data/merged_data/genes/): this includes the MIDAS genes output corresponding to _B. vulgatus_.
+- [MIDAS genes outputs](https://github.com/garudlab/Wasney-Briscoe/example_data/merged_data/snps/): this includes the MIDAS snps output corresponding to _B. vulgatus_.
