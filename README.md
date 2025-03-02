@@ -10,6 +10,7 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 2. [Scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts): scripts used in all pipelines/analyses. Instructions on how to execute the scripts can be found in Analysis.
 3. [Metadata](https://github.com/garudlab/Wasney-Briscoe/tree/main/metadata): metadata files necessary to run analysis and generate figures.
 4. [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data): example MIDAS output for _Bacteroides vulgatus_, which can be used to demonstrate pipelines included in this repository.
+5. [environments](https://github.com/garudlab/Wasney-Briscoe/tree/main/environments)
 
 ## How to get started
 
@@ -21,13 +22,24 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 
 This repository contains all code necessary to analyze the raw data and generate figures/tables. This process typicaly only takes a couple of seconds.
 
-### 3. Run MIDAS
+### 3. Create necessary conda environments
+
+Code in this repository is built either for a python 2.7- or python 3.6-based environment (`python27_env` and `python_env`, respectively). Create these environments in your analysis workspace like so:
+
+```
+conda env create -f ~/Wasney-Briscoe/environments/python27_env.yml
+conda env create -f ~/Wasney-Briscoe/environments/python_env.yml
+```
+
+Alternatively, you can use your own python 2.7- and python 3.6-based environments, provided they're loaded with the necessary packages.
+
+### 4. Run MIDAS
 
 Ensure you are running MIDAS v1.2.2. To download MIDAS v1.2.2, consult the official [MIDAS v1 documentation](https://github.com/snayfach/MIDAS).
 
 Consult [MIDAS.md](https://github.com/garudlab/Wasney-Briscoe/tree/main/analysis/MIDAS.md) for instructions on running MIDAS on the mouse data. Note that running MIDAS can require significant computational resources, and we therefore recommend that this step is performed on a high performance computing cluster.
 
-### 4. Run post-processing on data
+### 5. Run post-processing on data
 
 Consult [postprocessing.md](https://github.com/garudlab/Wasney-Briscoe/tree/main/analysis/postprocessing.md)
 
