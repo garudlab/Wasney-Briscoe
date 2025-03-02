@@ -33,11 +33,28 @@ evolutionary_changes_path = os.path.join(config.project_folder, "evolutionary_ch
 if not os.path.exists(evolutionary_changes_path):
     os.makedirs(evolutionary_changes_path)
 
-# Generating species list
+import argparse
 
-species_list_path = "cat /u/project/ngarud/Garud_lab/HumanizedMouse/HumanizedMouse_Batch2/metadata/species_snps.txt.bz2"
-species_list = subprocess.check_output(species_list_path, shell=True, stderr=subprocess.STDOUT).split("\n")
-species_list = [species for species in species_list if species != ""]
+# Set up the argument parser
+parser = argparse.ArgumentParser(description='Process species list')
+parser.add_argument('--species_list', type=str, help='Specify a path to a species list')
+
+# Parse the arguments
+args = parser.parse_args()
+
+# Determine the species list file path
+if args.species_list:
+    species_list_path = args.species_list
+else:
+    species_list_path = '~/Wasney-Briscoe/metadata/species_snps.txt'  # Default file path
+
+# Python 2.7 open() doesn't support 'with' on some old versions, so use try-finally
+species_list_path = os.path.expanduser(species_list_path)  # Expand '~' to the full home directory path
+try:
+    file = open(species_list_path, 'r')
+    species_list = [line.strip() for line in file if line.strip()]
+finally:
+    file.close()
 
 # Calculating species to consider
 
