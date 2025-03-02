@@ -80,6 +80,23 @@ sh ./cp_files_for_pi.sh --species_list ~/Wasney-Briscoe/example_data/Bacteroides
 
 Ensure that the number of tasks specified reflects the presence of only a single species (i.e., line 8 should read `#$ -t 1-1:1`)
 
+### Calculating pi
+
+Instead of using the `qsub_single_sample_pi_EXECUTE.sh` in the [`qsubs/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi/StatsPipeline/qsubs/) directory, submit the version in the [`example_data`](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data) directory. From the [`example_data`](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data) directory, you will submit it the same way:
+
+```
+sh ./qsub_single_sample_pi_EXECUTE.sh
+```
+
+### step 4. Create the $\pi$ dataframe
+
+Run python script to summarize the dataframe as normal: 
+
+```
+conda activate python_env
+python ~/Wasney-Briscoe/scripts/pi/summarize_pi.py
+```
+
 
 
 
