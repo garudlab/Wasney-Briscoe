@@ -26,4 +26,10 @@ python core_gene_utils.py --species Bacteroides_vulgatus_57955
 
 ### Running the post-processing script
 
-Run `post_processing_wrapper.sh` with a species list comprising only `Bacteroides_vulgatus_57955`. Such a list has been included in [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data), 
+Run `post_processing_wrapper.sh` with a species list comprising only `Bacteroides_vulgatus_57955`. Such a list has been included in [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data), such that the code can be run like so:
+
+```
+qsub post_processing_wrapper.sh -species_list ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
+```
+
+
