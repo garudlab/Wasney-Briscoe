@@ -12,4 +12,18 @@ mv ~/Wasney-Briscoe/example_data/merged_data/ ~/.
 
 Subsequent steps assume that the `merged_data/` directory can be found in your home directory.
 
-## Step 2: 
+## Step 2: Post-processing pipeline
+
+The post-processing pipeline can be executed almost identically as described in [postprocessing.MD](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md), with the following changes:
+
+### calculating core genes
+
+Run `core_gene_utils.py` with the `--species` flag, i.e., 
+
+```
+python core_gene_utils.py --species Bacteroides_vulgatus_57955
+```
+
+### Running the post-processing script
+
+Run `post_processing_wrapper.sh` with a species list comprising only `Bacteroides_vulgatus_57955`. Such a list has been included in [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data), 
