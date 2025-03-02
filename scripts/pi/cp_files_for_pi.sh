@@ -19,6 +19,8 @@ Help()
    echo
    echo "-p|--project_directory          Path to directory holding MIDAS output directory (merged_data)."
    echo
+   echo "-m|--metric                     Median or mean (default is median)."
+   echo
    echo "-h|--help                       Display this help message and exit script."
    echo
 }
@@ -38,6 +40,7 @@ done
 #Default arguments
 species_list=~/Wasney-Briscoe/scripts/postprocessing/species_snps.txt
 project_directory=~/
+metric=median
 
 #Arguments that are passed
 for arg in "$@"
@@ -50,6 +53,11 @@ do
         ;;
         -p|--project_directory)
         project_directory="$2"
+        shift 
+        shift 
+        ;;
+        -m|--mean)
+        mean="$2"
         shift 
         shift 
         ;;
@@ -66,12 +74,19 @@ i=$((SGE_TASK_ID))
 
 species_name=$(sed -n "$i"p $species_file)
 
-# Making gene directory, if necessary
-mkdir -p ${project_directory}/merged_data_downsampled/genes/${species_name}/
+# Set the destination directory based on the metric
+if [ "$metric" == "median" ]; then
+    merge_directory=${project_directory}SiteDownsampled
+elif [ "$metric" == "mean" ]; then
+    merge_directory=${project_directory}SiteDownsampledByMean
+else
+    echo "Error: The metric argument is incorrectly defined. Must be 'mean' or 'median'."
+    exit 1
+fi
 
 # Copying snp files
-cp ~/merged_data/snps/${species_name}/snps_info.txt.bz2 ${project_directory}/merged_data_downsampled/snps/${species_name}/.
+cp ${project_directory}merged_data/snps/${species_name}/snps_info.txt.bz2 ${merge_directory}/merged_data/snps/${species_name}/.
 
 # Copying gene files
 
-cp ~/merged_data/genes/${species_name}/genes_copynum.txt.bz2 ${project_directory}/merged_data_downsampled/genes/${species_name}/.
+cp ${project_directory}merged_data/genes/${species_name}/genes_copynum.txt.bz2 ${merge_directory}/merged_data/genes/${species_name}/.
