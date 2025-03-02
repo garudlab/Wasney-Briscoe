@@ -132,6 +132,12 @@ python summarize_snp_changes.py
 - A directory called `evolutionary_changes` in your project folder (set to `~/` in the [`config.py`](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/postprocessing/postprocessing_scripts/config.py). Within that directory:
   - `snp_changes.txt.bz2`: a dataframe containing all SNP changes between samples (i.e., SNPs going from allele frequency $f \le 0.2$ in one sample to $f \ge 0.8$ in another sample).
   - `opportunities.txt.bz2`: a dataframe quantifying the the number of loci that have high coverage (i.e., coverage $D \ge 20$ reads) in both samples between all pairs of QP samples.
+ 
+To summarize snp changes and opportunities for only a subset of species, execute the code with a `--species_list` path:
+
+```
+python summarize_snp_changes.py --species_list ~/new_species_list.txt
+```
 
 ### Extract frequencies of evolutionary SNPs from all samples
 
