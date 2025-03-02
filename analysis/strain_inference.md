@@ -23,10 +23,11 @@ qsub ./create_StrainFinderInput_wrapper.sh
 To infer strain frequencies, execute the following code in the [`Wasney-Briscoe/scripts/strain_inference/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference) directory for the species of interest:
 
 ```
+conda activate python_env
 python strain_inference.py --species Bacteroides_vulgatus_57955
 ```
 
-Ensure that the version of python 3 (not 2.7) is loaded. If `--species` is not passed to the script, it will by default process Bacteroides_vulgatus_57955.
+Ensure that the environment with python 3 (python_env) is loaded. If `--species` is not passed to the script, it will by default process Bacteroides_vulgatus_57955.
 
 the `strain_inference.py` script should produce a file called `species_id_strain_frequency.csv` in the direcotry `strain_phasing/strain_clusters/species_id/`, where `species_id` is replaced by the actual ID of the species of interst. This file contains the frequncies of all inferred strains in each sample, as well as the upper and lower bounds of the bootstrapped 95% confidence interval around the strain frequncies in each sample.
 
