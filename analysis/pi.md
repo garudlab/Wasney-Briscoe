@@ -46,7 +46,7 @@ Here's what you'll need to run this pipeline, which are included in this reposit
 - a list of sample accessions. This pipeline is set up to use [`accessions.txt`](https://github.com/garudlab/Wasney-Briscoe/tree/main/metadata/accessions.txt)
 - a [`config.yaml`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi/StatsPipeline/configs/config.yaml) specifying the relevant paths.
 
-Run the following job, which will submit a job array with the number of jobs corresponding to the number of species-sample combinations:
+Run the following job, which will submit a job array from the [`qsubs/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi/StatsPipeline/qsubs/), which will submit a number of jobs corresponding to the number of species-sample combinations:
 
 ```
 sh ./qsub_single_sample_pi_EXECUTE.sh
