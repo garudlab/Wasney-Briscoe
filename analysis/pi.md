@@ -61,6 +61,7 @@ In addition, this script assumes the MIDAS database of reference genomes (`midas
 Step 3 outputs an individual file for each species-sample combination. To create a single dataframe containing pi estimates for all species and samples, run:
 
 ```
+conda activate python_env
 python ~/Wasney-Briscoe/scripts/pi/summarize_pi.py
 ```
 
