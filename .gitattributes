@@ -1,1 +1,4 @@
-example_data/merged_data/* filter=lfs diff=lfs merge=lfs -text
+example_data/merged_data/ filter=lfs diff=lfs merge=lfs -text
+example_data/merged_data/species/* filter=lfs diff=lfs merge=lfs -text
+example_data/merged_data/genes/Bacteroides_vulgatus_57955/* filter=lfs diff=lfs merge=lfs -text
+example_data/merged_data/snps/Bacteroides_vulgatus_57955/* filter=lfs diff=lfs merge=lfs -text
