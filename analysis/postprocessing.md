@@ -114,7 +114,7 @@ As with `post_processing_wrapper.sh`, make sure the the number of tasks (`#$ -t 
 If you wish to calculate intersample changes for only a single species, you can do so by submitting the following script from [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts): 
 
 ```
-python calculate_intersample_changes.py -species Bacteroides_vulgatus_57955
+python calculate_intersample_changes.py --species Bacteroides_vulgatus_57955
 ```
 where `Bacteroides_vulgatus_57955` is the species of interest.
 
