@@ -29,10 +29,32 @@ python core_gene_utils.py --species Bacteroides_vulgatus_57955
 Run `post_processing_wrapper.sh` with a species list comprising only `Bacteroides_vulgatus_57955`. Such a list has been included in [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data), such that the code can be run like so:
 
 ```
-qsub post_processing_wrapper.sh -species_list ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
+qsub post_processing_wrapper.sh --species_list ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
 ```
 
 Ensure that the number of tasks in the `post_processing_wrapper.sh` task array script reflects there being only a single species in the list (i.e., line 6 reads `#$ -t 1-1:1`)
+
+### Calculating intersample changes
+
+Run `calculate_intersample_changes.py` for Bacteroides_vulgatus_57955_list only like so:
+
+```
+python calculate_intersample_changes.py --species Bacteroides_vulgatus_57955
+```
+
+### Summarize SNP changes and opportunities in dataframe format
+
+You pass the `summarize_snp_changes.py` script the custom species list with only Bacteroides_vulgatus_57955 like so:
+
+```
+python summarize_snp_changes.py --species_list  ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
+```
+
+### Extract frequencies of evolutionary SNPs from all samples
+
+No change is necessary here, as the `extract_snv_freqs.py` will extract frequencies for all species included in the output of the last step.
+
+
 
 
 
