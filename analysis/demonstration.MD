@@ -55,6 +55,39 @@ python summarize_snp_changes.py --species_list  ~/Wasney-Briscoe/example_data/Ba
 No change is necessary here, as the `extract_snv_freqs.py` will extract frequencies for all species included in the output of the last step.
 
 
+## Step 3: calculating $\pi$
+
+Implement the following modifications to the $\pi$ pipeline to calculate nucleotide diversity for Bacteroides_vulgatus_57955 only. Note that the scripts provided to produce Figure 3 work best with many species. Nonetheless, the dataframe output at the end of this pipeline `SinglePi_SchloissnigPi_cov4.csv` is of the format that is used to generate figure 3, albeit with information for only a single species instead of many.
+
+### Downsampling
+
+To downsample the _B. vulgatus_ snp data by site, pass the job submission code the list to the Bacteroides_vulgatus_57955-only species list:
+
+```
+while IFS= read -r species;
+do
+  	qsub -cwd -V -N $species -e logs -o logs -l h_data=4G,time=12:00:00 -b y "./job_script_site_downsampling.sh $species" 
+done < ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
+```
+
+### Copying files from normal MIDAS output directory to the downsampled directory
+
+Similarly, you can copy downsampled files into a new folder by passing the Bacteroides_vulgatus_57955-only species list:
+
+```
+sh ./cp_files_for_pi.sh --species_list ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
+```
+
+Ensure that the number of tasks specified reflects the presence of only a single species (i.e., line 8 should read `#$ -t 1-1:1`)
+
+
+
+
+
+
+
+
+
 
 
 
