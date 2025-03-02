@@ -7,10 +7,59 @@
 #$ -l time=4:00:00
 #$ -t 1-85:1
 
-# Change directory
+###########################################################
+# Help                                                     #
+############################################################
+Help()
+{
+   # Display Help
+   echo "Syntax: [-s|--species_list / -h|--help]"
+   echo "options:"
+   echo "-s|--species_list               Path to the list of species to be processed."
+   echo
+   echo "-p|--project_directory          Path to directory holding MIDAS output directory (merged_data)."
+   echo
+   echo "-h|--help                       Display this help message and exit script."
+   echo
+}
 
+############################################################
+# Setup                                                    #
+############################################################
+
+while getopts ":h" option; do
+   case $option in
+      h) # display Help
+         Help
+         exit;;
+   esac
+done
+
+#Default arguments
+species_list=~/Wasney-Briscoe/scripts/postprocessing/species_snps.txt
 project_directory=~/
-species_file=~/Wasney-Briscoe/metadata/species_snps.txt
+
+#Arguments that are passed
+for arg in "$@"
+do
+    case $arg in
+        -s|--species_list)
+        species_list="$2"
+        shift 
+        shift 
+        ;;
+        -p|--project_directory)
+        project_directory="$2"
+        shift 
+        shift 
+        ;;
+    esac
+done
+
+
+############################################################
+# execute                                                  #
+############################################################
 
 # Species
 i=$((SGE_TASK_ID))
