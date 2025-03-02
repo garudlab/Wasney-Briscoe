@@ -32,4 +32,8 @@ Run `post_processing_wrapper.sh` with a species list comprising only `Bacteroide
 qsub post_processing_wrapper.sh -species_list ~/Wasney-Briscoe/example_data/Bacteroides_vulgatus_57955_list.txt
 ```
 
+Ensure that the number of tasks in the `post_processing_wrapper.sh` task array script reflects there being only a single species in the list (i.e., line 6 reads `#$ -t 1-1:1`)
+
+
+
 
