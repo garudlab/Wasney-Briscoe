@@ -14,7 +14,7 @@ Subsequent steps assume that the `merged_data/` directory can be found in your h
 
 ## Step 2: Post-processing pipeline
 
-[Post-processing scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing).
+[Post-processing scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing).  
 [Post-processing analysis guidelines](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md)
 
 The post-processing pipeline can be executed almost identically as described in [postprocessing.MD](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md), with the following changes:
@@ -60,8 +60,8 @@ No change is necessary here, as the `extract_snv_freqs.py` will extract frequenc
 
 ## Step 3: calculating $\pi$
 
-[$\pi$ scripts scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi).
-[$\pi$ analysis guidelines](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/pi.md)
+[pi scripts scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi).  
+[pi analysis guidelines](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/pi.md)
 
 Implement the following modifications to the $\pi$ pipeline to calculate nucleotide diversity for Bacteroides_vulgatus_57955 only. Note that the scripts provided to produce Figure 3 work best with many species. Nonetheless, the dataframe output at the end of this pipeline `SinglePi_SchloissnigPi_cov4.csv` is of the format that is used to generate figure 3, albeit with information for only a single species instead of many.
 
@@ -86,7 +86,7 @@ sh ./cp_files_for_pi.sh --species_list ~/Wasney-Briscoe/example_data/Bacteroides
 
 Ensure that the number of tasks specified reflects the presence of only a single species (i.e., line 8 should read `#$ -t 1-1:1`)
 
-### Calculating pi
+### Calculating $\pi$
 
 Instead of using the `qsub_single_sample_pi_EXECUTE.sh` in the [`qsubs/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/pi/StatsPipeline/qsubs/) directory, submit the version in the [`example_data`](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data) directory. From the [`example_data`](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data) directory, you will submit it the same way:
 
@@ -105,7 +105,7 @@ python ~/Wasney-Briscoe/scripts/pi/summarize_pi.py
 
 ## Step 4. Strain frequency inference
 
-[Strain inference scripts scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference).
+[Strain inference scripts scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/strain_inference).  
 [Strain inference analysis guidelines](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/strain_inference.md)
 
 The strain inference pipeline can be executed almost identically as described in [strain_inference.MD](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/strain_inference.md), with the following changes:
