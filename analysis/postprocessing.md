@@ -2,6 +2,8 @@
 
 During post-processing, merged MIDAS outputs are wrangled into data formats that can be used for downstream analyses (e.g., strain inference). The post-processing scripts are written in python 2.7. Here, we execute them in a python 2.7-based conda environment `python27_env`.
 
+Note that this step requires access to a MIDAS database of references genomes, which can be set up with during the installation of MIDAS. Make sure that the path to the MIDAS database is correctly specificed in `config.py` (in the `config.py` file included here, we specify the path as `~/midas_db_v1.2/`). 
+
 ## Set up
 
 Project paths and global parameters are defined in `config.py` file in the [`Wasney-Briscoe/scripts/postprocessing/postprocessing_scripts/`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/postprocessing/postprocessing_scripts) directory.
