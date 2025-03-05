@@ -10,7 +10,7 @@ This is the GitHub repository for Wasney and Briscoe et al., 2024, BioRxiv. This
 2. [Scripts](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts): scripts used in all pipelines/analyses. Instructions on how to execute the scripts can be found in Analysis.
 3. [Metadata](https://github.com/garudlab/Wasney-Briscoe/tree/main/metadata): metadata files necessary to run analysis and generate figures.
 4. [example_data](https://github.com/garudlab/Wasney-Briscoe/tree/main/example_data): example MIDAS output for _Bacteroides vulgatus_, which can be used to demonstrate pipelines included in this repository.
-5. [environments](https://github.com/garudlab/Wasney-Briscoe/tree/main/environments)
+5. [environments](https://github.com/garudlab/Wasney-Briscoe/tree/main/environments): this folder contains .yml files specifying two conda environments used throughout this pipeline
 
 ## How to get started
 
