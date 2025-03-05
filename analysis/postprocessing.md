@@ -13,7 +13,7 @@ This file is currently modifed to reflect the directory strucutre of this reposi
 ## Step 1: Calculate core genes, shared genes, and gene prevalences
 
 In this step, three different outputs of interest are produced:
-- `core_genes.txt.gz`: lists of core genes for all species detected in the dataset. Core genes are genes present in $\ge$ 90% of strains.
+- `core_genes.txt.gz` and `core_genes_stringent.txt.gz`: lists of core genes for all species detected in the dataset. Core genes are genes present in $\ge$ 90% of strains.
 - `shared_genes.txt.gz`: lists of genes that are likely shared across species boundaries for all species detected in the dataset. Shared genes are genes that have a copy number $\gt$ 3, as this provides evidence for cross-species gene sharing. Putatively shared genes are removed from downstream analysis.
 - `species_id_gene_freqs.txt.gz`: prevalences of each gene for all species detected in the dataset. A unique file is produced for each species.
 
@@ -34,6 +34,7 @@ In the [`Wasney-Briscoe/scripts/postprocessing/`](https://github.com/garudlab/Wa
 
 ```
 cp ~/Wasney-Briscoe-2024/scripts/postprocessing/core_genes_HMP.txt.gz ~/merged_data/core_genes/.
+cp ~/Wasney-Briscoe-2024/scripts/postprocessing/core_genes_stringent_HMP.txt.gz ~/merged_data/core_genes/.
 cp ~/Wasney-Briscoe-2024/scripts/postprocessing/shared_genes_HMP.txt.gz ~/merged_data/core_genes/.
 ```
 
