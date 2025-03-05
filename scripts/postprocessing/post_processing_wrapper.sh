@@ -121,13 +121,7 @@ echo ""
 
 python calculate_within_person_sfs.py ${species_name} --use_HMP
 
-#STEP 6: Calculate intersample changes 
-echo "Calculating intersample changes"
-echo ""
 
-python calculate_intersample_changes.py ${species_name}
-
-#Step 6: Summarize evolutionary changes in dataframe
 
 
 
