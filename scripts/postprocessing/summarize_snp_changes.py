@@ -20,6 +20,7 @@ from calculate_intersample_changes import *
 import parse_midas_data
 import diversity_utils
 import core_gene_utils
+import parse_patric
 
 import matplotlib.pyplot as plt
 import seaborn as sns
