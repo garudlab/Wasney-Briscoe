@@ -1,4 +1,4 @@
-# Uniform bacterial genetic diversity along the guts of mice inoculated with human stool
+# Uniform bacterial genetic diversity along the gut
 *Michael Wasney, Leah Briscoe, Richard Wolff, Hans Ghezzi, Carolina Tropini, Nandita Garud*
 
 ## Overview
