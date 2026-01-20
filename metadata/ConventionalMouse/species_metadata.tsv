@@ -1,0 +1,1095 @@
+genome	species_id	representative	genome_is_representative	species	taxonomy	ANI circumscription radius	Mean intra-species ANI	Min intra-species ANI	Mean intra-species AF	Min intra-species AF	No. clustered genomes
+MGBC000001	100001	MGBC000001	1	g__Schaedlerella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__						3
+MGBC000003	100003	MGBC000003	1	g__Schaedlerella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__						1
+MGBC000011	100011	MGBC000011	1	s__Bacteroides acidifaciens	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides acidifaciens						118
+MGBC000013	100013	MGBC000013	1	s__Lactobacillus intestinalis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus intestinalis						38
+MGBC000018	100018	MGBC000018	1	s__Proteus mirabilis	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Proteus;s__Proteus mirabilis						2
+MGBC000019	100019	MGBC000019	1	s__Klebsiella pneumoniae	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella pneumoniae						1
+MGBC000020	100020	MGBC000020	1	s__Citrobacter_A rodentium	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter_A;s__Citrobacter_A rodentium						1
+MGBC000029	100029	MGBC000029	1	s__Anaerostipes sp000508985	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Anaerostipes;s__Anaerostipes sp000508985						3
+MGBC000037	100037	MGBC000037	1	s__Escherichia coli	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia;s__Escherichia coli						11
+MGBC000041	100041	MGBC000041	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						11
+MGBC000042	100042	MGBC000042	1	g__Emergencia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Emergencia;s__						8
+MGBC000050	100050	MGBC000050	1	s__Alistipes timonensis	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes timonensis						1
+MGBC000078	100078	MGBC000078	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC000080	100080	MGBC000080	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						2
+MGBC000081	100081	MGBC000081	1	s__Staphylococcus nepalensis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus;s__Staphylococcus nepalensis						2
+MGBC000083	100083	MGBC000083	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC000089	100089	MGBC000089	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						3
+MGBC000100	100100	MGBC000100	1	g__Anaerotruncus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Anaerotruncus;s__						3
+MGBC000110	100110	MGBC000110	1	s__Anaerotruncus sp003612625	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Anaerotruncus;s__Anaerotruncus sp003612625						4
+MGBC000111	100111	MGBC000111	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						16
+MGBC000112	100112	MGBC000112	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						14
+MGBC000113	100113	MGBC000113	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						5
+MGBC000116	100116	MGBC000116	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						3
+MGBC000118	100118	MGBC000118	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						1
+MGBC000120	100120	MGBC000120	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						1
+MGBC000134	100134	MGBC000134	1	g__D16-34	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-34;s__						2
+MGBC000135	100135	MGBC000135	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						1
+MGBC000137	100137	MGBC000137	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						6
+MGBC000139	100139	MGBC000139	1	s__Staphylococcus warneri	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus;s__Staphylococcus warneri						2
+MGBC000141	100141	MGBC000141	1	g__Eubacterium_G	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_G;s__						39
+MGBC000146	100146	MGBC000146	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC000147	100147	MGBC000147	1	f__Erysipelotrichaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__;s__						3
+MGBC000151	100151	MGBC000151	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC000153	100153	MGBC000153	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC000158	100158	MGBC000158	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						2
+MGBC000161	100161	MGBC000161	1	g__Desulfovibrio	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Desulfovibrio;s__						10
+MGBC000170	100170	MGBC000170	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						20
+MGBC000171	100171	MGBC000171	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						18
+MGBC000172	100172	MGBC000172	1	s__Streptococcus oralis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus oralis						1
+MGBC000176	100176	MGBC000176	1	g__CAG-81	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-81;s__						1
+MGBC000178	100178	MGBC000178	1	f__Anaerovoracaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__;s__						1
+MGBC000183	100183	MGBC000183	1	s__Adlercreutzia sp004793465	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__Adlercreutzia sp004793465						7
+MGBC000190	100190	MGBC000190	1	s__NM07-P-09 sp004793665	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__NM07-P-09;s__NM07-P-09 sp004793665						50
+MGBC000199	100199	MGBC000199	1	s__Bacillus_AC sp001076885	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Bacillaceae_A;g__Bacillus_AC;s__Bacillus_AC sp001076885						2
+MGBC000200	100200	MGBC000200	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						2
+MGBC000203	100203	MGBC000203	1	s__Bacillus licheniformis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Bacillaceae;g__Bacillus;s__Bacillus licheniformis						1
+MGBC000210	100210	MGBC000210	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						3
+MGBC000217	100217	MGBC000217	1	s__Parvibacter caecicola	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Parvibacter;s__Parvibacter caecicola						6
+MGBC000218	100218	MGBC000218	1	s__Staphylococcus pasteuri_A	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus;s__Staphylococcus pasteuri_A						1
+MGBC000219	100219	MGBC000219	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						6
+MGBC000220	100220	MGBC000220	1	g__Parvibacter	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Parvibacter;s__						3
+MGBC000224	100224	MGBC000224	1	s__Staphylococcus epidermidis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus;s__Staphylococcus epidermidis						1
+MGBC000227	100227	MGBC000227	1	f__Anaerovoracaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__;s__						2
+MGBC000234	100234	MGBC000234	1	s__Granulicatella adiacens	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Aerococcaceae;g__Granulicatella;s__Granulicatella adiacens						1
+MGBC000243	100243	MGBC000243	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						1
+MGBC000251	100251	MGBC000251	1	s__Enterocloster aldenensis	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster aldenensis						1
+MGBC000269	100269	MGBC000269	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC000275	100275	MGBC000275	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						8
+MGBC000287	100287	MGBC000287	1	s__Cutibacterium acnes	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Propionibacteriales;f__Propionibacteriaceae;g__Cutibacterium;s__Cutibacterium acnes						2
+MGBC000289	100289	MGBC000289	1	s__Chlamydia muridarum	d__Bacteria;p__Verrucomicrobiota_A;c__Chlamydiia;o__Chlamydiales;f__Chlamydiaceae;g__Chlamydia;s__Chlamydia muridarum						1
+MGBC000316	100316	MGBC000316	1	s__ASF356 sp000364165	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__ASF356;s__ASF356 sp000364165						1
+MGBC000320	100320	MGBC000320	1	s__Schaedlerella sp000364245	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__Schaedlerella sp000364245						4
+MGBC000322	100322	MGBC000322	1	s__Helicobacter_A bilis	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_A;s__Helicobacter_A bilis						3
+MGBC000324	100324	MGBC000324	1	s__Bacteroides thetaiotaomicron	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides thetaiotaomicron						49
+MGBC000328	100328	MGBC000328	1	s__Phocaeicola vulgatus	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__Phocaeicola vulgatus						177
+MGBC000334	100334	MGBC000334	1	s__Adlercreutzia caecimuris	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__Adlercreutzia caecimuris						15
+MGBC000335	100335	MGBC000335	1	s__Paenibacillus_A barengoltzii	d__Bacteria;p__Firmicutes;c__Bacilli;o__Paenibacillales;f__Paenibacillaceae;g__Paenibacillus_A;s__Paenibacillus_A barengoltzii						1
+MGBC000338	100338	MGBC000338	1	s__Oscillibacter sp000403435	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__Oscillibacter sp000403435						2
+MGBC000343	100343	MGBC000343	1	s__14-2 sp000403845	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__14-2 sp000403845						12
+MGBC000345	100345	MGBC000345	1	s__Lawsonibacter sp000492175	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__Lawsonibacter sp000492175						1
+MGBC000346	100346	MGBC000346	1	s__Klebsiella_A oxytoca	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella_A;s__Klebsiella_A oxytoca						1
+MGBC000348	100348	MGBC000348	1	s__Faecalibaculum rodentium	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Faecalibaculum;s__Faecalibaculum rodentium						177
+MGBC000349	100349	MGBC000349	1	s__Flavonifractor plautii	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor;s__Flavonifractor plautii						1
+MGBC000355	100355	MGBC000355	1	s__Akkermansia muciniphila	d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiae;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia;s__Akkermansia muciniphila						127
+MGBC000357	100357	MGBC000357	1	s__Turicimonas muris	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Turicimonas;s__Turicimonas muris						58
+MGBC000359	100359	MGBC000359	1	s__Enterococcus faecalis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus;s__Enterococcus faecalis						8
+MGBC000370	100370	MGBC000370	1	g__Limosilactobacillus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus;s__						1
+MGBC000375	100375	MGBC000375	1	s__Acutalibacter muris	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__Acutalibacter muris						59
+MGBC000377	100377	MGBC000377	1	s__Muribaculum intestinale	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__Muribaculum intestinale						271
+MGBC000384	100384	MGBC000384	1	s__Limosilactobacillus reuteri	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus;s__Limosilactobacillus reuteri						199
+MGBC000387	100387	MGBC000387	1	s__Prevotella sp004792655	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp004792655						1
+MGBC000393	100393	MGBC000393	1	s__14-2 sp004793545	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__14-2 sp004793545						3
+MGBC000395	100395	MGBC000395	1	s__CAG-56 sp004793585	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-56;s__CAG-56 sp004793585						69
+MGBC000405	100405	MGBC000405	1	s__Cutibacterium humerusii	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Propionibacteriales;f__Propionibacteriaceae;g__Cutibacterium;s__Cutibacterium humerusii						1
+MGBC000413	100413	MGBC000413	1	s__Stenotrophomonas maltophilia_AO	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Xanthomonadales;f__Xanthomonadaceae;g__Stenotrophomonas;s__Stenotrophomonas maltophilia_AO						1
+MGBC000414	100414	MGBC000414	1	s__Microbacterium sp003293595	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Microbacteriaceae;g__Microbacterium;s__Microbacterium sp003293595						1
+MGBC000416	100416	MGBC000416	1	s__Clostridium sartagoforme_B	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium sartagoforme_B						1
+MGBC000421	100421	MGBC000421	1	s__Bacteroides faecichinchillae	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides faecichinchillae						1
+MGBC000422	100422	MGBC000422	1	s__Sphingomonas olei	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Sphingomonas;s__Sphingomonas olei						1
+MGBC000424	100424	MGBC000424	1	s__Klebsiella variicola	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Klebsiella;s__Klebsiella variicola						1
+MGBC000425	100425	MGBC000425	1	s__Escherichia flexneri	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia;s__Escherichia flexneri						22
+MGBC000428	100428	MGBC000428	1	s__Clostridium chromiireducens	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium chromiireducens						1
+MGBC000429	100429	MGBC000429	1	s__Adlercreutzia mucosicola	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__Adlercreutzia mucosicola						1
+MGBC000431	100431	MGBC000431	1	g__Streptococcus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__						2
+MGBC000436	100436	MGBC000436	1	s__Clostridium paraputrificum	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__Clostridium paraputrificum						1
+MGBC000441	100441	MGBC000441	1	s__UBA9502 sp003611875	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__UBA9502 sp003611875						36
+MGBC000444	100444	MGBC000444	1	s__1XD8-76 sp003611955	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76;s__1XD8-76 sp003611955						6
+MGBC000445	100445	MGBC000445	1	s__Bacillus_A thuringiensis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Bacillaceae_G;g__Bacillus_A;s__Bacillus_A thuringiensis						1
+MGBC000448	100448	MGBC000448	1	s__Lawsonibacter sp003612335	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__Lawsonibacter sp003612335						1
+MGBC000451	100451	MGBC000451	1	s__CAG-95 sp003612395	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__CAG-95 sp003612395						4
+MGBC000455	100455	MGBC000455	1	s__D16-63 sp003612475	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__D16-63 sp003612475						2
+MGBC000457	100457	MGBC000457	1	s__D16-34 sp003612515	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-34;s__D16-34 sp003612515						1
+MGBC000458	100458	MGBC000458	1	s__C-53 sp003612525	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__C-53;s__C-53 sp003612525						1
+MGBC000459	100459	MGBC000459	1	s__Acutalibacter sp003612555	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__Acutalibacter sp003612555						1
+MGBC000461	100461	MGBC000461	1	s__UBA7160 sp003612585	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7160;s__UBA7160 sp003612585						5
+MGBC000462	100462	MGBC000462	1	s__Virgibacillus sp003612345	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Amphibacillaceae;g__Virgibacillus;s__Virgibacillus sp003612345						1
+MGBC000465	100465	MGBC000465	1	s__Bacteroides ovatus	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides ovatus						5
+MGBC000477	100477	MGBC000477	1	s__Muricomes sp000509105	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Muricomes;s__Muricomes sp000509105						1
+MGBC000479	100479	MGBC000479	1	s__Alistipes onderdonkii	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes onderdonkii						1
+MGBC000480	100480	MGBC000480	1	g__Limosilactobacillus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus;s__						5
+MGBC000489	100489	MGBC000489	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						19
+MGBC000495	100495	MGBC000495	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						1
+MGBC000496	100496	MGBC000496	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						1
+MGBC000498	100498	MGBC000498	1	s__UBA9502 sp003669055	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__UBA9502 sp003669055						1
+MGBC000499	100499	MGBC000499	1	g__Senegalia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Tissierellales;f__SIT17;g__Senegalia;s__						1
+MGBC000500	100500	MGBC000500	1	s__Schaedlerella sp000403295	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__Schaedlerella sp000403295						5
+MGBC000503	100503	MGBC000503	1	f__Butyricicoccaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__;s__						7
+MGBC000515	100515	MGBC000515	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						1
+MGBC000518	100518	MGBC000518	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						1
+MGBC000522	100522	MGBC000522	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						1
+MGBC000523	100523	MGBC000523	1	s__Enterococcus_A xiangfangensis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus_A;s__Enterococcus_A xiangfangensis						1
+MGBC000524	100524	MGBC000524	1	s__Clostridioides difficile	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Clostridioides;s__Clostridioides difficile						1
+MGBC000527	100527	MGBC000527	1	f__Erysipelotrichaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__;s__						2
+MGBC000531	100531	MGBC000531	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						1
+MGBC000533	100533	MGBC000533	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						6
+MGBC000538	100538	MGBC000538	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						1
+MGBC000539	100539	MGBC000539	1	g__Bacillus_AK	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Bacillaceae_A;g__Bacillus_AK;s__						1
+MGBC000541	100541	MGBC000541	1	g__Emergencia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Emergencia;s__						1
+MGBC000542	100542	MGBC000542	1	g__Flavonifractor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor;s__						1
+MGBC000548	100548	MGBC000548	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						2
+MGBC000551	100551	MGBC000551	1	s__Enterococcus_C asini	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus_C;s__Enterococcus_C asini						1
+MGBC000555	100555	MGBC000555	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						2
+MGBC000557	100557	MGBC000557	1	s__Muricomes intestini	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Muricomes;s__Muricomes intestini						1
+MGBC000558	100558	MGBC000558	1	s__Cuneatibacter caecimuris	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Cuneatibacter;s__Cuneatibacter caecimuris						1
+MGBC000559	100559	MGBC000559	1	s__Dorea muris	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__Dorea muris						1
+MGBC000561	100561	MGBC000561	1	s__Longibaculum muris	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Longibaculum;s__Longibaculum muris						1
+MGBC000562	100562	MGBC000562	1	s__Paenibacillus amylolyticus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Paenibacillales;f__Paenibacillaceae;g__Paenibacillus;s__Paenibacillus amylolyticus						1
+MGBC000563	100563	MGBC000563	1	s__Frisingicoccus caecimuris	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Frisingicoccus;s__Frisingicoccus caecimuris						1
+MGBC000564	100564	MGBC000564	1	s__Blautia_A sp000433815	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp000433815						1
+MGBC000565	100565	MGBC000565	1	g__Actinomyces	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Actinomycetaceae;g__Actinomyces;s__						1
+MGBC000568	100568	MGBC000568	1	f__Garciellaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Eubacteriales;f__Garciellaceae;g__;s__						1
+MGBC000569	100569	MGBC000569	1	s__Enterocloster bolteae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster bolteae						1
+MGBC000573	100573	MGBC000573	1	s__Enterococcus_B hirae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus_B;s__Enterococcus_B hirae						2
+MGBC000574	100574	MGBC000574	1	s__Staphylococcus xylosus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus;s__Staphylococcus xylosus						8
+MGBC000577	100577	MGBC000577	1	s__Bacteroides xylanisolvens	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides xylanisolvens						1
+MGBC000578	100578	MGBC000578	1	s__Paraclostridium bifermentans	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Paraclostridium;s__Paraclostridium bifermentans						1
+MGBC000582	100582	MGBC000582	1	s__Rodentibacter heylii	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Pasteurellaceae;g__Rodentibacter;s__Rodentibacter heylii						2
+MGBC000585	100585	MGBC000585	1	s__Longicatena caecimuris	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Longicatena;s__Longicatena caecimuris						1
+MGBC000586	100586	MGBC000586	1	s__Clostridium_Q symbiosum	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Clostridium_Q;s__Clostridium_Q symbiosum						1
+MGBC000588	100588	MGBC000588	1	s__Longicatena innocuum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Longicatena;s__Longicatena innocuum						5
+MGBC000589	100589	MGBC000589	1	s__Clostridium_F tepidum	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium_F;s__Clostridium_F tepidum						1
+MGBC000596	100596	MGBC000596	1	s__Erysipelatoclostridium ramosum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Erysipelatoclostridium;s__Erysipelatoclostridium ramosum						1
+MGBC000597	100597	MGBC000597	1	s__Anaerosalibacter_A massiliensis	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Tissierellales;f__Sporanaerobacteraceae;g__Anaerosalibacter_A;s__Anaerosalibacter_A massiliensis						1
+MGBC000599	100599	MGBC000599	1	s__Oceanobacillus caeni	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Amphibacillaceae;g__Oceanobacillus;s__Oceanobacillus caeni						1
+MGBC000600	100600	MGBC000600	1	s__Acetatifactor muris	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor muris						1
+MGBC000601	100601	MGBC000601	1	s__Paeniclostridium sordellii	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Paeniclostridium;s__Paeniclostridium sordellii						1
+MGBC000602	100602	MGBC000602	1	s__Bacillus_A cereus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Bacillaceae_G;g__Bacillus_A;s__Bacillus_A cereus						1
+MGBC000603	100603	MGBC000603	1	g__Clostridium	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__						1
+MGBC000604	100604	MGBC000604	1	s__Clostridium_G cochlearium	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium_G;s__Clostridium_G cochlearium						1
+MGBC000606	100606	MGBC000606	1	s__Lactobacillus rodentium	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus rodentium						1
+MGBC000607	100607	MGBC000607	1	s__Intestinimonas butyriciproducens	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas;s__Intestinimonas butyriciproducens						1
+MGBC100019	200019	MGBC100019	1	g__Rikenella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Rikenella;s__						2
+MGBC100069	200069	MGBC100069	1	g__CAG-510	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-510;s__						2
+MGBC100080	200080	MGBC100080	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						1
+MGBC100084	200084	MGBC100084	1	g__1XD8-76	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76;s__						1
+MGBC100111	200111	MGBC100111	1	g__UBA11963	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UBA11963;s__						1
+MGBC100127	200127	MGBC100127	1	g__Eubacterium_R	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__						3
+MGBC100138	200138	MGBC100138	1	g__Parabacteroides	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__						19
+MGBC100158	200158	MGBC100158	1	g__Ruminococcus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus;s__						4
+MGBC100162	200162	MGBC100162	1	s__CAG-873 sp001689665	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp001689665						73
+MGBC100163	200163	MGBC100163	1	g__Tidjanibacter	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Tidjanibacter;s__						16
+MGBC100164	200164	MGBC100164	1	g__Butyrivibrio_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Butyrivibrio_A;s__						4
+MGBC100172	200172	MGBC100172	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						1
+MGBC100174	200174	MGBC100174	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						55
+MGBC100230	200230	MGBC100230	1	g__CAG-510	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-510;s__						2
+MGBC100255	200255	MGBC100255	1	s__UBA7050 sp003979345	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7050;s__UBA7050 sp003979345						24
+MGBC100264	200264	MGBC100264	1	s__UBA7173 sp900548705	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp900548705						3
+MGBC100288	200288	MGBC100288	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						3
+MGBC100310	200310	MGBC100310	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						5
+MGBC100320	200320	MGBC100320	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						1
+MGBC100342	200342	MGBC100342	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						1
+MGBC100369	200369	MGBC100369	1	g__D16-34	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-34;s__						2
+MGBC100415	200415	MGBC100415	1	g__Allobaculum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Allobaculum;s__						3
+MGBC100798	200798	MGBC100798	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						3
+MGBC100967	200967	MGBC100967	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						5
+MGBC101044	201044	MGBC101044	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						1
+MGBC101100	201100	MGBC101100	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						30
+MGBC101131	201131	MGBC101131	1	g__Eubacterium_R	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__						28
+MGBC101207	201207	MGBC101207	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						4
+MGBC101285	201285	MGBC101285	1	g__Mailhella	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella;s__						15
+MGBC101403	201403	MGBC101403	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						8
+MGBC101489	201489	MGBC101489	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						9
+MGBC101638	201638	MGBC101638	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						43
+MGBC101821	201821	MGBC101821	1	s__Kineothrix sp000403275	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__Kineothrix sp000403275						221
+MGBC101899	201899	MGBC101899	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						5
+MGBC101916	201916	MGBC101916	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						19
+MGBC101917	201917	MGBC101917	1	g__Marseille-P3106	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Marseille-P3106;s__						1
+MGBC101923	201923	MGBC101923	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						3
+MGBC101977	201977	MGBC101977	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						1
+MGBC101978	201978	MGBC101978	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						2
+MGBC101980	201980	MGBC101980	1	g__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__UBA3700;s__						2
+MGBC102041	202041	MGBC102041	1	g__CAG-115	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-115;s__						2
+MGBC102213	202213	MGBC102213	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						39
+MGBC102277	202277	MGBC102277	1	g__CAG-582	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__CAG-582;s__						2
+MGBC102441	202441	MGBC102441	1	s__Dubosiella newyorkensis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Dubosiella;s__Dubosiella newyorkensis						37
+MGBC102794	202794	MGBC102794	1	s__Paramuribaculum sp001689565	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__Paramuribaculum sp001689565						98
+MGBC102829	202829	MGBC102829	1	s__Blautia_A sp900551075	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp900551075						1
+MGBC102897	202897	MGBC102897	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						26
+MGBC102923	202923	MGBC102923	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						12
+MGBC102946	202946	MGBC102946	1	f__CAG-822	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__;s__						3
+MGBC102972	202972	MGBC102972	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						39
+MGBC103056	203056	MGBC103056	1	s__Dubosiella sp004793885	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Dubosiella;s__Dubosiella sp004793885						24
+MGBC103062	203062	MGBC103062	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						3
+MGBC103140	203140	MGBC103140	1	s__Blautia coccoides_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia coccoides_A						13
+MGBC103219	203219	MGBC103219	1	g__UBA2730	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__UBA2730;s__						4
+MGBC103251	203251	MGBC103251	1	g__UBA5026	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5026;s__						1
+MGBC103294	203294	MGBC103294	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						51
+MGBC103306	203306	MGBC103306	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						46
+MGBC103317	203317	MGBC103317	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						13
+MGBC103325	203325	MGBC103325	1	g__CAG-267	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAG-267;s__						24
+MGBC103329	203329	MGBC103329	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						48
+MGBC103338	203338	MGBC103338	1	s__CAG-873 sp900550395	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp900550395						15
+MGBC103387	203387	MGBC103387	1	g__51-20	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__51-20;s__						15
+MGBC103398	203398	MGBC103398	1	s__Pseudomonas_E fluorescens_BA	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Pseudomonadales;f__Pseudomonadaceae;g__Pseudomonas_E;s__Pseudomonas_E fluorescens_BA						1
+MGBC103445	203445	MGBC103445	1	g__Helicobacter_C	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_C;s__						22
+MGBC103454	203454	MGBC103454	1	g__UBA1436	d__Bacteria;p__Elusimicrobiota;c__Elusimicrobia;o__Elusimicrobiales;f__Elusimicrobiaceae;g__UBA1436;s__						12
+MGBC103458	203458	MGBC103458	1	s__CAG-495 sp900538765	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAG-495;s__CAG-495 sp900538765						4
+MGBC103503	203503	MGBC103503	1	s__Enterococcus_D gallinarum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus_D;s__Enterococcus_D gallinarum						6
+MGBC103508	203508	MGBC103508	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						75
+MGBC103592	203592	MGBC103592	1	s__Parabacteroides merdae	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides merdae						3
+MGBC103678	203678	MGBC103678	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						30
+MGBC103686	203686	MGBC103686	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						60
+MGBC103718	203718	MGBC103718	1	g__UMGS1071	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1071;s__						19
+MGBC103721	203721	MGBC103721	1	g__Ruminococcus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus;s__						1
+MGBC103936	203936	MGBC103936	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						6
+MGBC104027	204027	MGBC104027	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						9
+MGBC104031	204031	MGBC104031	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						26
+MGBC104191	204191	MGBC104191	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						21
+MGBC104195	204195	MGBC104195	1	g__CAG-303	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-303;s__						51
+MGBC104239	204239	MGBC104239	1	s__Parabacteroides distasonis_A	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides distasonis_A						107
+MGBC104261	204261	MGBC104261	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						30
+MGBC104323	204323	MGBC104323	1	g__UMGS268	d__Bacteria;p__Firmicutes;c__Bacilli;o__Acholeplasmatales;f__Anaeroplasmataceae;g__UMGS268;s__						4
+MGBC104324	204324	MGBC104324	1	g__Prevotella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__						4
+MGBC104355	204355	MGBC104355	1	g__CAG-495	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAG-495;s__						28
+MGBC104380	204380	MGBC104380	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						10
+MGBC104416	204416	MGBC104416	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						84
+MGBC104426	204426	MGBC104426	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						27
+MGBC104636	204636	MGBC104636	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						1
+MGBC104650	204650	MGBC104650	1	s__Muribaculum sp002473395	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__Muribaculum sp002473395						30
+MGBC104683	204683	MGBC104683	1	s__Helicobacter_C magdeburgensis	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_C;s__Helicobacter_C magdeburgensis						1
+MGBC104699	204699	MGBC104699	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						19
+MGBC104717	204717	MGBC104717	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC104726	204726	MGBC104726	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						85
+MGBC104730	204730	MGBC104730	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						40
+MGBC104799	204799	MGBC104799	1	g__RC9	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__UBA932;g__RC9;s__						92
+MGBC104814	204814	MGBC104814	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						1
+MGBC104819	204819	MGBC104819	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						18
+MGBC104832	204832	MGBC104832	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						1
+MGBC104855	204855	MGBC104855	1	s__Helicobacter_D ganmani	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_D;s__Helicobacter_D ganmani						50
+MGBC104891	204891	MGBC104891	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						1
+MGBC104908	204908	MGBC104908	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						28
+MGBC104938	204938	MGBC104938	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						5
+MGBC104949	204949	MGBC104949	1	g__Roseburia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__						14
+MGBC104963	204963	MGBC104963	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						11
+MGBC104969	204969	MGBC104969	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						36
+MGBC104987	204987	MGBC104987	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						2
+MGBC105003	205003	MGBC105003	1	s__Helicobacter_C hepaticus	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_C;s__Helicobacter_C hepaticus						17
+MGBC105042	205042	MGBC105042	1	g__CAG-475	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-917;g__CAG-475;s__						10
+MGBC105045	205045	MGBC105045	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						59
+MGBC105053	205053	MGBC105053	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						33
+MGBC105056	205056	MGBC105056	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						1
+MGBC105120	205120	MGBC105120	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						5
+MGBC105122	205122	MGBC105122	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						3
+MGBC105132	205132	MGBC105132	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						15
+MGBC105142	205142	MGBC105142	1	s__Dorea sp000403455	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__Dorea sp000403455						12
+MGBC105161	205161	MGBC105161	1	s__Clostridium_P perfringens	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium_P;s__Clostridium_P perfringens						2
+MGBC105165	205165	MGBC105165	1	s__Parabacteroides goldsteinii	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides goldsteinii						36
+MGBC105174	205174	MGBC105174	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						128
+MGBC105190	205190	MGBC105190	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						1
+MGBC105224	205224	MGBC105224	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						29
+MGBC105242	205242	MGBC105242	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						4
+MGBC105254	205254	MGBC105254	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC105264	205264	MGBC105264	1	g__Rikenella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Rikenella;s__						10
+MGBC105270	205270	MGBC105270	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						1
+MGBC105279	205279	MGBC105279	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC105282	205282	MGBC105282	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						1
+MGBC105284	205284	MGBC105284	1	g__CAG-475	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-917;g__CAG-475;s__						1
+MGBC105311	205311	MGBC105311	1	s__Duncaniella sp002492665	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella sp002492665						365
+MGBC105340	205340	MGBC105340	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						2
+MGBC105346	205346	MGBC105346	1	f__Ruminococcaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__;s__						1
+MGBC105353	205353	MGBC105353	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						163
+MGBC105355	205355	MGBC105355	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						2
+MGBC105391	205391	MGBC105391	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						2
+MGBC105404	205404	MGBC105404	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						5
+MGBC105408	205408	MGBC105408	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						1
+MGBC105409	205409	MGBC105409	1	s__Mucispirillum schaedleri	d__Bacteria;p__Deferribacterota;c__Deferribacteres;o__Deferribacterales;f__Mucispirillaceae;g__Mucispirillum;s__Mucispirillum schaedleri						118
+MGBC105438	205438	MGBC105438	1	s__Helicobacter_D rodentium	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_D;s__Helicobacter_D rodentium						19
+MGBC105482	205482	MGBC105482	1	s__Savagella sp000270205	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Savagellaceae;g__Savagella;s__Savagella sp000270205						4
+MGBC105483	205483	MGBC105483	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						9
+MGBC105490	205490	MGBC105490	1	g__Odoribacter	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__						211
+MGBC105519	205519	MGBC105519	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						9
+MGBC105541	205541	MGBC105541	1	s__UBA3282 sp003611805	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__UBA3282 sp003611805						171
+MGBC105563	205563	MGBC105563	1	f__Atopobiaceae	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__;s__						1
+MGBC105567	205567	MGBC105567	1	s__Ligilactobacillus murinus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus;s__Ligilactobacillus murinus						403
+MGBC105593	205593	MGBC105593	1	g__Rikenella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Rikenella;s__						11
+MGBC105925	205925	MGBC105925	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						5
+MGBC106096	206096	MGBC106096	1	s__UBA7173 sp001689485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp001689485						454
+MGBC106400	206400	MGBC106400	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						14
+MGBC106688	206688	MGBC106688	1	s__COE1 sp000403335	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__COE1 sp000403335						117
+MGBC106726	206726	MGBC106726	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						30
+MGBC106841	206841	MGBC106841	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						1
+MGBC106873	206873	MGBC106873	1	g__Eubacterium_G	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_G;s__						5
+MGBC106896	206896	MGBC106896	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						49
+MGBC106904	206904	MGBC106904	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						14
+MGBC106958	206958	MGBC106958	1	s__UBA11940 sp003979335	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__UBA11940 sp003979335						40
+MGBC107002	207002	MGBC107002	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						26
+MGBC107029	207029	MGBC107029	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						7
+MGBC107218	207218	MGBC107218	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						44
+MGBC107221	207221	MGBC107221	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						1
+MGBC107251	207251	MGBC107251	1	g__CAG-41	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Monoglobales_A;f__UBA1381;g__CAG-41;s__						1
+MGBC107413	207413	MGBC107413	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						21
+MGBC107450	207450	MGBC107450	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						6
+MGBC107459	207459	MGBC107459	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						15
+MGBC107550	207550	MGBC107550	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						77
+MGBC107581	207581	MGBC107581	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						7
+MGBC107693	207693	MGBC107693	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						40
+MGBC107741	207741	MGBC107741	1	g__UMGS268	d__Bacteria;p__Firmicutes;c__Bacilli;o__Acholeplasmatales;f__Anaeroplasmataceae;g__UMGS268;s__						125
+MGBC107888	207888	MGBC107888	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						9
+MGBC107897	207897	MGBC107897	1	s__Staphylococcus_A sciuri	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus_A;s__Staphylococcus_A sciuri						1
+MGBC107915	207915	MGBC107915	1	s__Erysipelatoclostridium cocleatum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__Erysipelatoclostridium;s__Erysipelatoclostridium cocleatum						32
+MGBC107932	207932	MGBC107932	1	g__Mailhella	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella;s__						1
+MGBC107952	207952	MGBC107952	1	g__UMGS1648	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UMGS1648;s__						1
+MGBC107953	207953	MGBC107953	1	s__Leuconostoc citreum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Leuconostoc;s__Leuconostoc citreum						8
+MGBC107955	207955	MGBC107955	1	s__Weissella confusa	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Weissella;s__Weissella confusa						3
+MGBC108016	208016	MGBC108016	1	g__1XD8-76	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76;s__						74
+MGBC108027	208027	MGBC108027	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						1
+MGBC108044	208044	MGBC108044	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						11
+MGBC108064	208064	MGBC108064	1	s__Parasutterella sp900552195	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Parasutterella;s__Parasutterella sp900552195						8
+MGBC108110	208110	MGBC108110	1	s__Phocaeicola sp002493165	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__Phocaeicola sp002493165						43
+MGBC108134	208134	MGBC108134	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						188
+MGBC108169	208169	MGBC108169	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						63
+MGBC108232	208232	MGBC108232	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						74
+MGBC108286	208286	MGBC108286	1	s__UBA7173 sp001915385	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp001915385						32
+MGBC108415	208415	MGBC108415	1	s__CAG-485 sp002361155	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp002361155						87
+MGBC108457	208457	MGBC108457	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						3
+MGBC108519	208519	MGBC108519	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						47
+MGBC108656	208656	MGBC108656	1	g__CAG-603	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-603;s__						4
+MGBC108684	208684	MGBC108684	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						10
+MGBC108697	208697	MGBC108697	1	s__COE1 sp000403215	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__COE1 sp000403215						137
+MGBC108720	208720	MGBC108720	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						10
+MGBC108722	208722	MGBC108722	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						5
+MGBC108766	208766	MGBC108766	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						25
+MGBC108787	208787	MGBC108787	1	g__UMGS1217	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UMGS1217;s__						5
+MGBC108822	208822	MGBC108822	1	s__Phocaeicola dorei	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__Phocaeicola dorei						15
+MGBC108887	208887	MGBC108887	1	g__Ruminiclostridium_E	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E;s__						1
+MGBC108895	208895	MGBC108895	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						1
+MGBC108897	208897	MGBC108897	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						1
+MGBC108899	208899	MGBC108899	1	s__CAG-510 sp003979355	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-510;s__CAG-510 sp003979355						26
+MGBC108918	208918	MGBC108918	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						7
+MGBC108922	208922	MGBC108922	1	g__UBA7177	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA7177;s__						4
+MGBC108936	208936	MGBC108936	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						44
+MGBC109100	209100	MGBC109100	1	g__UBA3818	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA3818;s__						1
+MGBC109106	209106	MGBC109106	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						7
+MGBC109121	209121	MGBC109121	1	g__Anaerotignum	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__Anaerotignum;s__						2
+MGBC109474	209474	MGBC109474	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						21
+MGBC109634	209634	MGBC109634	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						1
+MGBC109699	209699	MGBC109699	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						46
+MGBC109742	209742	MGBC109742	1	s__Muribaculum sp002492595	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__Muribaculum sp002492595						498
+MGBC109838	209838	MGBC109838	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						237
+MGBC109852	209852	MGBC109852	1	s__CAG-485 sp002493045	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp002493045						180
+MGBC109898	209898	MGBC109898	1	s__CAG-485 sp003979075	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp003979075						67
+MGBC109914	209914	MGBC109914	1	g__AM07-15	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__AM07-15;s__						7
+MGBC109982	209982	MGBC109982	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						14
+MGBC110001	210001	MGBC110001	1	g__CAG-45	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-45;s__						9
+MGBC110046	210046	MGBC110046	1	s__Limosilactobacillus reuteri_D	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus;s__Limosilactobacillus reuteri_D						49
+MGBC110096	210096	MGBC110096	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						2
+MGBC110107	210107	MGBC110107	1	s__Akkermansia muciniphila_A	d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiae;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia;s__Akkermansia muciniphila_A						59
+MGBC110134	210134	MGBC110134	1	s__CAG-873 sp002493945	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp002493945						2
+MGBC110188	210188	MGBC110188	1	s__Duncaniella sp002494015	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella sp002494015						7
+MGBC110191	210191	MGBC110191	1	s__Jeotgalicoccus nanhaiensis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Salinicoccaceae;g__Jeotgalicoccus;s__Jeotgalicoccus nanhaiensis						1
+MGBC110198	210198	MGBC110198	1	g__Muribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__						4
+MGBC110213	210213	MGBC110213	1	s__Helicobacter_C typhlonius	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_C;s__Helicobacter_C typhlonius						74
+MGBC110218	210218	MGBC110218	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						1
+MGBC110346	210346	MGBC110346	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC110388	210388	MGBC110388	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						3
+MGBC110401	210401	MGBC110401	1	g__Brachyspira	d__Bacteria;p__Spirochaetota;c__Brachyspirae;o__Brachyspirales;f__Brachyspiraceae;g__Brachyspira;s__						5
+MGBC110404	210404	MGBC110404	1	s__Mailhella sp003512875	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella;s__Mailhella sp003512875						157
+MGBC110447	210447	MGBC110447	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						4
+MGBC110487	210487	MGBC110487	1	f__Ruminococcaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__;s__						4
+MGBC110513	210513	MGBC110513	1	f__P3	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__P3;g__;s__						3
+MGBC110551	210551	MGBC110551	1	g__Mailhella	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Mailhella;s__						15
+MGBC110562	210562	MGBC110562	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						8
+MGBC110565	210565	MGBC110565	1	g__Odoribacter	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__						35
+MGBC110621	210621	MGBC110621	1	g__NHYN01	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__NHYN01;s__						2
+MGBC110633	210633	MGBC110633	1	f__Mycoplasmoidaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Mycoplasmatales;f__Mycoplasmoidaceae;g__;s__						7
+MGBC110670	210670	MGBC110670	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						2
+MGBC110736	210736	MGBC110736	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						1
+MGBC110745	210745	MGBC110745	1	s__Alistipes sp003979135	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes sp003979135						260
+MGBC110790	210790	MGBC110790	1	s__Paramuribaculum intestinale	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__Paramuribaculum intestinale						226
+MGBC110822	210822	MGBC110822	1	f__Selenomonadaceae	d__Bacteria;p__Firmicutes_C;c__Negativicutes;o__Selenomonadales;f__Selenomonadaceae;g__;s__						2
+MGBC110834	210834	MGBC110834	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						1
+MGBC110941	210941	MGBC110941	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						7
+MGBC111235	211235	MGBC111235	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						6
+MGBC111253	211253	MGBC111253	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						56
+MGBC111351	211351	MGBC111351	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						166
+MGBC111394	211394	MGBC111394	1	s__Ruminococcus_E sp002493635	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Ruminococcus_E;s__Ruminococcus_E sp002493635						7
+MGBC111445	211445	MGBC111445	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						1
+MGBC111446	211446	MGBC111446	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC111450	211450	MGBC111450	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						1
+MGBC111451	211451	MGBC111451	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						4
+MGBC111476	211476	MGBC111476	1	g__Bacteroides	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__						2
+MGBC111479	211479	MGBC111479	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						8
+MGBC111495	211495	MGBC111495	1	s__Ligilactobacillus agilis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus;s__Ligilactobacillus agilis						1
+MGBC111501	211501	MGBC111501	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						38
+MGBC111586	211586	MGBC111586	1	s__TF01-11 sp003611745	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__TF01-11 sp003611745						15
+MGBC111601	211601	MGBC111601	1	g__UBA5026	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5026;s__						4
+MGBC111722	211722	MGBC111722	1	g__CAG-510	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-510;s__						5
+MGBC111853	211853	MGBC111853	1	s__CAG-485 sp002361215	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp002361215						48
+MGBC111861	211861	MGBC111861	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						3
+MGBC111863	211863	MGBC111863	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						329
+MGBC111873	211873	MGBC111873	1	g__Evtepia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Evtepia;s__						2
+MGBC111877	211877	MGBC111877	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						44
+MGBC112108	212108	MGBC112108	1	g__UBA7177	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA7177;s__						2
+MGBC112435	212435	MGBC112435	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						1
+MGBC112607	212607	MGBC112607	1	s__Duncaniella muris	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella muris						187
+MGBC112619	212619	MGBC112619	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						2
+MGBC112850	212850	MGBC112850	1	s__Muribaculum sp003150235	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__Muribaculum sp003150235						13
+MGBC112867	212867	MGBC112867	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						124
+MGBC113161	213161	MGBC113161	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						3
+MGBC113184	213184	MGBC113184	1	s__CAG-873 sp002490635	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp002490635						192
+MGBC113195	213195	MGBC113195	1	g__Prevotella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__						17
+MGBC113208	213208	MGBC113208	1	s__CAG-873 sp001689415	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp001689415						16
+MGBC113244	213244	MGBC113244	1	g__AF33-28	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__AF33-28;s__						1
+MGBC113262	213262	MGBC113262	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						2
+MGBC113289	213289	MGBC113289	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						1
+MGBC113320	213320	MGBC113320	1	g__Muribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__						1
+MGBC113373	213373	MGBC113373	1	g__CAG-115	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-115;s__						3
+MGBC113403	213403	MGBC113403	1	g__Muribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__						13
+MGBC113460	213460	MGBC113460	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						21
+MGBC113473	213473	MGBC113473	1	s__Escherichia sp000208585	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia;s__Escherichia sp000208585						2
+MGBC113509	213509	MGBC113509	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC113583	213583	MGBC113583	1	s__Anaerotruncus sp000403395	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Anaerotruncus;s__Anaerotruncus sp000403395						53
+MGBC113602	213602	MGBC113602	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						3
+MGBC113609	213609	MGBC113609	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						2
+MGBC113610	213610	MGBC113610	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						17
+MGBC113616	213616	MGBC113616	1	f__Ruminococcaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__;s__						5
+MGBC113645	213645	MGBC113645	1	f__Erysipelatoclostridiaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__;s__						3
+MGBC113668	213668	MGBC113668	1	g__Allobaculum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Allobaculum;s__						4
+MGBC113686	213686	MGBC113686	1	f__UBA1381	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Monoglobales_A;f__UBA1381;g__;s__						1
+MGBC113809	213809	MGBC113809	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						2
+MGBC113841	213841	MGBC113841	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						2
+MGBC113844	213844	MGBC113844	1	s__Alistipes sp002358415	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes sp002358415						53
+MGBC113942	213942	MGBC113942	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						51
+MGBC113951	213951	MGBC113951	1	g__Roseburia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__						2
+MGBC113998	213998	MGBC113998	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						15
+MGBC113999	213999	MGBC113999	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						90
+MGBC114079	214079	MGBC114079	1	f__CAG-274	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__CAG-274;g__;s__						4
+MGBC114095	214095	MGBC114095	1	g__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__UBA3700;s__						63
+MGBC114107	214107	MGBC114107	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						10
+MGBC114113	214113	MGBC114113	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC114200	214200	MGBC114200	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						37
+MGBC114255	214255	MGBC114255	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						90
+MGBC114289	214289	MGBC114289	1	g__UMGS995	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__UMGS995;s__						1
+MGBC114398	214398	MGBC114398	1	g__UBA11517	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA1242;g__UBA11517;s__						6
+MGBC114452	214452	MGBC114452	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						127
+MGBC114492	214492	MGBC114492	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						4
+MGBC114583	214583	MGBC114583	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC114603	214603	MGBC114603	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						45
+MGBC114681	214681	MGBC114681	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						46
+MGBC114818	214818	MGBC114818	1	s__M3 sp001689445	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__M3;s__M3 sp001689445						2
+MGBC114844	214844	MGBC114844	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						4
+MGBC114845	214845	MGBC114845	1	s__1XD42-69 sp003612565	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__1XD42-69 sp003612565						73
+MGBC114912	214912	MGBC114912	1	s__Dorea sp000403475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__Dorea sp000403475						5
+MGBC114913	214913	MGBC114913	1	s__14-2 sp000403255	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__14-2 sp000403255						11
+MGBC114924	214924	MGBC114924	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						1
+MGBC114937	214937	MGBC114937	1	s__UBA710 sp002298905	d__Bacteria;p__Firmicutes;c__Bacilli;o__Mycoplasmatales;f__Metamycoplasmataceae;g__UBA710;s__UBA710 sp002298905						21
+MGBC114950	214950	MGBC114950	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						23
+MGBC115029	215029	MGBC115029	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						23
+MGBC115043	215043	MGBC115043	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						4
+MGBC115109	215109	MGBC115109	1	s__Akkermansia sp001580195	d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiae;o__Verrucomicrobiales;f__Akkermansiaceae;g__Akkermansia;s__Akkermansia sp001580195						1
+MGBC115181	215181	MGBC115181	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						9
+MGBC115182	215182	MGBC115182	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						2
+MGBC115325	215325	MGBC115325	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						2
+MGBC115383	215383	MGBC115383	1	s__Enterobacter himalayensis	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Enterobacter;s__Enterobacter himalayensis						1
+MGBC115396	215396	MGBC115396	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						19
+MGBC115827	215827	MGBC115827	1	s__Parabacteroides distasonis	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides distasonis						53
+MGBC116389	216389	MGBC116389	1	s__Enterococcus_B faecium	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Enterococcaceae;g__Enterococcus_B;s__Enterococcus_B faecium						1
+MGBC116391	216391	MGBC116391	1	s__Lactiplantibacillus plantarum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactiplantibacillus;s__Lactiplantibacillus plantarum						2
+MGBC116392	216392	MGBC116392	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						3
+MGBC116396	216396	MGBC116396	1	s__Lactococcus lactis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus;s__Lactococcus lactis						19
+MGBC116409	216409	MGBC116409	1	s__Bacteroides uniformis	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides uniformis						50
+MGBC116419	216419	MGBC116419	1	g__UBA3818	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA3818;s__						1
+MGBC116426	216426	MGBC116426	1	f__Monoglobaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Monoglobales;f__Monoglobaceae;g__;s__						1
+MGBC116427	216427	MGBC116427	1	s__Lactococcus garvieae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus;s__Lactococcus garvieae						2
+MGBC116430	216430	MGBC116430	1	s__Pediococcus pentosaceus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Pediococcus;s__Pediococcus pentosaceus						2
+MGBC116435	216435	MGBC116435	1	s__Leuconostoc pseudomesenteroides	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Leuconostoc;s__Leuconostoc pseudomesenteroides						2
+MGBC116453	216453	MGBC116453	1	s__Alistipes finegoldii	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes finegoldii						8
+MGBC116460	216460	MGBC116460	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						6
+MGBC116472	216472	MGBC116472	1	s__Alistipes sp002362235	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes sp002362235						178
+MGBC116657	216657	MGBC116657	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						4
+MGBC116682	216682	MGBC116682	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						4
+MGBC116689	216689	MGBC116689	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						1
+MGBC116724	216724	MGBC116724	1	g__UMGS1872	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UMGS1872;s__						15
+MGBC116812	216812	MGBC116812	1	s__Bifidobacterium animalis	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Bifidobacteriaceae;g__Bifidobacterium;s__Bifidobacterium animalis						3
+MGBC116833	216833	MGBC116833	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						14
+MGBC116935	216935	MGBC116935	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC116940	216940	MGBC116940	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						3
+MGBC116941	216941	MGBC116941	1	o__Christensenellales	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__;g__;s__						1
+MGBC116946	216946	MGBC116946	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						3
+MGBC116954	216954	MGBC116954	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						3
+MGBC116964	216964	MGBC116964	1	g__Phocaeicola	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__						4
+MGBC116970	216970	MGBC116970	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC116972	216972	MGBC116972	1	s__CAG-180 sp900540295	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-180;s__CAG-180 sp900540295						32
+MGBC117087	217087	MGBC117087	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						17
+MGBC117094	217094	MGBC117094	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						18
+MGBC117240	217240	MGBC117240	1	s__Turicibacter sp002311155	d__Bacteria;p__Firmicutes;c__Bacilli;o__Haloplasmatales;f__Turicibacteraceae;g__Turicibacter;s__Turicibacter sp002311155						64
+MGBC117253	217253	MGBC117253	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						29
+MGBC117295	217295	MGBC117295	1	s__UBA3263 sp001689615	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA3263;s__UBA3263 sp001689615						108
+MGBC117378	217378	MGBC117378	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						52
+MGBC117419	217419	MGBC117419	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						6
+MGBC117436	217436	MGBC117436	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						1
+MGBC117467	217467	MGBC117467	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						4
+MGBC117495	217495	MGBC117495	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						11
+MGBC117562	217562	MGBC117562	1	f__CAG-611	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__;s__						1
+MGBC117610	217610	MGBC117610	1	g__Evtepia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Evtepia;s__						2
+MGBC117628	217628	MGBC117628	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						2
+MGBC117665	217665	MGBC117665	1	g__Ruminococcus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus;s__						2
+MGBC117744	217744	MGBC117744	1	g__Flavonifractor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Flavonifractor;s__						1
+MGBC117829	217829	MGBC117829	1	g__Ruminococcus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus;s__						1
+MGBC117992	217992	MGBC117992	1	g__CAG-267	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAG-267;s__						1
+MGBC118027	218027	MGBC118027	1	g__CAG-81	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-81;s__						6
+MGBC118028	218028	MGBC118028	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						2
+MGBC118047	218047	MGBC118047	1	g__Eubacterium_R	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__						2
+MGBC118066	218066	MGBC118066	1	g__UBA5578	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5578;s__						3
+MGBC118072	218072	MGBC118072	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						37
+MGBC118087	218087	MGBC118087	1	g__CAG-196	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__CAG-196;s__						1
+MGBC118190	218190	MGBC118190	1	s__CAG-485 sp002491945	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp002491945						60
+MGBC118394	218394	MGBC118394	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						8
+MGBC118395	218395	MGBC118395	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						32
+MGBC118412	218412	MGBC118412	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC118434	218434	MGBC118434	1	s__COE1 sp002490665	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__COE1 sp002490665						108
+MGBC118768	218768	MGBC118768	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						120
+MGBC118889	218889	MGBC118889	1	g__CAG-594	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-433;g__CAG-594;s__						1
+MGBC118957	218957	MGBC118957	1	g__CAG-495	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAG-495;s__						20
+MGBC119012	219012	MGBC119012	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						12
+MGBC119074	219074	MGBC119074	1	f__Anaerovoracaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__;s__						1
+MGBC119075	219075	MGBC119075	1	s__Alistipes_A indistinctus	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A;s__Alistipes_A indistinctus						1
+MGBC119114	219114	MGBC119114	1	g__Alistipes_A	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes_A;s__						4
+MGBC119115	219115	MGBC119115	1	g__Parabacteroides	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__						38
+MGBC119269	219269	MGBC119269	1	f__CAG-1000	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__;s__						2
+MGBC119292	219292	MGBC119292	1	g__CAG-303	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-303;s__						19
+MGBC119341	219341	MGBC119341	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						2
+MGBC119345	219345	MGBC119345	1	s__UBA7173 sp900555165	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp900555165						11
+MGBC119608	219608	MGBC119608	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						3
+MGBC119653	219653	MGBC119653	1	g__Allobaculum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Allobaculum;s__						4
+MGBC119725	219725	MGBC119725	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC119734	219734	MGBC119734	1	g__UMGS1872	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UMGS1872;s__						1
+MGBC119765	219765	MGBC119765	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						35
+MGBC119771	219771	MGBC119771	1	g__CAG-594	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-433;g__CAG-594;s__						1
+MGBC119817	219817	MGBC119817	1	f__CAG-611	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__;s__						1
+MGBC119835	219835	MGBC119835	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						1
+MGBC119866	219866	MGBC119866	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						2
+MGBC119923	219923	MGBC119923	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						22
+MGBC119928	219928	MGBC119928	1	g__UBA7057	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__UBA7057;s__						1
+MGBC119940	219940	MGBC119940	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						11
+MGBC120045	220045	MGBC120045	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC120144	220144	MGBC120144	1	s__COE1 sp003513705	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__COE1 sp003513705						165
+MGBC120187	220187	MGBC120187	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						1
+MGBC120236	220236	MGBC120236	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						2
+MGBC120247	220247	MGBC120247	1	g__Eubacterium_R	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__						66
+MGBC120314	220314	MGBC120314	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						3
+MGBC120343	220343	MGBC120343	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						1
+MGBC120354	220354	MGBC120354	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						9
+MGBC120363	220363	MGBC120363	1	g__Ruminococcus_C	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus_C;s__						3
+MGBC120460	220460	MGBC120460	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						121
+MGBC120535	220535	MGBC120535	1	s__Duncaniella sp001689575	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella sp001689575						79
+MGBC120617	220617	MGBC120617	1	s__Ruminococcus sp002362135	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus;s__Ruminococcus sp002362135						21
+MGBC120805	220805	MGBC120805	1	g__ASF356	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__ASF356;s__						3
+MGBC120887	220887	MGBC120887	1	g__UMGS1815	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__UMGS1815;s__						5
+MGBC120897	220897	MGBC120897	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						4
+MGBC120929	220929	MGBC120929	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						20
+MGBC121002	221002	MGBC121002	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						21
+MGBC121089	221089	MGBC121089	1	s__CAG-485 sp002493515	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp002493515						35
+MGBC121214	221214	MGBC121214	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						2
+MGBC121271	221271	MGBC121271	1	g__CAG-603	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-603;s__						305
+MGBC121343	221343	MGBC121343	1	g__Eubacterium_R	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Eubacterium_R;s__						92
+MGBC121596	221596	MGBC121596	1	s__Prevotella sp900545525	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp900545525						71
+MGBC121705	221705	MGBC121705	1	g__UMGS1217	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UMGS1217;s__						3
+MGBC121754	221754	MGBC121754	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						15
+MGBC122214	222214	MGBC122214	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						35
+MGBC122240	222240	MGBC122240	1	s__Lactobacillus hominis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus hominis						9
+MGBC122324	222324	MGBC122324	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						4
+MGBC122397	222397	MGBC122397	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC122484	222484	MGBC122484	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						1
+MGBC122486	222486	MGBC122486	1	s__UMGS268 sp900540705	d__Bacteria;p__Firmicutes;c__Bacilli;o__Acholeplasmatales;f__Anaeroplasmataceae;g__UMGS268;s__UMGS268 sp900540705						51
+MGBC122606	222606	MGBC122606	1	g__UBA5026	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5026;s__						8
+MGBC122614	222614	MGBC122614	1	g__UBA5578	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5578;s__						1
+MGBC122639	222639	MGBC122639	1	g__UMGS268	d__Bacteria;p__Firmicutes;c__Bacilli;o__Acholeplasmatales;f__Anaeroplasmataceae;g__UMGS268;s__						15
+MGBC122917	222917	MGBC122917	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						29
+MGBC122974	222974	MGBC122974	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						9
+MGBC123004	223004	MGBC123004	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						1
+MGBC123009	223009	MGBC123009	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						52
+MGBC123032	223032	MGBC123032	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						16
+MGBC123049	223049	MGBC123049	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						9
+MGBC123065	223065	MGBC123065	1	g__Muribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__						2
+MGBC123224	223224	MGBC123224	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC123285	223285	MGBC123285	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						4
+MGBC123372	223372	MGBC123372	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						4
+MGBC123461	223461	MGBC123461	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						4
+MGBC123502	223502	MGBC123502	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						4
+MGBC123503	223503	MGBC123503	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						16
+MGBC123542	223542	MGBC123542	1	s__TF01-11 sp003612285	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__TF01-11 sp003612285						3
+MGBC123563	223563	MGBC123563	1	g__UBA1191	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__UBA1191;s__						1
+MGBC123773	223773	MGBC123773	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						47
+MGBC123815	223815	MGBC123815	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						7
+MGBC123817	223817	MGBC123817	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						55
+MGBC123951	223951	MGBC123951	1	g__Limosilactobacillus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Limosilactobacillus;s__						5
+MGBC124430	224430	MGBC124430	1	g__UBA946	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA946;s__						65
+MGBC124655	224655	MGBC124655	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						12
+MGBC124762	224762	MGBC124762	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						4
+MGBC124771	224771	MGBC124771	1	g__CAG-475	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-917;g__CAG-475;s__						2
+MGBC124931	224931	MGBC124931	1	f__Gastranaerophilaceae	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__;s__						2
+MGBC124934	224934	MGBC124934	1	g__Zag111	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Zag111;s__						2
+MGBC125006	225006	MGBC125006	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						4
+MGBC125037	225037	MGBC125037	1	s__CAG-127 sp002493625	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-127;s__CAG-127 sp002493625						7
+MGBC125142	225142	MGBC125142	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						60
+MGBC125209	225209	MGBC125209	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						18
+MGBC125215	225215	MGBC125215	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						35
+MGBC125253	225253	MGBC125253	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC125399	225399	MGBC125399	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						10
+MGBC125446	225446	MGBC125446	1	s__CAG-485 sp001701295	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp001701295						14
+MGBC125736	225736	MGBC125736	1	s__Corynebacterium stationis	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Mycobacteriales;f__Mycobacteriaceae;g__Corynebacterium;s__Corynebacterium stationis						9
+MGBC125940	225940	MGBC125940	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						44
+MGBC125952	225952	MGBC125952	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						45
+MGBC126105	226105	MGBC126105	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						3
+MGBC126123	226123	MGBC126123	1	g__Desulfovibrio	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Desulfovibrio;s__						12
+MGBC126140	226140	MGBC126140	1	g__Treponema_D	d__Bacteria;p__Spirochaetota;c__Spirochaetia;o__Treponematales;f__Treponemataceae;g__Treponema_D;s__						19
+MGBC126149	226149	MGBC126149	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC126305	226305	MGBC126305	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						45
+MGBC127200	227200	MGBC127200	1	s__Staphylococcus_A lentus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus_A;s__Staphylococcus_A lentus						48
+MGBC127367	227367	MGBC127367	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						3
+MGBC127554	227554	MGBC127554	1	g__CAG-822	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__CAG-822;s__						7
+MGBC127601	227601	MGBC127601	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						53
+MGBC127629	227629	MGBC127629	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						16
+MGBC127631	227631	MGBC127631	1	s__CAG-873 sp900555715	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp900555715						17
+MGBC127674	227674	MGBC127674	1	s__Butyricimonas virosa	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Butyricimonas;s__Butyricimonas virosa						7
+MGBC127872	227872	MGBC127872	1	g__Dubosiella	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Dubosiella;s__						59
+MGBC127878	227878	MGBC127878	1	g__CAG-590	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-590;s__						1
+MGBC127947	227947	MGBC127947	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						7
+MGBC127997	227997	MGBC127997	1	g__UBA11963	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UBA11963;s__						2
+MGBC128010	228010	MGBC128010	1	g__UBA7862	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA1242;g__UBA7862;s__						1
+MGBC128103	228103	MGBC128103	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						9
+MGBC128194	228194	MGBC128194	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						13
+MGBC128220	228220	MGBC128220	1	s__UBA1394 sp900066845	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA1394;s__UBA1394 sp900066845						1
+MGBC128295	228295	MGBC128295	1	s__Muribaculum arabinoxylanisolvens	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__Muribaculum arabinoxylanisolvens						73
+MGBC128313	228313	MGBC128313	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						9
+MGBC128351	228351	MGBC128351	1	s__Lactobacillus johnsonii	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus johnsonii						255
+MGBC128373	228373	MGBC128373	1	s__Amulumruptor sp900539915	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Amulumruptor;s__Amulumruptor sp900539915						51
+MGBC128419	228419	MGBC128419	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						2
+MGBC128531	228531	MGBC128531	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						2
+MGBC128759	228759	MGBC128759	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						29
+MGBC128762	228762	MGBC128762	1	g__CAG-41	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Monoglobales_A;f__UBA1381;g__CAG-41;s__						1
+MGBC128780	228780	MGBC128780	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						12
+MGBC128920	228920	MGBC128920	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						10
+MGBC128938	228938	MGBC128938	1	s__Helicobacter_C japonicus	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_C;s__Helicobacter_C japonicus						16
+MGBC128948	228948	MGBC128948	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						42
+MGBC128953	228953	MGBC128953	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						35
+MGBC128991	228991	MGBC128991	1	f__Muribaculaceae	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__;s__						111
+MGBC129052	229052	MGBC129052	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						2
+MGBC129154	229154	MGBC129154	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						4
+MGBC129157	229157	MGBC129157	1	s__CAG-485 sp002362485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__CAG-485 sp002362485						421
+MGBC129192	229192	MGBC129192	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						1
+MGBC129207	229207	MGBC129207	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						2
+MGBC129221	229221	MGBC129221	1	g__CAG-590	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-590;s__						9
+MGBC129232	229232	MGBC129232	1	g__Desulfovibrio	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Desulfovibrio;s__						39
+MGBC129248	229248	MGBC129248	1	g__Eisenbergiella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eisenbergiella;s__						2
+MGBC129263	229263	MGBC129263	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						4
+MGBC129270	229270	MGBC129270	1	g__Lachnospira	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospira;s__						2
+MGBC129275	229275	MGBC129275	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						4
+MGBC129284	229284	MGBC129284	1	g__1XD8-76	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76;s__						1
+MGBC129303	229303	MGBC129303	1	g__Marseille-P3106	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Marseille-P3106;s__						1
+MGBC129315	229315	MGBC129315	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						4
+MGBC129327	229327	MGBC129327	1	o__Christensenellales	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__;g__;s__						4
+MGBC129342	229342	MGBC129342	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						2
+MGBC129349	229349	MGBC129349	1	g__UBA11517	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA1242;g__UBA11517;s__						2
+MGBC129472	229472	MGBC129472	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						8
+MGBC129547	229547	MGBC129547	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						13
+MGBC129548	229548	MGBC129548	1	g__UBA7185	d__Bacteria;p__Firmicutes_B;c__Peptococcia;o__Peptococcales;f__Peptococcaceae;g__UBA7185;s__						13
+MGBC129633	229633	MGBC129633	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						3
+MGBC129690	229690	MGBC129690	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						4
+MGBC129708	229708	MGBC129708	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						19
+MGBC129722	229722	MGBC129722	1	g__Ruminiclostridium_E	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E;s__						26
+MGBC129725	229725	MGBC129725	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						2
+MGBC129736	229736	MGBC129736	1	g__An181	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__An181;s__						37
+MGBC129764	229764	MGBC129764	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						10
+MGBC129856	229856	MGBC129856	1	g__CAG-776	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__CAG-776;s__						4
+MGBC129914	229914	MGBC129914	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						29
+MGBC129933	229933	MGBC129933	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						18
+MGBC129937	229937	MGBC129937	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						4
+MGBC129972	229972	MGBC129972	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						3
+MGBC129998	229998	MGBC129998	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						27
+MGBC130208	230208	MGBC130208	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						20
+MGBC130214	230214	MGBC130214	1	g__CAG-303	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-303;s__						30
+MGBC130266	230266	MGBC130266	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						23
+MGBC130362	230362	MGBC130362	1	s__CAG-1427 sp000435675	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__CAG-1427;s__CAG-1427 sp000435675						1
+MGBC130483	230483	MGBC130483	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						27
+MGBC130490	230490	MGBC130490	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						1
+MGBC130525	230525	MGBC130525	1	g__Eubacterium_G	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_G;s__						9
+MGBC130580	230580	MGBC130580	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						19
+MGBC130615	230615	MGBC130615	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						32
+MGBC130616	230616	MGBC130616	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						3
+MGBC130773	230773	MGBC130773	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						8
+MGBC130809	230809	MGBC130809	1	g__UBA5026	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5026;s__						1
+MGBC130908	230908	MGBC130908	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						36
+MGBC131033	231033	MGBC131033	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						8
+MGBC131066	231066	MGBC131066	1	s__Romboutsia ilealis	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Romboutsia;s__Romboutsia ilealis						13
+MGBC131109	231109	MGBC131109	1	g__CAG-81	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-81;s__						2
+MGBC131118	231118	MGBC131118	1	g__Clostridium_Q	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Clostridium_Q;s__						3
+MGBC131161	231161	MGBC131161	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						4
+MGBC131258	231258	MGBC131258	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						115
+MGBC131349	231349	MGBC131349	1	s__14-2 sp000403315	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__14-2 sp000403315						115
+MGBC131384	231384	MGBC131384	1	g__Adlercreutzia	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__						5
+MGBC131385	231385	MGBC131385	1	s__Acetatifactor sp003612485	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__Acetatifactor sp003612485						51
+MGBC131434	231434	MGBC131434	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						22
+MGBC131504	231504	MGBC131504	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						12
+MGBC131677	231677	MGBC131677	1	g__UMGS995	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__UMGS995;s__						3
+MGBC131735	231735	MGBC131735	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						9
+MGBC131886	231886	MGBC131886	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC131887	231887	MGBC131887	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						47
+MGBC131955	231955	MGBC131955	1	g__Odoribacter	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__						51
+MGBC131967	231967	MGBC131967	1	g__Butyricicoccus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Butyricicoccus;s__						5
+MGBC131977	231977	MGBC131977	1	g__Angelakisella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Angelakisella;s__						1
+MGBC131995	231995	MGBC131995	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						3
+MGBC132108	232108	MGBC132108	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						1
+MGBC132220	232220	MGBC132220	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						2
+MGBC132292	232292	MGBC132292	1	g__CAG-41	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Monoglobales_A;f__UBA1381;g__CAG-41;s__						1
+MGBC132302	232302	MGBC132302	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						1
+MGBC132356	232356	MGBC132356	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						15
+MGBC132469	232469	MGBC132469	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						27
+MGBC132531	232531	MGBC132531	1	s__Kosmotoga_B pacifica	d__Bacteria;p__Thermotogota;c__Thermotogae;o__Petrotogales;f__Kosmotogaceae;g__Kosmotoga_B;s__Kosmotoga_B pacifica						1
+MGBC132548	232548	MGBC132548	1	s__Caloranaerobacter azorensis	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Tissierellales;f__Caloranaerobacteraceae;g__Caloranaerobacter;s__Caloranaerobacter azorensis						1
+MGBC132858	232858	MGBC132858	1	s__Prevotella sp002298815	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp002298815						44
+MGBC132965	232965	MGBC132965	1	s__Muribacter muris	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Pasteurellaceae;g__Muribacter;s__Muribacter muris						1
+MGBC133064	233064	MGBC133064	1	s__Streptococcus sp002300045	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Streptococcus;s__Streptococcus sp002300045						1
+MGBC133411	233411	MGBC133411	1	g__CAG-495	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__CAG-495;s__						2
+MGBC133433	233433	MGBC133433	1	g__RC9	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__UBA932;g__RC9;s__						34
+MGBC133623	233623	MGBC133623	1	g__Paraprevotella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Paraprevotella;s__						1
+MGBC134176	234176	MGBC134176	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						99
+MGBC134341	234341	MGBC134341	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						65
+MGBC134540	234540	MGBC134540	1	g__Parasutterella	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Parasutterella;s__						57
+MGBC134914	234914	MGBC134914	1	g__UMGS1217	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UMGS1217;s__						1
+MGBC135202	235202	MGBC135202	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						66
+MGBC135302	235302	MGBC135302	1	g__1XD8-76	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD8-76;s__						29
+MGBC135451	235451	MGBC135451	1	f__Butyricicoccaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__;s__						2
+MGBC135575	235575	MGBC135575	1	s__Bacteroides sp002491635	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides sp002491635						64
+MGBC135576	235576	MGBC135576	1	s__Paramuribaculum sp001689535	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__Paramuribaculum sp001689535						10
+MGBC135601	235601	MGBC135601	1	g__Paraprevotella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Paraprevotella;s__						6
+MGBC135721	235721	MGBC135721	1	s__UBA7173 sp002491305	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp002491305						56
+MGBC135730	235730	MGBC135730	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						2
+MGBC135946	235946	MGBC135946	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						27
+MGBC136074	236074	MGBC136074	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						7
+MGBC136599	236599	MGBC136599	1	s__Enterocloster clostridioformis	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Enterocloster;s__Enterocloster clostridioformis						28
+MGBC136623	236623	MGBC136623	1	g__Angelakisella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Angelakisella;s__						5
+MGBC136627	236627	MGBC136627	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						7
+MGBC136833	236833	MGBC136833	1	g__Anaerotignum	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__Anaerotignum;s__						27
+MGBC136875	236875	MGBC136875	1	g__Bilophila	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila;s__						12
+MGBC136929	236929	MGBC136929	1	g__Bilophila	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila;s__						3
+MGBC137200	237200	MGBC137200	1	s__UBA7173 sp004102805	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp004102805						21
+MGBC137711	237711	MGBC137711	1	g__UBA946	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA946;s__						89
+MGBC137839	237839	MGBC137839	1	g__CAG-81	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-81;s__						4
+MGBC137871	237871	MGBC137871	1	f__CAG-611	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__;s__						3
+MGBC137892	237892	MGBC137892	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						2
+MGBC137941	237941	MGBC137941	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						8
+MGBC139270	239270	MGBC139270	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						3
+MGBC139341	239341	MGBC139341	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						8
+MGBC139354	239354	MGBC139354	1	f__CAG-1000	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__;s__						1
+MGBC139400	239400	MGBC139400	1	g__AM07-15	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__AM07-15;s__						1
+MGBC139490	239490	MGBC139490	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						26
+MGBC139511	239511	MGBC139511	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC139512	239512	MGBC139512	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						2
+MGBC139654	239654	MGBC139654	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						1
+MGBC139665	239665	MGBC139665	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						1
+MGBC139669	239669	MGBC139669	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						3
+MGBC139783	239783	MGBC139783	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						3
+MGBC139800	239800	MGBC139800	1	g__Ruminococcus_E	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Ruminococcus_E;s__						4
+MGBC139812	239812	MGBC139812	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						9
+MGBC139895	239895	MGBC139895	1	s__Eubacterium_J plexicaudatum	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__Eubacterium_J plexicaudatum						5
+MGBC139909	239909	MGBC139909	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						3
+MGBC139916	239916	MGBC139916	1	f__P3	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__P3;g__;s__						9
+MGBC139950	239950	MGBC139950	1	f__Erysipelotrichaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__;s__						4
+MGBC139975	239975	MGBC139975	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						1
+MGBC139981	239981	MGBC139981	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						4
+MGBC140009	240009	MGBC140009	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC140028	240028	MGBC140028	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						14
+MGBC140040	240040	MGBC140040	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						1
+MGBC140066	240066	MGBC140066	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						19
+MGBC140090	240090	MGBC140090	1	f__Erysipelatoclostridiaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__;s__						1
+MGBC140115	240115	MGBC140115	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						1
+MGBC140131	240131	MGBC140131	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						1
+MGBC140159	240159	MGBC140159	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						8
+MGBC140179	240179	MGBC140179	1	g__Mucispirillum	d__Bacteria;p__Deferribacterota;c__Deferribacteres;o__Deferribacterales;f__Mucispirillaceae;g__Mucispirillum;s__						14
+MGBC140196	240196	MGBC140196	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						2
+MGBC140221	240221	MGBC140221	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						2
+MGBC140242	240242	MGBC140242	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						3
+MGBC140257	240257	MGBC140257	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						4
+MGBC140398	240398	MGBC140398	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						3
+MGBC140467	240467	MGBC140467	1	g__Bacteroides	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__						9
+MGBC140491	240491	MGBC140491	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						7
+MGBC140522	240522	MGBC140522	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						26
+MGBC140579	240579	MGBC140579	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						5
+MGBC140709	240709	MGBC140709	1	g__Ruthenibacterium	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium;s__						21
+MGBC140748	240748	MGBC140748	1	g__Anaerotruncus	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Anaerotruncus;s__						1
+MGBC140906	240906	MGBC140906	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						19
+MGBC141088	241088	MGBC141088	1	s__COE1 sp002358575	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__COE1 sp002358575						235
+MGBC141809	241809	MGBC141809	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						9
+MGBC141815	241815	MGBC141815	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						1
+MGBC141840	241840	MGBC141840	1	s__CAG-95 sp000403495	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__CAG-95 sp000403495						107
+MGBC142035	242035	MGBC142035	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						11
+MGBC142124	242124	MGBC142124	1	s__RC9 sp002298075	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__UBA932;g__RC9;s__RC9 sp002298075						270
+MGBC142214	242214	MGBC142214	1	g__UMGS1815	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__CAG-272;g__UMGS1815;s__						3
+MGBC142302	242302	MGBC142302	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						4
+MGBC142332	242332	MGBC142332	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						2
+MGBC142465	242465	MGBC142465	1	s__Rodentibacter pneumotropicus	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Pasteurellaceae;g__Rodentibacter;s__Rodentibacter pneumotropicus						3
+MGBC142608	242608	MGBC142608	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						5
+MGBC142695	242695	MGBC142695	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						76
+MGBC142918	242918	MGBC142918	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						1
+MGBC142924	242924	MGBC142924	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						34
+MGBC143053	243053	MGBC143053	1	s__Hungatella_A sp002358555	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__Hungatella_A sp002358555						51
+MGBC143115	243115	MGBC143115	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						22
+MGBC143118	243118	MGBC143118	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						7
+MGBC143123	243123	MGBC143123	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						5
+MGBC143167	243167	MGBC143167	1	g__CAG-632	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-632;s__						7
+MGBC143173	243173	MGBC143173	1	g__Lachnospira	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospira;s__						2
+MGBC143234	243234	MGBC143234	1	g__Bacteroides	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__						10
+MGBC143306	243306	MGBC143306	1	s__Duncaniella sp001689425	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella sp001689425						167
+MGBC143446	243446	MGBC143446	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC143456	243456	MGBC143456	1	g__UMGS995	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__UMGS995;s__						2
+MGBC143556	243556	MGBC143556	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						15
+MGBC143594	243594	MGBC143594	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						5
+MGBC143601	243601	MGBC143601	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						3
+MGBC143606	243606	MGBC143606	1	g__G11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__G11;s__						21
+MGBC143610	243610	MGBC143610	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						3
+MGBC143693	243693	MGBC143693	1	g__UMGS1217	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UMGS1217;s__						1
+MGBC143734	243734	MGBC143734	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						4
+MGBC143741	243741	MGBC143741	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						2
+MGBC143759	243759	MGBC143759	1	g__Agathobacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Agathobacter;s__						7
+MGBC143782	243782	MGBC143782	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						1
+MGBC143783	243783	MGBC143783	1	g__UBA3818	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA3818;s__						1
+MGBC143807	243807	MGBC143807	1	g__Alistipes	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__						31
+MGBC143808	243808	MGBC143808	1	g__Prevotella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__						202
+MGBC143865	243865	MGBC143865	1	g__CAG-115	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-115;s__						14
+MGBC143869	243869	MGBC143869	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						15
+MGBC143931	243931	MGBC143931	1	s__UBA7173 sp001689685	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__UBA7173 sp001689685						130
+MGBC143961	243961	MGBC143961	1	g__CAG-1435	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-314;g__CAG-1435;s__						3
+MGBC143965	243965	MGBC143965	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						4
+MGBC144528	244528	MGBC144528	1	s__Bacteroides congonensis	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides congonensis						18
+MGBC144733	244733	MGBC144733	1	s__Bacteroides caecimuris	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides caecimuris						38
+MGBC145212	245212	MGBC145212	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						1
+MGBC145421	245421	MGBC145421	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						109
+MGBC145961	245961	MGBC145961	1	g__Zag1	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__Gastranaerophilaceae;g__Zag1;s__						1
+MGBC146413	246413	MGBC146413	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						72
+MGBC146759	246759	MGBC146759	1	s__Bacteroides intestinalis	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides intestinalis						43
+MGBC146938	246938	MGBC146938	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						16
+MGBC147098	247098	MGBC147098	1	f__Muribaculaceae	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__;s__						41
+MGBC147835	247835	MGBC147835	1	g__Ruminiclostridium_E	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminiclostridium_E;s__						13
+MGBC147959	247959	MGBC147959	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						10
+MGBC148030	248030	MGBC148030	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						23
+MGBC148330	248330	MGBC148330	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						3
+MGBC149507	249507	MGBC149507	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						145
+MGBC150235	250235	MGBC150235	1	s__CAG-873 sp002491245	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp002491245						7
+MGBC150826	250826	MGBC150826	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						5
+MGBC150949	250949	MGBC150949	1	g__ASF356	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__ASF356;s__						2
+MGBC151438	251438	MGBC151438	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						14
+MGBC151524	251524	MGBC151524	1	s__Alistipes sp002428825	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes sp002428825						292
+MGBC151848	251848	MGBC151848	1	f__Butyricicoccaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__;s__						6
+MGBC152050	252050	MGBC152050	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						17
+MGBC152089	252089	MGBC152089	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						95
+MGBC152178	252178	MGBC152178	1	g__Odoribacter	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__						57
+MGBC152290	252290	MGBC152290	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						105
+MGBC152421	252421	MGBC152421	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						18
+MGBC152423	252423	MGBC152423	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						13
+MGBC152544	252544	MGBC152544	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						7
+MGBC152639	252639	MGBC152639	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						18
+MGBC152734	252734	MGBC152734	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						7
+MGBC152987	252987	MGBC152987	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						5
+MGBC153020	253020	MGBC153020	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						2
+MGBC153228	253228	MGBC153228	1	f__Muribaculaceae	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__;s__						84
+MGBC153675	253675	MGBC153675	1	g__CAG-1435	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-314;g__CAG-1435;s__						37
+MGBC153954	253954	MGBC153954	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						163
+MGBC153991	253991	MGBC153991	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						82
+MGBC154005	254005	MGBC154005	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						2
+MGBC154526	254526	MGBC154526	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						17
+MGBC155283	255283	MGBC155283	1	f__CAG-1000	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__;s__						2
+MGBC155975	255975	MGBC155975	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						18
+MGBC156312	256312	MGBC156312	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						19
+MGBC156614	256614	MGBC156614	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						75
+MGBC156628	256628	MGBC156628	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						4
+MGBC156629	256629	MGBC156629	1	g__Schaedlerella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__						14
+MGBC156923	256923	MGBC156923	1	g__CAG-582	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__CAG-582;s__						2
+MGBC157066	257066	MGBC157066	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						117
+MGBC157102	257102	MGBC157102	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						63
+MGBC157384	257384	MGBC157384	1	g__UBA11517	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA1242;g__UBA11517;s__						1
+MGBC157385	257385	MGBC157385	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						1
+MGBC157433	257433	MGBC157433	1	g__CAG-115	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__CAG-115;s__						88
+MGBC157434	257434	MGBC157434	1	s__UBA3282 sp003612405	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__UBA3282 sp003612405						190
+MGBC157594	257594	MGBC157594	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC157705	257705	MGBC157705	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						12
+MGBC157731	257731	MGBC157731	1	g__ASF356	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__ASF356;s__						14
+MGBC157735	257735	MGBC157735	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						1
+MGBC157936	257936	MGBC157936	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						14
+MGBC158032	258032	MGBC158032	1	s__Paramuribaculum sp900553585	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__Paramuribaculum sp900553585						210
+MGBC158044	258044	MGBC158044	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						27
+MGBC158299	258299	MGBC158299	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						6
+MGBC158372	258372	MGBC158372	1	s__Ruthenibacterium lactatiformans	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium;s__Ruthenibacterium lactatiformans						2
+MGBC158472	258472	MGBC158472	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						14
+MGBC158517	258517	MGBC158517	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						1
+MGBC158728	258728	MGBC158728	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						20
+MGBC158835	258835	MGBC158835	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						24
+MGBC159243	259243	MGBC159243	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						7
+MGBC159247	259247	MGBC159247	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						147
+MGBC159253	259253	MGBC159253	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						43
+MGBC159717	259717	MGBC159717	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						101
+MGBC159740	259740	MGBC159740	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						3
+MGBC159744	259744	MGBC159744	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						3
+MGBC159851	259851	MGBC159851	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						17
+MGBC159923	259923	MGBC159923	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC159935	259935	MGBC159935	1	g__Desulfovibrio	d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Desulfovibrio;s__						9
+MGBC159988	259988	MGBC159988	1	g__UBA7182	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA7182;s__						16
+MGBC159997	259997	MGBC159997	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						24
+MGBC160000	260000	MGBC160000	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						6
+MGBC160006	260006	MGBC160006	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						10
+MGBC160019	260019	MGBC160019	1	g__CAG-1435	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-314;g__CAG-1435;s__						11
+MGBC160026	260026	MGBC160026	1	g__UMGS1880	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__UMGS1880;s__						1
+MGBC160578	260578	MGBC160578	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						1
+MGBC160833	260833	MGBC160833	1	g__51-20	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__RF32;f__CAG-239;g__51-20;s__						23
+MGBC161056	261056	MGBC161056	1	g__CAG-95	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-95;s__						198
+MGBC161115	261115	MGBC161115	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						2
+MGBC161128	261128	MGBC161128	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						3
+MGBC161175	261175	MGBC161175	1	s__Duncaniella sp001689495	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__Duncaniella sp001689495						19
+MGBC161191	261191	MGBC161191	1	s__Dubosiella sp000403415	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Dubosiella;s__Dubosiella sp000403415						3
+MGBC161213	261213	MGBC161213	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						2
+MGBC161412	261412	MGBC161412	1	g__Clostridium_Q	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Clostridium_Q;s__						34
+MGBC161418	261418	MGBC161418	1	g__Marseille-P3106	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Marseille-P3106;s__						3
+MGBC161419	261419	MGBC161419	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						13
+MGBC161554	261554	MGBC161554	1	g__Ligilactobacillus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Ligilactobacillus;s__						4
+MGBC161558	261558	MGBC161558	1	g__Muribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__						6
+MGBC161624	261624	MGBC161624	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						1
+MGBC161649	261649	MGBC161649	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						44
+MGBC161672	261672	MGBC161672	1	g__Angelakisella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Angelakisella;s__						36
+MGBC161676	261676	MGBC161676	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						14
+MGBC161736	261736	MGBC161736	1	g__CAG-776	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__CAG-776;s__						2
+MGBC161747	261747	MGBC161747	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						3
+MGBC161755	261755	MGBC161755	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						2
+MGBC161823	261823	MGBC161823	1	g__Roseburia	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia;s__						1
+MGBC161919	261919	MGBC161919	1	s__Lactococcus lactis_E	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Streptococcaceae;g__Lactococcus;s__Lactococcus lactis_E						25
+MGBC162018	262018	MGBC162018	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						53
+MGBC162040	262040	MGBC162040	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						85
+MGBC162081	262081	MGBC162081	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						7
+MGBC162097	262097	MGBC162097	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC162151	262151	MGBC162151	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						51
+MGBC162170	262170	MGBC162170	1	g__ASF356	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__ASF356;s__						19
+MGBC162267	262267	MGBC162267	1	g__UMGS1217	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UMGS1217;s__						1
+MGBC162268	262268	MGBC162268	1	o__Gastranaerophilales	d__Bacteria;p__Cyanobacteria;c__Vampirovibrionia;o__Gastranaerophilales;f__;g__;s__						2
+MGBC162360	262360	MGBC162360	1	s__Amulumruptor sp001689515	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Amulumruptor;s__Amulumruptor sp001689515						43
+MGBC162392	262392	MGBC162392	1	s__Phocaeicola sartorii	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Phocaeicola;s__Phocaeicola sartorii						21
+MGBC162393	262393	MGBC162393	1	g__Parvibacter	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Parvibacter;s__						3
+MGBC162430	262430	MGBC162430	1	s__Bifidobacterium globosum	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Bifidobacteriaceae;g__Bifidobacterium;s__Bifidobacterium globosum						119
+MGBC162466	262466	MGBC162466	1	s__Muribaculum sp002358615	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__Muribaculum sp002358615						56
+MGBC162486	262486	MGBC162486	1	f__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__;s__						60
+MGBC162508	262508	MGBC162508	1	g__CAG-145	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__CAG-145;s__						1
+MGBC162518	262518	MGBC162518	1	s__Prevotellamassilia sp002933955	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotellamassilia;s__Prevotellamassilia sp002933955						20
+MGBC162555	262555	MGBC162555	1	g__D16-34	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-34;s__						2
+MGBC162581	262581	MGBC162581	1	f__CAG-611	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__;s__						1
+MGBC162663	262663	MGBC162663	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						3
+MGBC162740	262740	MGBC162740	1	s__Helicobacter_D apodemus	d__Bacteria;p__Campylobacterota;c__Campylobacteria;o__Campylobacterales;f__Helicobacteraceae;g__Helicobacter_D;s__Helicobacter_D apodemus						26
+MGBC162742	262742	MGBC162742	1	g__Brachyspira	d__Bacteria;p__Spirochaetota;c__Brachyspirae;o__Brachyspirales;f__Brachyspiraceae;g__Brachyspira;s__						5
+MGBC162746	262746	MGBC162746	1	g__Lactobacillus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__						7
+MGBC162798	262798	MGBC162798	1	s__UBA1820 sp003150615	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__UBA1820;g__UBA1820;s__UBA1820 sp003150615						1
+MGBC162806	262806	MGBC162806	1	g__Prevotellamassilia	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotellamassilia;s__						13
+MGBC162808	262808	MGBC162808	1	s__CAG-873 sp003979155	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__CAG-873 sp003979155						53
+MGBC162824	262824	MGBC162824	1	g__UBA11940	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UBA11940;s__						2
+MGBC162829	262829	MGBC162829	1	f__Borkfalkiaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__;s__						1
+MGBC162832	262832	MGBC162832	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						1
+MGBC162833	262833	MGBC162833	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						4
+MGBC162871	262871	MGBC162871	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						4
+MGBC162876	262876	MGBC162876	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						21
+MGBC162888	262888	MGBC162888	1	f__UBA11393	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Paracaedibacterales;f__UBA11393;g__;s__						2
+MGBC162917	262917	MGBC162917	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						1
+MGBC162921	262921	MGBC162921	1	g__Kineothrix	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Kineothrix;s__						73
+MGBC162943	262943	MGBC162943	1	g__UMGS1004	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Borkfalkiaceae;g__UMGS1004;s__						6
+MGBC162966	262966	MGBC162966	1	g__Odoribacter	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae;g__Odoribacter;s__						57
+MGBC162980	262980	MGBC162980	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						3
+MGBC163016	263016	MGBC163016	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						2
+MGBC163017	263017	MGBC163017	1	f__Rikenellaceae	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__;s__						9
+MGBC163040	263040	MGBC163040	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						267
+MGBC163085	263085	MGBC163085	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						21
+MGBC163158	263158	MGBC163158	1	s__NM07-P-09 sp004793925	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Atopobiaceae;g__NM07-P-09;s__NM07-P-09 sp004793925						19
+MGBC163165	263165	MGBC163165	1	g__CHKCI006	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__CHKCI006;s__						9
+MGBC163303	263303	MGBC163303	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						6
+MGBC163323	263323	MGBC163323	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						20
+MGBC163329	263329	MGBC163329	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						4
+MGBC163421	263421	MGBC163421	1	g__UBA2882	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA2882;s__						20
+MGBC163448	263448	MGBC163448	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						1
+MGBC163490	263490	MGBC163490	1	f__Erysipelatoclostridiaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelatoclostridiaceae;g__;s__						3
+MGBC163510	263510	MGBC163510	1	g__UBA11957	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA11957;s__						5
+MGBC163511	263511	MGBC163511	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						4
+MGBC163558	263558	MGBC163558	1	g__1XD42-69	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__1XD42-69;s__						68
+MGBC163564	263564	MGBC163564	1	g__ASF356	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__ASF356;s__						28
+MGBC163656	263656	MGBC163656	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						8
+MGBC163672	263672	MGBC163672	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						2
+MGBC163738	263738	MGBC163738	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						41
+MGBC163752	263752	MGBC163752	1	g__Schaedlerella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__						17
+MGBC163836	263836	MGBC163836	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						14
+MGBC163852	263852	MGBC163852	1	g__Faecalibaculum	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Faecalibaculum;s__						9
+MGBC163918	263918	MGBC163918	1	s__Parasutterella excrementihominis	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Parasutterella;s__Parasutterella excrementihominis						19
+MGBC163952	263952	MGBC163952	1	g__QANA01	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__Christensenellaceae;g__QANA01;s__						4
+MGBC163961	263961	MGBC163961	1	f__Erysipelotrichaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__;s__						13
+MGBC163973	263973	MGBC163973	1	g__UMGS1217	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__UMGS1217;s__						3
+MGBC164018	264018	MGBC164018	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						8
+MGBC164045	264045	MGBC164045	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						12
+MGBC164203	264203	MGBC164203	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						8
+MGBC164205	264205	MGBC164205	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						7
+MGBC164289	264289	MGBC164289	1	g__Lachnospira	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Lachnospira;s__						38
+MGBC164298	264298	MGBC164298	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						9
+MGBC164303	264303	MGBC164303	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						16
+MGBC164316	264316	MGBC164316	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						7
+MGBC164402	264402	MGBC164402	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						51
+MGBC164404	264404	MGBC164404	1	g__Acutalibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__						9
+MGBC164417	264417	MGBC164417	1	g__UBA9502	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA9502;s__						7
+MGBC164422	264422	MGBC164422	1	g__AF33-28	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__AF33-28;s__						7
+MGBC164430	264430	MGBC164430	1	g__Oscillibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Oscillibacter;s__						5
+MGBC164450	264450	MGBC164450	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						2
+MGBC164454	264454	MGBC164454	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						2
+MGBC164455	264455	MGBC164455	1	g__UBA9475	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__UBA9475;s__						1
+MGBC164501	264501	MGBC164501	1	g__Clostridium	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__						29
+MGBC164577	264577	MGBC164577	1	g__UBA7173	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__UBA7173;s__						96
+MGBC164593	264593	MGBC164593	1	g__TF01-11	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__TF01-11;s__						79
+MGBC164599	264599	MGBC164599	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						9
+MGBC164609	264609	MGBC164609	1	g__CAG-110	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__CAG-110;s__						29
+MGBC164624	264624	MGBC164624	1	g__CAG-582	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-1000;g__CAG-582;s__						29
+MGBC164692	264692	MGBC164692	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						2
+MGBC164714	264714	MGBC164714	1	f__Oscillospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__;s__						2
+MGBC164771	264771	MGBC164771	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						120
+MGBC164801	264801	MGBC164801	1	g__Atopostipes	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Carnobacteriaceae;g__Atopostipes;s__						2
+MGBC164932	264932	MGBC164932	1	g__UBA1394	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA1394;s__						83
+MGBC164958	264958	MGBC164958	1	f__CAG-552	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__CAG-552;g__;s__						15
+MGBC164983	264983	MGBC164983	1	g__Parvibacter	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Parvibacter;s__						1
+MGBC165015	265015	MGBC165015	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						15
+MGBC165019	265019	MGBC165019	1	g__Adlercreutzia	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Adlercreutzia;s__						8
+MGBC165023	265023	MGBC165023	1	g__Hungatella_A	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Hungatella_A;s__						7
+MGBC165025	265025	MGBC165025	1	f__Butyricicoccaceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__;s__						5
+MGBC165041	265041	MGBC165041	1	g__UBA1405	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__UBA1405;s__						2
+MGBC165045	265045	MGBC165045	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						1
+MGBC165049	265049	MGBC165049	1	g__UMGS1370	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UMGS1370;s__						1
+MGBC165060	265060	MGBC165060	1	g__Marseille-P3106	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Marseille-P3106;s__						1
+MGBC165061	265061	MGBC165061	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						1
+MGBC165132	265132	MGBC165132	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						42
+MGBC165149	265149	MGBC165149	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						12
+MGBC165152	265152	MGBC165152	1	g__Acetatifactor	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Acetatifactor;s__						23
+MGBC165187	265187	MGBC165187	1	f__Erysipelotrichaceae	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__;s__						6
+MGBC165261	265261	MGBC165261	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						18
+MGBC165282	265282	MGBC165282	1	f__Lachnospiraceae	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__						9
+MGBC165308	265308	MGBC165308	1	g__Ureaplasma	d__Bacteria;p__Firmicutes;c__Bacilli;o__Mycoplasmatales;f__Mycoplasmoidaceae;g__Ureaplasma;s__						8
+MGBC165345	265345	MGBC165345	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						3
+MGBC165376	265376	MGBC165376	1	g__UBA3700	d__Bacteria;p__Firmicutes_A;c__Clostridia_A;o__Christensenellales;f__UBA3700;g__UBA3700;s__						4
+MGBC165440	265440	MGBC165440	1	g__Lawsonibacter	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__						24
+MGBC165444	265444	MGBC165444	1	s__Ileibacterium valens	d__Bacteria;p__Firmicutes;c__Bacilli;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Ileibacterium;s__Ileibacterium valens						19
+MGBC165515	265515	MGBC165515	1	g__Muribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Muribaculum;s__						8
+MGBC165561	265561	MGBC165561	1	g__UBA3789	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-611;g__UBA3789;s__						2
+MGBC165605	265605	MGBC165605	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						44
+MGBC165708	265708	MGBC165708	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						98
+MGBC165752	265752	MGBC165752	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						2
+MGBC165885	265885	MGBC165885	1	g__CAG-485	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-485;s__						4
+MGBC165900	265900	MGBC165900	1	g__UBA5578	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__CAG-822;g__UBA5578;s__						4
+MGBC165935	265935	MGBC165935	1	g__Parvibacter	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__Parvibacter;s__						1
+MGBC166049	266049	MGBC166049	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						2
+MGBC166137	266137	MGBC166137	1	f__UBA1381	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Monoglobales_A;f__UBA1381;g__;s__						5
+MGBC166178	266178	MGBC166178	1	g__COE1	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__COE1;s__						2
+MGBC166183	266183	MGBC166183	1	g__CAG-273	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__TANB77;f__CAG-508;g__CAG-273;s__						1
+MGBC166213	266213	MGBC166213	1	g__Dorea	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Dorea;s__						1
+MGBC166238	266238	MGBC166238	1	g__D16-63	d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__D16-63;s__						5
+MGBC166381	266381	MGBC166381	1	g__Duncaniella	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Duncaniella;s__						5
+MGBC166390	266390	MGBC166390	1	g__Paramuribaculum	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__Paramuribaculum;s__						2
+MGBC166434	266434	MGBC166434	1	g__CAG-873	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__CAG-873;s__						6
+MGBC166500	266500	MGBC166500	1	g__Schaedlerella	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Schaedlerella;s__						7
+MGBC166616	266616	MGBC166616	1	g__Eubacterium_J	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_J;s__						16
+MGBC166701	266701	MGBC166701	1	g__Lactobacillus	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__						1
+MGBC166763	266763	MGBC166763	1	g__Eubacterium_F	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_F;s__						32
+MGBC166828	266828	MGBC166828	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						2
+MGBC166864	266864	MGBC166864	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						4
+MGBC167004	267004	MGBC167004	1	g__14-2	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__14-2;s__						12
+MGBC167061	267061	MGBC167061	1	s__Lactobacillus taiwanensis	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus;s__Lactobacillus taiwanensis						18
+MGBC167064	267064	MGBC167064	1	g__UBA3282	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__UBA3282;s__						7
+MGBC167141	267141	MGBC167141	1	s__Prevotella sp002933775	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Prevotella;s__Prevotella sp002933775						216
