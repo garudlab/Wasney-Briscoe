@@ -11,6 +11,7 @@ library(ggpubr)
 library(grid)
 library(ggtext)
 
+data_dir <-  "~/"
 
 plot_strains <- function(species, output = "normal", strain_colors = c("#654321", "#D2B48C"), species_metadata = "~/Wasney-Briscoe/metadata/ConventionlMouse/species_metadata.tsv") {
   
