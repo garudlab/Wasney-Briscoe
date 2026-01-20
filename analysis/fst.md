@@ -22,4 +22,4 @@ sh ./qsub_calculate_fst_EXECUTE.sh
 
 This calculates $F_{ST}$ for the downsampled MIDAS data. By default, this calculates [qsub_calculate_fst_EXECUTE.sh](https://github.com/garudlab/Wasney-Briscoe/blob/main/scripts/pi/StatsPipeline/qsubs/qsub_calculate_fst_EXECUTE.sh) for normal MIDAS outputs. To calculate $F_{ST}$ on downsampled MIDAS data, change `study=normal` to `study=SiteDownsampled`. The paths to the normal MIDAS data are specified in the [config.yaml](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/pi.md) file.'
 
-## Step 2: step 4. Create a single $F_{ST}$ dataframe
+## Step 2: Create a single $F_{ST}$ dataframe
