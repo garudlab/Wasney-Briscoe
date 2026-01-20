@@ -10,7 +10,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 ## $\pi$ and $F_{ST}$ analysis
 
 - [Calculate pi](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/pi.md)
-- [Calculate $F_{ST}$](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/fst.md)
+- [Calculate F<sub>ST</sub>](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/fst.md)
 
 ## Strain frequency analysis
 
