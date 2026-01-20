@@ -26,7 +26,7 @@ This script will output `figure_5.png` in your home directory (`~/`).
 
 ## Figure 6
 
-Run `figure_4.R` in [`Wasney-Briscoe/scripts/figures/figure_5.R`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/figures/figure_6.R).
+Run `figure_4.R` in [`Wasney-Briscoe/scripts/figures/figure_6.R`](https://github.com/garudlab/Wasney-Briscoe/tree/main/scripts/figures/figure_6.R).
 
 This script will output `figure_6.png` in your home directory (`~/`).
 
