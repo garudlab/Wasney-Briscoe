@@ -7,7 +7,7 @@ The analysis subdirectory contains instructions on running all analyses and repr
 - [Running MIDAS](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/MIDAS.md)
 - [Post-processing MIDAS data](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/postprocessing.md)
 
-## $\pi$ analysis
+## $\pi$ and $F_{ST}$ analysis
 
 - [Calculate pi](https://github.com/garudlab/Wasney-Briscoe/blob/main/analysis/pi.md)
 
